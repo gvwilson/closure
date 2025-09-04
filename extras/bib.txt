@@ -1,0 +1,36 @@
+<span id="Bollier2025">Bollier 2025</span>
+:   David Bollier:
+    *Think Like a Commoner: A Short Introduction to the Life of the Commons*
+    (2nd edition).
+    New Society Publishers,
+    2025,
+    978-1774060117.
+
+<span id="Eghbal2020">Eghbal 2020</span>
+:   Nadia Eghbal:
+    *Working in Public: The Making and Maintenance of Open Source Software*.
+    Stripe Press,
+    2020,
+    978-0578675862.
+
+<span id="Fogel2020">Fogel 2020</span>
+:   Karl Fogel:
+    *Producing Open Source Software: How to Run a Successful Free Software Project*
+    (2nd edition).
+    <https://producingoss.com/>,
+    2020.
+
+<span id="Langille2010">Langille & Eisen 2010</span>
+:   Morgan G.I. Langille and Jonathan A. Eisen:
+    "BioTorrents: A File Sharing Service for Scientific Data".
+    *PLoS One*,
+    4(5),
+    2010,
+    10.1371/journal.pone.0010071.
+
+<span id="Nikiforuk2013">Nikiforuk 2013</span>
+:   Andrew Nikiforuk:
+    "Harper government shuts down 'world class' collection on freshwater science and protection."
+    *The Tyee*,
+    2013-12-09,
+    https://thetyee.ca/News/2013/12/09/Dismantling-Fishery-Library/.

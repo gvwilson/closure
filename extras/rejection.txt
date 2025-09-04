@@ -1,0 +1,131 @@
+Reviewer #1: The paper under consideration is intended for the "10
+simple rules" series and proposes 10 rules for making software
+accessible and usable in the long term, beyond the availability of the
+original developers. It is obviously motivated by the current
+political climate of funding cuts and other increasing government
+interventions in science in many countries as a reason for the loss of
+software developer personnel and knowledge.
+
+At the same time, the issue of making software accessible and usable
+for many users independent of the availability of the original
+developer is a general issue that affects all scientists who develop
+software and is not restricted to specific crisis situations such as
+funding cuts.
+
+Unfortunately the authors appear to address all possible scenarios at
+the same time, from normal loss of staff due to personal and family
+reasons, which happens all the time both in academia and industry,
+over funding cuts to interventions in science due to a government or
+institutional leadership that is critical, unsupportive or even
+hostile to a specific scientific approach or discipline or to science
+in general. Mixing all these scenarios together. in my opinion, has
+two effects that are both detrimental to the paper: One the one hand,
+there is a political issue: it mixes worthwhile general considerations
+on software longevity with instructions for activism opposing
+institutional of governmental leadership. I would prefer to have these
+two aspects separated. On the other hand, there is a practical issue:
+the different scenarios are really different and while there is some
+overlap in how to handle software accessibillity in the different
+scenarios, they will require different measures and mixing them
+together only creates confusion.
+
+Related to the latter point is the question who this authors imagine
+the audience of this paper to be. Readers who are already experts on
+this topics will not learn anything new, but for novices in software
+longevity, the paper is confusing rather than helpful with the large
+number of rules and sub-rules, recommendation for different scenarios
+
+Thus, while I see the topic as interesting and timely, this paper does
+not really do it justice. The 10 simple rules should appeal to broad
+audience, and I have trouble seeing that in this case.
+
+In addition, there are several points where individual rules are much
+less clear-cut than what the authors suggest:
+
+Rule 4: An important aspect that is not even mentioned is that
+licenses can also restrict the authors themselves. Maybe they will
+some day be interested in using the software in a startup or in
+selling it, so the consequences of license choices for such use need
+to be considered. Of course, this is highly dependent on the
+circumstances, see the scenarios mentioned above.
+
+Rule 5: Whether LOCKSS is the right approach is controversial, another
+approach would be 3-2-1 (3 copies on 2 different media, 1 in a
+different place). The section on git is too much focused on commercial
+solutions. Self-hosting or institutional hosting may be alternatives
+in some of the scenarios (though not in one where code is to be saved
+from hostile institution leadership).
+
+Rule 7/8: Whether there should be rules dependent on 'if you have
+time' is also strongly dependent on the circumstances. A general rule
+for 'if you have time' is dangerous in the sense that scientists never
+really have time.
+
+Whether data should be part of the project (git repository) is also at
+least controversial (and, depending on data size and repository, may
+also not be technically possible). At least large data will likely be
+stored somewhere else.
+
+Reviewer #2: The manuscript "Ten simple rules for making your software
+outlive your job" (PCOMPBIOL-D-25-01113) is intended to offer guidance
+on preserving and maintaining scientific software in situations of
+disruption or project termination. While the topic is timely and of
+broad relevance to the scientific community, I have serious concerns
+regarding the scope, tone, and scientific content of the submission.
+
+Most importantly, the manuscript lacks any substantive connection to
+biology or computational biology. There are no biological examples,
+use cases, or references to computational biology. Given the scope of
+PLOS Computational Biology, this omission is critical. Including at
+least a few well-known cases, both failed and successful software
+efforts in the biological domains, would provide the necessary context
+and relevance. For instance, various successful efforts in
+bioinformatics and projects such as NEST simulator software initiative
+in computational neuroscience field would have strengthened the
+manuscript's grounding in the field.
+
+The article leans heavily toward practical advice, often presented in
+a tone that borders on informal or even polemical. Scientific rigor is
+limited throughout, with several rules based more on opinion or
+general commentary than on evidence or community standards. Rule 2
+lacks sufficient detail on how to implement the advice given, and
+Rules 9 and 10 drift considerably from technical content.
+
+Most problematic is the content of Rule 9 and 10 and the manuscript's
+concluding section. These parts appear to shift from practical
+guidance to political commentary, expressing generalized concerns
+about political influence on science. While such concerns may be valid
+in appropriate contexts, this shift feels out of place in a scientific
+article about software development. This kind of discussion would be
+more suitable for an editorial or opinion piece, but not a
+peer-reviewed educational article in a scientific journal.
+
+The structure and writing style of the manuscript would also benefit
+from revision. Certain sections, such as "Collecting Wisdom" feel
+disconnected from the main argument and disrupt the coherence of the
+introduction. The use of emotionally charged language further
+undermines the manuscript's objectivity and neutrality.
+
+Finally, there are also technical issues to address. Several
+references (e.g., 4-6 and 8) are incorrectly formatted or
+misattributed. The quality of the figure is poor and must be improved
+for legibility. Moreover, in Section Rule 8, points 3 and 6 appear to
+give the same information. Additionally, the References 35-44 cannot
+be found (at least not easily). For instance, the DOI provided in
+Reference 43 corresponds to the DOI of a different article.
+
+A positive aspect of the article is that it lists several software
+development resources and websites, which can be useful for
+researchers in computational biology although these are likely already
+familiar to software developers. Rules 4 and 5 are good and
+informative for software developer in life sciences and biological
+sciences.
+
+In conclusion, although the authors' goal of promoting sustainable
+software practices is commendable, the current manuscript does not
+meet the scientific or thematic standards expected for PLOS
+Computational Biology. I recommend rejection in its current form, with
+the suggestion that a revised version could be more appropriate for a
+journal with a broader or more technical scope.
+
+Reviewer #3: Please see attached
