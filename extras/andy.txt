@@ -1,0 +1,61 @@
+# Andy / 2025-09-04
+
+Andreas Nedbal <andy@pixelde.su>
+
+- Built a site Retrospring about 11 years ago (went public in Dec 2014)
+- Beta-tested privately and then soft launched
+- Was a social QA website like Formspring
+- Initially wasn't open source - became open source mid-2015
+- Also had temporary shutdown then (personal politics)
+  - The final shutdown was the third, and only fully happened four days ago
+- Let site run without support from 2017, got remotivated, started working on it again in 2020
+- Competitor had downtime in 2020, their site exploded then (gained 30K users in a month)
+- The site became well-known without any marketing
+- That continued until last year (2024)
+- At which point they decided social QA wasn't really a useful thing
+- The maintainers all had full-time jobs
+- And people on social networks aren't all that nice
+- Even with donations, the cost outweighed the benefit
+  - They wouldn't want to do this full-time
+- There were some internal clashes
+- So they decided in August 2024 to shut down on March 1, 2025
+- They published blog post start of Aug 2024 saying the site would shut down
+  - Offered data export until Sept 1, 2025
+  - Then contacted by archive team
+  - Changed website into read-only instead of shutting it down
+  - Ran read-only for six months w/ data export
+- Had seen importance w/ other platforms of giving users time to export data and build alternatives
+  - Takes time
+- This wasn't a forced shutdown
+  - Just two people isn't enough to keep it going
+  - Negligence and optimism would eventually cause trouble
+  - And wanted to ensure good memories in minds of users
+  - Could keep it running, but w/ 200K users, not caring is not an option
+- Everything stays open source
+- Other instances have started up, but most have also since shut down
+  - Social media is a very aggressive environment
+  - Most people don't hold out for long
+- Just Andy involved in decision to shut down
+  - Other person who had been involved wasn't in the loop (by their choice)
+- Believes it went as well as it could have
+  - Six months between each step for the users to make plans
+  - Used the system's announcement system
+  - Looked at analytics on announcement post: had 80K views, so at least 50% of active user base
+- Was surprised that no one has come back since to complain
+  - Was expecting some hostility (open source, social media, users…)
+  - At some point users start demanding things (consumers rather than active contributors)
+  - Most people really were just sad: frustration turned into sadness rather than anger
+- https://blog.retrospring.net/retrospring-is-shutting-down-on-1st-march-2025
+- Q: where did you learn how to do this?
+  - Negative examples: sites that just go down without warning
+  - Positive example: the Mastodon Server Covenant for public instances https://joinmastodon.org/covenant
+    - "Give at least a month's notice of shutdown"
+    - Ample time for users to migrate
+  - 15 years of personal experience with other services and how quickly they can disappear
+- Q: is this changing what you do now?
+  - Not currently running any projects that are this large
+  - Had maintainers come and go over ten years of being open source
+  - Lots of documentation, reviewed pull requests carefully
+  - Never more than 2-3 people working on website at a time
+  - If he was going to build another social media site, he would put proper governance structure in place
+    - More people with decision-making power
