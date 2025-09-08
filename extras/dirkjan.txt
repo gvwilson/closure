@@ -1,15 +1,44 @@
-# Name
+# Dirkjan
 
-Name <email>
+Dirkjan Ochtman <dirkjan@ochtman.nl>
 
 - Brief biography
+  - Professional Rust maintainer: has been software developer for 20-ish years
 - First involvement with open source
+  - Started by contributing translation to PHP manual around 2002-03
+  - Was using PHP in a student job on campus in the US
+  - Easiest thing was to help with Dutch translation of docs
 - Origins of the project
-- Publicizing it?
-- Top of the arc?
+  - CouchDB Python package
+  - He started using it, original developer wasn't doing much, DO took over maintenance
+  - Then DO stopped using CouchDB and decided to stop maintaining it in 2017
+  - Updated README in Git in 2018
 - How it ended
+  - Wrote an issue asking for maintainers
+  - Nobody started contributing in a way that washelpful
+    - Some people said they would, but didn't do anything
+  - Always way that previously-unknown maintainers may not be trustworthy
+  - Another Python package that he transitioned to a new maintainer, he kept track of the PRs so he knew the person
 - Who else involved in decision?
+  - No one else involved: he was the only maintainer at the time
 - Shutdown mechanics
+  - Put a notice in the README but didn't update documentation or PyPI page (didn't add archive/deprecation notice)
+  - There was a mailing list in Google Groups: started an email thread, basically no response
+    - https://groups.google.com/g/couchdb-python/c/dSmtV4bkV1U
+  - Put in a pointer to an alternative project that people might want to use instead
 - Lessons learned
+  - Might have tried harder to recruit other maintainers earlier on (not at the end but in flight)
+    - DO is pretty fussy about code quality, which sometimes turns people off and makes it hard to recruit people
+  - Didn't archive the repository on GitHub, which he would do now
+  - Would also have posted a final update to PyPI with a deprecation notice
 - How do you feel about all of this now?
+  - DO was no longer using CouchDB so no longer interested in this project
+  - Was maintaining lots of other open source projects so one going down means more time for other projects
+  - Was also transitioning from Python to Rust, so less motivated to work on Python code
 - Final comments?
+  - Nothing comes to mind
+  - It's hard to determine when to stop, so he generally waits too long
+  - And under-estimates the pleasure of not being responsible for something any longer
+  - https://github.com/djc/couchdb-python/commit/87faa0c142724e8907e7593645a20e721c03f3b5
+- DO's move from Python to Rust + CouchDB's market failure meant project was no longer interesting
+
