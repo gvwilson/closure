@@ -1,15 +1,70 @@
-# Name
+# Francis
 
-Name <email>
+Francis Gulotta <francis@gulotta.solutions>
 
 - Brief biography
-- First involvement with open source
+  - Started in IT by fixing people's computers in high school
+  - Found the culture in engineering to be rough: cheaper to be a hobbyist programmer than a hobbyist engineer
+  - Dropped out of school, went back to fixing computers, got fed up with the state of software, started making tools
+  - Eventually got a sys admin job and taught himself more about programming
+  - Left Finance for startups, has worked many places since then
+  - Most recently at Microsoft building Apple VMs for Azure running GitHub Actions
+  - Open source has been his way to fix the tools he uses every day
 - Origins of the project
-- Publicizing it?
+  - Michael Rogers has been a prolific NodeJS contributor since the beginning
+  - Responsible for a conference that FG went to that changed FG's career
+  - He started `request` because there wasn't a good general-purpose HTTP library for NodeJS at the time
+  - It grew substantially because there are a lot of features that needed implementing
+  - Patterns for things like packages and plugins were in flux at the time
+  - Project started around 2010, NodeJS 4.0 release (a big one) was 2015
 - Top of the arc?
+  - FG joined toward the end of the project's life
+  - It was a very popular project: the most popular HTTP request client for a long time
+  - There was talk about moving it into core NodeJS
+  - Peak development fell off around 2017, but kept growing in popularity to 2021 https://npmtrends.com/request
 - How it ended
+  - Bit rot was a huge problem, number of support tickets kept growing
+  - FG was building serverless applications at a digital media company
+  - One of the large platform providers was using `request`: it was larger than everything else put together
+  - They were very sensitive to bundle size, so FG wanted to stop using it
+  - Found an esoteric feature bundled into core that was massive: should have been a plugin
+  - FG wanted a breaking release that would affect very few people
+  - Reached out to Michael, who said the test suite isn't even working any more
+  - FG tried anyway: had rescued other, smaller projects before ("I have to find another one, make my own, or help")
+  - Gave up after a few months: didn't believe they could get the test suite passing again
+  - Michael agreed (he was the only maintainer still active - felt ownership)
+  - Made the decision to shut it down, deprecate everything, and move the community to modern (less buggy) replacements
+  - Also wanted to use the decision to get NodeJS to bring in the `fetch` API
+  - And had known security issues
 - Who else involved in decision?
+  - FG and Michael made the decision
 - Shutdown mechanics
+  - Marked every version as deprecated on NPM
+  - Announced on Git repo in README and in a GitHub issue
+  - Had another GitHub issue to help people migrate pointing at other versions of software they could use
+  - And announced on Twitter (had large presence)
+- Pushback?
+  - People were very upset: lots of tweets etc. (large user community, lots of downstream)
+  - People who were maintainers understood
+  - Pure users didn't understand/appreciate the warnings from packages that depended on it
+  - Could have found another maintainer, but it would be a very risky proposition
+  - And they just wanted to be done
+  - Firmly believed it would be better to end it: it predated modern patterns
 - Lessons learned
+  - FG thinks they handled it well
+  - Definitely a period of adjustment, and may have contributed to overall bit rot
+  - Libraries that people went to became the de facto defaults
+  - Lots of downstream projects became megabytes smaller as a result
+  - Nobody from the larger companies reached out
+  - Postman released a fork of `request`: still being maintained, but they never said anything about taking over main project
+    - Fork has 1M/week downloads vs. 12M/week for original project
 - How do you feel about all of this now?
+  - Feels good: it was better for everyone
+  - Can still install it if you really want to, but a clear message that people need to upgrade
+  - It wasn't a good tool any longer
+  - Very little feedback after the initial shock wore off
+  - And it was a big relief for Michael: good to have that weight off his shoulders
 - Final comments?
+  - Has another project he wants to deprecate that he hasn't used for years
+  - If someone else will take it over, great, but has asked a few times and nobody has stuck around
+  - "Do I deprecate it? How do I shut it down without it becoming a supply chain risk?"
