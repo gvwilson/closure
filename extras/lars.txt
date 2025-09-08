@@ -1,0 +1,84 @@
+# Lars
+
+Lars Wirzenius <liw@liw.fi>
+
+- Brief biography
+  - Started CS in 1988 hoping to be a prof
+  - In 1991 helped start Linux and realized he wasn't interested in academia: wanted to build things
+  - Familiar with NWIT
+- First involvement with open source
+  - Got access to BB and read GNU Manifesto in 1986
+  - Made him want to save the world by writing software
+  - Got access to FTP servers in '88 and found lots of interesting software to look at
+- Origins of the project
+  - Father introduced him to computers in 1984 on a home computer
+  - "This floppy is where you put your files, this other floppy is where you put your backups"
+  - Forty years later has never had a catastrophic data loss (has never really needed to do a restore)
+  - Realized in early 2000s that floppies were too small for data he had, and so were CDs and DVDs
+  - Realized in 2004 that hard drives were so cheap he could just make a backup there
+  - Started looking for software to do that, and that takes advantage of the fact that he has a hard drive not a tape drive
+  - Didn't find anything he liked (esp. not anything that would do encrypted remote snapshot backups)
+  - Started a company in 2006 w/ a friend to build a business around Obnam
+  - First version written in Python nad had a few hundred users
+- Publicizing it?
+  - Talked incessantly about it (blog, IRC, wherever)
+  - Was happy with the number of users he had
+  - Didn't care about being the world's most popular backup program
+  - Problem was that he wrote bad code: fundamentally hard to make changes
+  - Was too easy to make a change that broke something somewhere else, and no test suite is perfect
+  - And it was (very) slow - slow enough to bother Lars as well as his users
+- How it ended
+  - Unhappy from about 2015 onward: a passion project had become a chore (felt obliged to continue supporting users)
+  - No outside pressure telling him to stop
+  - Decided in 2017 that backups were no longer interesting to him
+  - Made a blog post saying that he'd stop maintaining it at the end of the year
+  - A few months in which people were strongly encouraged to switch
+  - Nothing bad happened in that time
+  - People continued to use it: "It has been zero years since I got a bug report"
+    - Someone needed to restore all his data: was very apologetic
+    - Have been a few other requests over the decade: friendly, but need help, so he does what he can
+- Who else involved in decision?
+  - Just Lars: practically speaking a solo project
+  - Some contributions from others but he was the only maintainer
+- Shutdown mechanics
+  - As far as he knows, nobody missed the announcement
+- Lessons learned
+  - Can't think of anything he would do differently
+  - Might tell his younger self to shut it down earlier
+  - Would also tell himself that he wouldn't really be done with backups
+  - Has learned from his mistakes: latest is going in a different direction
+- How do you feel about all of this now?
+  - Feels good: it was the right thing to do
+  - Could either hand it over or shut it down and there was nobody who was involved enough to take over
+  - Could have spent a month searching for someone, but there were at least two spinoff projects that are still going on
+  - "Obnam was so bad that people wanted to do better"
+- Final comments?
+  - All the interactions he had with other people were slightly irritating but friendly
+  - People understood he didn't have time to work on this (esp. no same-day turnaround)
+  - One user spent a year debugging why one client backup didn't work properly
+  - Doesn't really know what he did right there
+
+## Another story
+
+- Wabid https://kannel.org/
+- Startup founded in the late 1990s
+- Money started drying up in 2000
+- Immediate bankruptcy: developers just walked away
+- The VCs did not treat them well when the money dried up
+- Wasn't able to do anything to transition funded project into community project
+- But people who were using it themselves started doing so
+- Warm start by users, but no follow-through support from original developers
+- It was like the original developers were cursed: nobody would talk to them
+- Did right:
+  - Very open project, transparent about internal communication
+  - All worked in the same office, but kept everything on the public mailing list to help other people see what was done why
+  - Architecture was simple
+  - Telecoms protocols were complex and badly documented, but well enough for other people to pick up
+- Could have done better:
+  - Could have given the community more warning
+    - But it's a very stressful time when a company is going bankrupt
+    - And may not be allowed to tell people
+  - Could have brought in more community members for maintenance earlier
+    - Development and release management
+- Doesn't know how the inheritors self-organized
+  - Mailing list might still be publicly archived

@@ -1,0 +1,15 @@
+# Name
+
+Name <email>
+
+- Brief biography
+- First involvement with open source
+- Origins of the project
+- Publicizing it?
+- Top of the arc?
+- How it ended
+- Who else involved in decision?
+- Shutdown mechanics
+- Lessons learned
+- How do you feel about all of this now?
+- Final comments?
