@@ -1,15 +1,61 @@
-# Name
+# Mark
 
-Name <email>
+Mark Dominus <mjd@pobox.com>
 
 - Brief biography
-- First involvement with open source
+  - Has been a professional developer since about 1990, has worked on many projects
+  - Worked for Pobox for about three years around 2009-12
+  - Came back to it when Fastmail decided to wind up Pobox (ca 2023-24, 18 month process)
+- First involvement with the project
+  - Was originally hired as full-time staff
+  - Had known founders personally and professionally for several years before that
+  - They were a Perl shop, he was very involved with Perl
 - Origins of the project
-- Publicizing it?
+  - Started as a commercial venture (founded by a couple of Penn undergrads who stayed with it for many years)
 - Top of the arc?
+  - Doesn't know peak number of users
+  - About 5 full-time employees at peak (two or three engineering, mostly in person)
 - How it ended
+  - Acquired by Fastmail ca 2015, ran it for 8 years
+  - Decided to wind it down because development was expensive
+    - Only one person left in house who knew the code base
+    - Completely separate hardware and software from Fastmail's
+    - Bugs in Pobox took time away from corresponding engineering effort in Fastmail
+    - Support staff had to be trained to deal with two kinds of customers, two interfaces, etc.
 - Who else involved in decision?
+  - Everybody who runs Fastmail is technical (even business people are interested in running mail service)
 - Shutdown mechanics
+  - Pobox has its own databases w/ customer info, enabled features, billing, etc.
+  - Actual mail delivery had already been moved into Fastmail, so that was going to be fine
+  - But no way to manage the customers until they had been migrated into Fastmail's customer DB along w/ user settings etc.
+  - Lots of Pobox features didn't have exact Fastmail counterparts
+    - E.g., Pobox had lots of sophisticated filtering, Fastmail's was different
+    - Pobox had different set of GDPR consent
+  - Almost everything was "translate Pobox to Fastmail"
+    - Only a little "add features to Fastmail to support Pobox" (can't think of any)
+    - Big mis-match was mail filtering
+    - Turned out most people were only using it simplistically so it could be converted easily
+    - Sophisticated users were told "sorry"
+    - Those were the power users they really wanted to keep :-/
+  - Didn't announce the transition until it was almost ready (a month or two ahead)
+    - One major Pobox feature that was eliminated was announced ahead of time
+      - Buying a domain through Pobox and routing email through it (e.g., university alumni groups)
+    - Advised those customers ahead of time that this wasn't going to be supported going forward (8-9 institutional customers)
+    - Didn't get pushback from institutional users
+    - Wasn't handling support from individual users so doesn't know
 - Lessons learned
+  - "I think we got it right"
+  - Built a system on the Pobox side that would turn a user ID into JSON that represented that user in terms of Fastmail features
+    - Composable: one chunk for billing, one for GDPR, etc.
+    - Then notification to Fastmail "here's a new plan" and Fastmail would adjust local settings
+    - Good for debugging: modular, could read the data and see what was broken
+  - Fastmail users were created in Fastmail as ghosts before the switchover
+    - Could create, test against, and then destroy
+    - So got everything ready for the switch beforehand: very few surprises
 - How do you feel about all of this now?
+  - Proud of how this went: went as well as it could have
+  - MD is a Pobox customer himself and didn't notice the switchover
+  - But traffic on Reddit is mostly angry
 - Final comments?
+  - Turned out to be more complicated than expected and took 16 months instead of 12
+  - Built a library up front to create mock data to feed into the planner for testing
