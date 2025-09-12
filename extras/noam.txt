@@ -1,0 +1,79 @@
+# Noam
+
+Noam Ross <noam@ropensci.org>
+
+- Didn't want to shut down: wanted to suspend (put in a coma)
+- NR was planning to leave at the time it happened
+
+- Brief biography
+  - Computational ecologist works in research and applied projects looking at emerging diseases
+  - Currently executive director of rOpenSci (supports open science in R)
+  - Talking about REPEL: veterinary disease forecasting project
+- First involvement with open source
+  - rOpenSci was founded by one of NR's grad school lab mates
+  - Pulled NR in to volunteer for it
+  - And had started a local R users group
+  - Roughly 2010
+- Origins of the project
+  - REPEL tried to predict emergence or arrival of vet disease outbreaks
+  - Funder in Dept. of Homeland Security ca 2020
+- Top of the arc?
+  - Four members of the team in its second phase (first phase was about two years)
+  - Second phase was to develop software further & incorporate into joint agency project/process
+  - Near the end of that phase's end, but had ongoing infrastructure and research project plan to improve model
+- How it ended
+  - Near the end of that implementation phase
+  - Organization received notice it was being debarred from all federal funding
+  - Team was not going to be there any more, and neither was infrastructure, and org was going to shut down
+  - Were wrapping up at the time (at the end of a funding phase) so was able to wrap deliverables for the phase
+  - June 2024
+  - Organization was politically targeted, resulted in loss of 90% of funding (because gov't)
+  - Targeting had been going on for a number of years, but final blow still came as a surprise (unanticipated)
+- What they did
+  - It's a mix (this was one project of several)
+  - Wrap-up of funding phase needed an archive etc. to hand over
+  - Realized that what they could create for that deliverable would be the finale for the project
+  - Needed a deployable thing, which first phase hadn't tried to do
+  - E.g., "need to make this package as good as possible" because further work wouldn't be possible
+  - "A README and a docker run" (the latter involved pulling a lot of external data sources)
+  - E.g., they had a database created by scraping an external database - still lives on, but not updated
+- Who else involved in decision?
+  - Just the project team (NR + the other three on the team)
+  - Gov't client understood "this is all you're going to get" (not a lot else that could be done)
+  - No users beyond the set of people the project was already interacting with (dozen people between two agencies)
+- Shutdown mechanics: see above
+- Lessons learned
+  - NR was at the center of a lot of these projects that were getting shut down
+  - Early focus on minimum viable product so that early shutdown leaves something useful
+    - Facilitated abrupt shutdown
+    - Wants to do it for future projects, even ones that don't need to be handed over
+  - There's a huge difference between low-cost and no-cost services for storage, cloud, etc.
+    - Even if resources are available, payment is tied to organizations' credit cards
+    - It isn't about the dollar amount, it's about the financial infrastructure required to make a payment
+    - NR has a machine in his apartment w/ 12 TByte of genomic data that he can't get to people because no AWS acc'ts
+  - Many different teams in org, some small, some large, some in the field, etc.
+    - Some teams have re-formed in other contexts / other institutions, some have not
+    - They re-formed because they had sufficient trust to get through the downtime
+    - Had set up open dialog about challenges (incl. funding) to keep everyone on the same page (not hiding things from each other)
+    - But there are other projects where that wasn't true, and those projects haven't re-formed
+  - Testing, documenting, etc. are very challenging for scientific R&D projects
+    - But this is the point where they wish they had done that better
+  - Have had projects revive but with new lead engineer, which is a big challenge
+  - "Roll your won framework" makes everything harder
+    - Using off-the-shelf tools makes things easier to pick up
+    - NR still does consulting for CDC: not a lot of common frameworks internally
+  - Where things have been revived, there is a connection to the old team
+    - Keeping in touch while things were moribund facilitates revival
+    - NR checked in with people monthly: turned out to be critical
+    - NR wasn't specifically keeping the connection alive for revival...
+    - ...but the best thing that came out of shutdown and biggest lesson is the value of that kind of investment in people
+    - Predecessor's advice at rOpenSci was to build in budget for attending conferences to keep social ties alive
+      - Not just with funding program officers
+- How do you feel about all of this now?
+  - Is bitter about a lot of things, but proud of what they managed under the circumstances
+  - There were people they couldn't help (e.g., couldn't find a way to cover their visa - they had to leave the country)
+  - Everybody is still on good terms and proud of the way they worked
+  - Some of the bitterness is directed toward people who didn't pursue that strategy in the years before that led to the political targeting
+  - Lots of inter-personal conflict when things go wrong
+- NR is the only American on staff
+  - Thinking about when/how/whether to move stuff out
