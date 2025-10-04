@@ -1,14 +1,12 @@
 # Runnable tasks.
 
-SLUG=sunset
+SLUG=change
 
 all: commands
 
-HTML_IGNORES = 'Attribute "x-' 'Attribute "@click' 'Attribute "file"'
-
 ## build: build HTML
 build:
-	mccole build --links extras/links.txt
+	@mccole build --src . --dst docs
 	@touch docs/.nojekyll
 
 ## commands: show available commands (*)
@@ -27,9 +25,9 @@ clean:
 links:
 	linkchecker -F text https://gvwilson.github.io/${SLUG}/
 
-## lint: check code and project
-lint:
-	@mccole lint --html --links extras/links.txt
+## check: check code and project
+check:
+	@mccole check --src . --dst docs
 
 ## serve: serve generated HTML
 serve:
@@ -38,3 +36,7 @@ serve:
 ## spelling: check for unknown words
 spelling:
 	@cat *.md */*.md | aspell list | sort | uniq | diff - extras/words.txt
+
+## untab: remove tabs in Markdown files
+untab:
+	@find . -name '*.md' -type f -exec sh -c 'expand -t 8 "$$1" > "$$1.tmp" && mv "$$1.tmp" "$$1"' _ {} \;

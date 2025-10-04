@@ -9,10 +9,4 @@ dependencies = [
 ]
 
 [tool.mccole]
-skips = ["*~", "extras/**", "unused/**", "uv.lock"]
-
-[tool.mccole.renames]
-"README.md" = ""
-"CODE_OF_CONDUCT.md" = "conduct"
-"CONTRIBUTING.md" = "contrib"
-"LICENSE.md" = "license"
+skips = ["*~", "extras/**", "uv.lock"]

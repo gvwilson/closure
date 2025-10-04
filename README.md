@@ -2,9 +2,9 @@
 
 This workshop is a short introduction to handing projects over or winding them down,
 either deliberately or on short notice.
-All of the material is available under an [open license](./LICENSE.md),
+All of the material is available under an [open license](@/license/),
 and contributions through our [repository][repo] are welcome.
-All participants are required to respect our [Code of Conduct](./CODE_OF_CONDUCT.md).
+All participants are required to respect our [Code of Conduct](@/conduct/).
 
 ## Learner Personas
 
@@ -54,12 +54,12 @@ This workshop therefore caters to two learner personas.
 
 <div id="lessons" markdown="1">
 
-1.  [Introduction](./intro/)
-1.  [Voluntary Handover](./handover/)
-1.  [Deliberate Shutdown](./deliberate/)
-1.  [Abrupt Shutdown](./abrupt/)
-1.  [Resilience](./resilience/)
-1.  [Conclusion](./finale/)
+1.  [Introduction](@/intro/)
+1.  [Voluntary Handover](@/handover/)
+1.  [Deliberate Shutdown](@/deliberate/)
+1.  [Abrupt Shutdown](@/abrupt/)
+1.  [Resilience](@/resilience/)
+1.  [Conclusion](@/finale/)
 
 </div>
 
@@ -67,13 +67,13 @@ This workshop therefore caters to two learner personas.
 
 <div id="appendices" markdown="1">
 
-1.  [License](./LICENSE.md)
-1.  [Code of Conduct](./CODE_OF_CONDUCT.md)
-1.  [Contributing](./CONTRIBUTING.md)
-1.  [Bibliography](./bibliography/)
-1.  [Glossary](./glossary/)
-1.  [Firing People](./firing/)
-1.  [Being Fired](./fired/)
+1.  [License](@/license/)
+1.  [Code of Conduct](@/conduct/)
+1.  [Contributing](@/contributing/)
+1.  [Bibliography](@/bibliography/)
+1.  [Glossary](@/glossary/)
+1.  [Firing People](@/firing/)
+1.  [Being Fired](@/fired/)
 
 </div>
 
