@@ -55,10 +55,6 @@ This workshop therefore caters to two learner personas.
 <div id="lessons" markdown="1">
 
 1.  [Introduction](@/intro/)
-1.  [Voluntary Handover](@/handover/)
-1.  [Deliberate Shutdown](@/deliberate/)
-1.  [Abrupt Shutdown](@/abrupt/)
-1.  [Resilience](@/resilience/)
 1.  [Conclusion](@/finale/)
 
 </div>
@@ -72,8 +68,6 @@ This workshop therefore caters to two learner personas.
 1.  [Contributing](@/contributing/)
 1.  [Bibliography](@/bibliography/)
 1.  [Glossary](@/glossary/)
-1.  [Firing People](@/firing/)
-1.  [Being Fired](@/fired/)
 
 </div>
 
@@ -84,7 +78,8 @@ This workshop therefore caters to two learner personas.
     and received ACM SIGSOFT's Influential Educator Award in 2020.
 
 Many thanks to [Yanina Bellini Saibene][bellini-saibene-yanina],
-and [Richard Littauer][littauer-richard].
+[Richard Littauer][littauer-richard],
+and everyone who shared their stories.
 
 <p class="center">
   <em>
@@ -98,5 +93,5 @@ and [Richard Littauer][littauer-richard].
 
 [bellini-saibene-yanina]: https://yabellini.netlify.app/
 [littauer-richard]: https://www.burntfen.com/
-[repo]: https://github.com/gvwilson/succession
+[repo]: https://github.com/gvwilson/closure
 [wilson-greg]: https://third-bit.com/

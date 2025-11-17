@@ -1,6 +1,6 @@
 # Introduction
 
-<p class="subtitle" markdown="1">what this training does and doesn't cover</p>
+<p class="subtitle" markdown="1">what this workshop does and doesn't cover</p>
 
 -   For every beginning there must be an ending
 -   But we don't like to talk about that
@@ -8,23 +8,24 @@
     -   Only a handful about how to pass one on or wind one down
     -   And many of those are really about how to sell out at the right time
     -   Because mortality scares us
--   Preparing for the end can make the end less likely
-    -   It also helps make what happens before then more enjoyable
+-   Preparing for the end can make it less painful
+    -   And less likely: if we think about how things might end, we might be able to prevent some endings
+    -   It also helps make what happens before the end more enjoyable
 
 ## Best vs. Good Enough
 
 -   [[](b:Wilson2014)] outlined how [research software engineers](g:rse) should organize their projetcs
 -   [[](b:Wilson2017)] was in part a rebuttal
     -   Most people don't have time to do everything the "right" way
-    -   By which we actually mean "their employers don't give them enough time"
+    -   By which we usually mean "their employers don't give them enough time"
     -   So comparing what they do to "best practices" is as unfair as
         comparing what a surgeon does at leisure in a well-equipped hospital
 	to what a paramedic does at a crash site
 -   This workshop addresses both kinds of setting
-    -   [Vaida](@root/#learner-vaida) has enough time to plan
+    -   [Vaida](@root/#learner-vaida) has time to plan
         and to correct things that she initially gets wrong
     -   [Liam](@root/#learner-liam) only has time to do a few things,
-        and will not be able to go back and fix anything he didn't get right
+        and will not be able to go back and fix anything he doesn't get right
 
 ## Threat Models
 
@@ -88,7 +89,9 @@ people turn to [civil society](g:civil-society) for help [[](b:Solnit2010)].
     -   So find out what those rules are and make sure you stay within them
 -   If you don't know if there is a policy or not, *ask someone*
     -   Look for an [Open Source Program Office][ospo] (OSPO) or intellectual property (IP) office
--   Here and elsewhere, use email rather than chat or video calls to create a record
+-   Here and elsewhere, use email rather than chat or video calls so that you have a record
+    -   Your memory isn't perfect (particularly under difficult circumstances)
+    -   And unfortunately, people may change their minds about what they said, meant, or promised
 
 <div class="callout" markdown="1">
 
@@ -107,12 +110,11 @@ a quiet conversation or two with selected colleagues may help you see your prior
 ## Not Covered
 
 -   Community building
-    -   Lots of good guides,
-        including [[Alinsky1989](b:Alinsky1989), [Brown2007](b:Brown2007), [Lakey2018](b:Lakey2018)]
+    -   Lots of good guides [[](b:Alinsky1989), [](b:Brown2007), [](b:Lakey2018)]
     -   We assume you have to use the community you already have
 -   Communication skills
     -   We'll talk about *what* to say but not (much) about *how* to say it
-    -   See [[Kuchner2011](b:Kuchner2011)] for some useful insights
+    -   See [[](b:Kuchner2011)] for some useful insights
 -   For-profit businesses
-    -   We assume your project project isn't supposed to turn a profit
+    -   We assume your project isn't supposed to turn a profit
     -   And that growth for its own sake hasn't been your goal [[](b:Burlingham2016)]
