@@ -12,6 +12,18 @@
     -   And less likely: if we think about how things might end, we might be able to prevent some endings
     -   It also helps make what happens before the end more enjoyable
 
+## Two Kinds of Ending
+
+-   [Deliberate closure](g:deliberate-closure)
+    -   You made the decision yourself
+    -   Or have enough advance notice to make plans
+    -   You can learn as you go and make changes along the way
+-   [Abrupt closure](g:abrupt-closure)
+    -   Short notice, and usually not your decision
+    -   You only get one shot at it and aren't able to make changes as you go along
+-   We want the former, but sometimes life happens
+-   Planning for the latter can make it less likely
+
 ## Best vs. Good Enough
 
 -   [[](b:Wilson2014)] outlined how [research software engineers](g:rse) should organize their projetcs
@@ -76,11 +88,13 @@ people turn to [civil society](g:civil-society) for help [[](b:Solnit2010)].
 ## No Abstinence Solutions
 
 -   An [abstinence solution](g:abstinence-solution) is one that requires people
-    to behave in ways we know they won't
+    to do things we know they actually won't
     -   See also "[bullshit](g:bullshit)" [[](b:Frankfurt2005)]
--   "Document everything" doesn't work
+-   In particular, "document everything" doesn't work
     -   People will always short-change writing descriptions of work in favor of actually doing work
     -   And fail to write down the parts of their work that they think are obvious
+    -   In part because most of what we can write today doesn't actually address
+        tomorrow's actual needs
 
 ## Stay Within the Law
 
@@ -103,7 +117,7 @@ and which you "just haven't gotten around to yet".
 Members of marginalized groups have had more practice with these tactics
 than members of privileged groups [[](b:Scott1987)];
 if you belong to the latter,
-a quiet conversation or two with selected colleagues may help you see your priorities more clearly.
+a conversation or two with selected colleagues may help you see your priorities more clearly.
 
 </div>
 

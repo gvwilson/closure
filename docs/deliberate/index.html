@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Deliberate Closure</title>
+<link href="../static/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="../static/page.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<nav>
+<a href="../">Home</a>
+      ·
+      <span class="dropdown">
+<a href="#">Lessons</a>
+<span class="dropdown-content" id="nav-lessons">
+<a href="../intro/">Introduction</a>
+<a href="../deliberate/">Deliberate Closure</a>
+<a href="../finale/">Conclusion</a>
+</span>
+</span>
+      ·
+      <span class="dropdown">
+<a href="#">Appendices</a>
+<span class="dropdown-content" id="nav-appendices">
+<a href="../license/">License</a>
+<a href="../conduct/">Code of Conduct</a>
+<a href="../contributing/">Contributing</a>
+<a href="../bibliography/">Bibliography</a>
+<a href="../glossary/">Glossary</a>
+</span>
+</span>
+</nav>
+<main>
+<h1>Deliberate Closure</h1>
+<p class="subtitle">when you have time to correct course</p>
+<ul>
+<li>Explore this first because it is less traumatic than the alternative</li>
+<li>And because recommendations are things the project should be doing anyway</li>
+<li>The most important assumption is that
+    <em>you have time to make changes to the project as part of shutting it down</em></li>
+</ul>
+<h2>Governance</h2>
+<ul>
+<li>People often conflate teams with projects<ul>
+<li>But team may disband when the project completes, or take on another project</li>
+<li>And membership of team may change during project</li>
+</ul>
+</li>
+<li>Every team should have explicit rules for making decisions<ul>
+<li>E.g., <a href="../glossary/#bdfl">BDFL</a> or <a href="../glossary/#marthas-rules">Martha's Rules</a></li>
+</ul>
+</li>
+<li>Every team also needs explicit rules for deciding <a href="../glossary/#suffrage">suffrage</a><ul>
+<li>"Being consulted" is meaningless without further stipulation</li>
+<li>"Who must agree in order for this to happen?"</li>
+<li>"Who can veto proposals?"</li>
+</ul>
+</li>
+<li>Growing number of open source projects have a <code>GOVERNANCE.md</code> file in their repository<ul>
+<li>But very few of these include explicit shutdown criteria</li>
+</ul>
+</li>
+<li>Put this in place <em>before</em> discussion of endings<ul>
+<li>It's hard enough to decide under normal circumstances</li>
+<li>Harder still when also thinking about shutdown</li>
+</ul>
+</li>
+<li>Example: the <a href="https://apache.org/">Apache Software Foundation</a> (ASF)<ul>
+<li>Board can request a roll call</li>
+<li>At least three people must respond to a "do a release" email for the project to be considered viable</li>
+</ul>
+</li>
+</ul>
+<section class="exercise">
+<h3>Exercise</h3>
+<ol>
+<li>
+<p>Who is currently a member of your project?
+    How do you know?
+    How do they (and others) know?
+    What does being a member actually mean?</p>
+</li>
+<li>
+<p>How does someone stop being a member, either voluntarily or otherwise?</p>
+</li>
+</ol>
+</section>
+<h2>Assets and Obligations</h2>
+<ul>
+<li>You can't manage things you aren't aware of</li>
+<li>Every project has <a href="../glossary/#asset">assets</a> that have some sort of value to someone<ul>
+<li>Source code in a repository</li>
+<li>Discussion archives that explain decision making (especially valuable to genAI)</li>
+<li>A website and/or social media accounts</li>
+<li>Software licenses</li>
+<li>Hardware</li>
+<li>Name recognition (possibly even a trademark)</li>
+<li>Community goodwill</li>
+<li><a href="../glossary/#collective-understanding">Collective understanding</a> [<a href="../bibliography/#Baetjer1997">Baetjer1997</a>]</li>
+</ul>
+</li>
+<li>Project may also have <a href="../glossary/#obligation">obligations</a><ul>
+<li>Hosting charges</li>
+<li>Software licenses</li>
+<li>A bank account</li>
+<li>Partially-completed research contracts or upcoming software releases</li>
+<li>Reports to funding agencies</li>
+<li>Security of confidential data</li>
+</ul>
+</li>
+<li>You may have legal responsibilities around both<ul>
+<li>E.g., institution may require you to return lab equipment</li>
+<li>Or require you to make best effort to realize full commercial value</li>
+<li><em>Ask someone</em></li>
+</ul>
+</li>
+<li>You must also think about self-defence<ul>
+<li>Having a gambling company take over your domain is unpleasant</li>
+</ul>
+</li>
+</ul>
+<section class="exercise">
+<h3>Exercise</h3>
+<ol>
+<li>
+<p>Make a list of the things that belong to your project.
+    Compare it with the lists made by other project members:
+    what did they include that you didn't and vice versa?</p>
+</li>
+<li>
+<p>Imagine your project was going to shut down in three months.
+    What would you have to deliver, to whom, in that time?</p>
+</li>
+</ol>
+</section>
+<h2>Permissions</h2>
+<ul>
+<li>Permissions are the overlap of governance with assets and obligations<ul>
+<li>Who can do what, with what</li>
+</ul>
+</li>
+<li>Easiest to use personal accounts for everything<ul>
+<li>Particularly in a project's early days when you're not sure it's going anywhere</li>
+</ul>
+</li>
+<li>As soon as multiple people can do things that outsiders cannot,
+    use dedicated accounts rather than personal ones<ul>
+<li>Enables continuity if (when) people move or are unavailable</li>
+</ul>
+</li>
+<li>And <em>make a list</em> of what those special actions are<ul>
+<li>Keep it somewhere findable (e.g., <code>CONTRIBUTING.md</code> in a project repository)</li>
+</ul>
+</li>
+<li>Use a <a href="../glossary/#password-manager">password manager</a> for all organizational accounts<ul>
+<li>Actually, use one for your own work as well [<a href="../bibliography/#Small2021">Small2021</a>]</li>
+</ul>
+</li>
+</ul>
+<section class="exercise">
+<h3>Exercise</h3>
+<ol>
+<li>
+<p>What is your project not able to do if you are unavailable for an extended period?
+    (For example, "cannot revise a paper" or "cannot publish a new version of a package".)</p>
+</li>
+<li>
+<p>Which of your project's activities are associated with personal accounts (yours or others)
+    rather than accounts dedicated to the project?</p>
+</li>
+</ol>
+</section>
+<h2>Community</h2>
+<ul>
+<li>You may want to stay in touch with some or all of the team after the project ends<ul>
+<li>"May" and "some" because not every project ends happily</li>
+<li>Even if it doesn't, it's useful to maintain good relations with funders, reviewers, customers, etc.</li>
+</ul>
+</li>
+<li>Shutdown is often contentious:
+    people who have complained but never contributed may criticize you<ul>
+<li>Can help to phrase shutdown notice as "putting into hibernation"</li>
+</ul>
+</li>
+<li>Take inspiration from the ASF's procedure<ul>
+<li>Don't start by announcing shutdown</li>
+<li>Instead, announce that you (singular or plural) are going to stop work
+    and ask for volunteers to take over</li>
+</ul>
+</li>
+</ul>
+<div class="callout">
+<p>Do <em>not</em> accept people you don't already know as successors on your project:
+there is a small but growing risk that they will try to use it
+for <a href="../glossary/#supply-chain-attack">supply chain attacks</a>,
+or repurpose your site to advertise gambling, porn, or extremist politics.</p>
+</div>
+<ul>
+<li>If you are not going to keep the project's domain,
+    move the content to a free hosting service (e.g., GitHub Pages)
+    and put redirects in place</li>
+<li>Make sure vendors, donors, and others with a legally binding stake in the project
+    have a way to contact you and/or the team after the project's email addresses are shut off</li>
+<li>Tell your team and your community as much as you can as soon as you can<ul>
+<li>Knowing that a project is shutting down will inevitably affect morale</li>
+<li>Don't add uncertainty or rumors to the mix</li>
+</ul>
+</li>
+<li>Things to tell them:<ul>
+<li>Reasons (as much as you can)</li>
+<li>Timelines (and updates to timelines, because these always shift)</li>
+<li>What's happening to assets and obligations</li>
+</ul>
+</li>
+</ul>
+<h2>What You Can Skip</h2>
+<ul>
+<li>The introduction explained that "document everything" doesn't work in practice because:<ul>
+<li>People are always too busy to keep the documentation up to date</li>
+<li>It's hard to know which bits are actually going to be useful in the future
+    (but experience teaches that most aren't)</li>
+</ul>
+</li>
+<li>Force yourself to make an exception for governance, assets &amp; obligations, and permissions<ul>
+<li>The project will grind to a halt without these</li>
+<li>And there may be legal or reputational risks to not doing it</li>
+</ul>
+</li>
+<li>But if you're shutting the project down, it's OK not to put effort into:<ul>
+<li>User-oriented documentation (e.g., tutorials)</li>
+<li>Project dependencies</li>
+<li>More tests or examples</li>
+</ul>
+</li>
+</ul>
+<h2>Hold a Wake</h2>
+<ul>
+<li>If you have time, it's worth doing a team retrospective<ul>
+<li>What did we do well?</li>
+<li>What could we have done differently?</li>
+<li>What did we learn along the way?</li>
+<li>What are we going to remember?</li>
+</ul>
+</li>
+<li>The last of these may be the most important<ul>
+<li>Endings are sad, but they can be sweetened</li>
+</ul>
+</li>
+</ul>
+<div class="callout">
+<p><a href="https://exple.tive.org/blarg/2025/11/11/historical-reasons-2/">Mike Hoye suggested</a> that
+we should retire the account names of Unix greats
+in the way that sports teams retire jersey numbers,
+and for the same reasons.
+End-of-project t-shirts or laptop stickers
+are another great way to say,
+"We were here and we did something good,"
+and so is getting the whole team on a call
+to watch as you push the "archive" button on your repository.</p>
+</div>
+</main>
+<footer>
+<div class="row">
+<div class="col-3 left">
+	  ⇐ <a href="../intro/">Introduction</a>
+</div>
+<div class="col-6 center">
+<a href="../"></a>
+	  © 2025
+	  <a href="../#acknowledgments">the authors</a>
+</div>
+<div class="col-3 right">
+<a href="../finale/">Conclusion</a> ⇒
+	</div>
+</div>
+</footer>
+</body>
+</html>

@@ -7,6 +7,13 @@
     1989,
     978-0679721130.
 
+<span id="Baetjer1997">Baetjer 1997</span>
+:   Howard Baetjer Jr.:
+    *Software as Capital: An Economic Perspective on Software Engineering*.
+    Wiley,
+    1997,
+    978-0818677793.
+
 <span id="Brown2007">Brown 2007</span>
 :   Michael Jacoby Brown:
     *Building Powerful Community Organizations*.
@@ -20,6 +27,13 @@
     Portfolio,
     2016,
     978-0143109600.
+
+<span id="Coelho2017">Coelho and Valente 2017</span>
+:   Jailton Coelho and Marco Tulio Valente:
+    "Why modern open source projects fail"
+    *Proc. ESEC/FSE 2017*,
+    2017,
+    doi:10.1145/3106237.3106246.
 
 <span id="Cullen2022">Cullen et al 2022</span>
 :   Laura Cullen, Kirsten Hanrahan, Michele Farrington, Sharon Tucker, and Stephanie Edmonds:
@@ -49,7 +63,7 @@
     *Computing in Science & Engineering*,
     20(3),
     2018,
-    10.1109/MCSE.2018.03221930.
+    doi:10.1109/MCSE.2018.03221930.
 
 <span id="Kuchner2011">Kuchner 2011</span>
 :   Marc J. Kuchner:
@@ -88,6 +102,14 @@
     1987,
     978-0300036411.
 
+<span id="Small2021">Small 2021</span>
+:   Danielle Smalls and Greg Wilson:
+    "Ten quick tips for staying safe online".
+    PLoS,
+    17(3),
+    2021,
+    doi:10.1371/journal.pcbi.1008563.
+
 <span id="Solnit2010">Solnit 2010</span>
 :   Rebecca Solnit:
     *A Paradise Built in Hell: The Extraordinary Communities That Arise in Disaster*.
@@ -101,7 +123,7 @@
     *PLOS Biology*,
     12(1),
     2014,
-    10.1371/journal.pbio.1001745.
+    doi:10.1371/journal.pbio.1001745.
 
 <span id="Wilson2017">Wilson et al 2017</span>
 :   Greg Wilson, Jennifer Bryan, Karen Cranston, Justin Kitzes, Lex Nederbragt, and Tracy K. Teal:
@@ -109,7 +131,7 @@
     *PLOS Computational Biology*,
     13(6),
     2017,
-    10.1371/journal.pcbi.1005510.
+    doi:10.1371/journal.pcbi.1005510.
 
 <span id="Yang2024">Yang 2024</span>
 :   Yuqing Yang:
@@ -117,4 +139,4 @@
     *Journal of Education, Humanities and Social Sciences*,
     26(3),
     2024,
-    10.54097/xng2q069.
+    doi:10.54097/xng2q069.

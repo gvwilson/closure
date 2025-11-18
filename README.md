@@ -55,6 +55,7 @@ This workshop therefore caters to two learner personas.
 <div id="lessons" markdown="1">
 
 1.  [Introduction](@/intro/)
+1.  [Deliberate Closure](@/deliberate/)
 1.  [Conclusion](@/finale/)
 
 </div>
