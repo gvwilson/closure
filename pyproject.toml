@@ -11,7 +11,5 @@ dependencies = [
 skips = [
     "*~",
     "docs/**",
-    "log/**",
-    "unused/**",
     "uv.lock"
 ]
