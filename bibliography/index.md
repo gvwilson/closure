@@ -330,13 +330,6 @@
     1987,
     978-0300036411.
 
-<span id="Steinmacher2015">Steinmacher2015</span>
-:   Igor Steinmacher, Tayana Conte, Marco Aurélio Gerosa, and David Redmiles:
-    "Social Barriers Faced by Newcomers Placing Their First Contribution in Open Source Software Projects."
-    *Proc. CSCW'15*,
-    2015,
-    doi:10.1145/2675133.2675215.
-
 <span id="Shepherd2003">Shepherd2003</span>
 :   Dean A. Shepherd:
     "Learning from Business Failure: Propositions of Grief Recovery for the Self-Employed."
@@ -389,6 +382,13 @@
     2012,
     doi:10.1016/j.neubiorev.2012.02.003.
 
+<span id="Steinmacher2015">Steinmacher2015</span>
+:   Igor Steinmacher, Tayana Conte, Marco Aurélio Gerosa, and David Redmiles:
+    "Social Barriers Faced by Newcomers Placing Their First Contribution in Open Source Software Projects."
+    *Proc. CSCW'15*,
+    2015,
+    doi:10.1145/2675133.2675215.
+
 <span id="Tamburri2020">Tamburri2020</span>
 :   Damian Andrew Tamburri, Kelly Blincoe Fabio Palomba, and Rick Kazman:
     "'The Canary in the Coal Mine…': A Cautionary Tale From the Decline of SourceForge."
@@ -418,6 +418,13 @@
     University of Chicago Press,
     1996,
     978-0226851754.
+
+<span id="WHO2026">WHO2026</span>
+:   World Health Organization:
+    "Psychological first aid: Facilitator's manual for orienting field workers."
+    <https://www.who.int/publications/i/item/psychological-first-aid>,
+    2013,
+    viewed 2026-04-08.
 
 <span id="Weick1993">Weick1993</span>
 :   Karl E. Weick:
@@ -450,13 +457,6 @@
     5(4),
     1980,
     doi:10.5465/amr.1980.4288962.
-
-<span id="WHO2026">WHO2026</span>
-:   World Health Organization:
-    "Psychological first aid: Facilitator's manual for orienting field workers."
-    <https://www.who.int/publications/i/item/psychological-first-aid>,
-    2013,
-    viewed 2026-04-08.
 
 <span id="Wilson2014">Wilson et al 2014</span>
 :   Greg Wilson, D. A. Aruliah, C. Titus Brown, Neil P. Chue Hong, Matt Davis, Richard T. Guy, Steven H. D. Haddock, Kathryn D. Huff, Ian M. Mitchell, Mark D. Plumbley, Ben Waugh, Ethan P. White, and Paul Wilson:
