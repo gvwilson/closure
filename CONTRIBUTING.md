@@ -28,5 +28,5 @@ Why is this material free?
 -   Run `make` on its own to see a list of common commands.
 
 [email]: mailto:gvwilson@third-bit.com
-[repo]: https://github.com/gvwilson/succession
+[repo]: https://github.com/gvwilson/closure
 [uv]: https://github.com/astral-sh/uv
