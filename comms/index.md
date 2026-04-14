@@ -48,7 +48,7 @@
     -   Current state (working, broken, incomplete)
     -   Where code, data, and results are (going to be) archived
     -   Next steps or alternatives for users
--   Don't both with:
+-   Don't bother with:
     -   User-facing tutorials
 	-   Exhaustive dependency documentation
 	-   Adding additional tests as if you were doing a new release
