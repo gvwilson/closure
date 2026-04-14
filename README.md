@@ -42,7 +42,7 @@ This workshop therefore caters to two different learners:
 1.  [Communicating During a Deliberate Shutdown](@/comms/)
 1.  [On Short Notice](@/emergency/)
 1.  [Preserving Your Work](@/preserve/)
-1.  [Presering Your People](@/care/)
+1.  [Preserving Your People](@/care/)
 1.  [Legal and Administrative Matters](@/legal/)
 1.  [Conclusion](@/finale/)
 
