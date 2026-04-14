@@ -79,7 +79,7 @@
 1.  Work individually for ten minutes
     to make a list of everything that belongs to your project.
 
-1.  Compare lists with otheres in your group.
+1.  Compare lists with others in your group.
     What did they include that you missed and vice versa?
 	What did someone include that other people think isn't actually part of the project?
 

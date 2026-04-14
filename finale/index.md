@@ -39,7 +39,7 @@
 -   Unfortunately, the bad guys aren't
     -   Who is more likely to run for a school board seat:
         someone with a PhD in epidemiology or an anti-vax conspiracy theorist?
--   Right now we have to focus on preseving what we have
+-   Right now we have to focus on preserving what we have
     -   But playing defense is just a way to lose more slowly
 -   See [Organizational Change for Open Science][ocos] for ideas
 
