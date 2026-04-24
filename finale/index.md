@@ -43,6 +43,11 @@
     -   But playing defense is just a way to lose more slowly
 -   See [Organizational Change for Open Science][ocos] for ideas
 
+## Further Reading
+
+-   [Repository Resilience][repository-resilience]
+-   [Beyond the Bus Factor][beyond-bus-factor]
+
 <section class="exercise" markdown="1">
 
 ## Exercises

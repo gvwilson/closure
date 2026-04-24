@@ -1,5 +1,6 @@
 [asf]: https://apache.org/
 [asf-attic]: https://attic.apache.org/process.html
+[beyond-bus-factor]: https://beyondthebusfactor.org/
 [bitbucket]: https://bitbucket.org/
 [blue-oak]: https://blueoakcouncil.org/license/1.0.0
 [buzzfeed-datacamp]: https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup
@@ -24,4 +25,5 @@
 [orcid]: https://orcid.org/
 [osi-licenses]: https://opensource.org/licenses
 [ospo]: https://sustainoss.org/academic-map/universities/index.html
+[repository-resilience]: https://www.esipfed.org/repository-resilience/
 [sourceforge-wiki]: https://en.wikipedia.org/wiki/SourceForge
