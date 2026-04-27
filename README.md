@@ -30,6 +30,20 @@ This workshop therefore caters to two different learners:
 	and focus their efforts on a closed-source alternative.
     He has been given until the end of the week to wind things down.
 
+-  June, 38, is a data scientist who released an open source project as part of her work at a tech company.
+   After a reorg moved her to a different division, internal funding for the project dried up
+   and she lost the time to maintain it.
+   She wants to step back gracefully, keeping in mind the reflection on how she accomplishes this will
+   reflect also on the compaany she works for.  She would thus, like to  leave the door open for a 
+   community member to take over if one wants to.
+
+- Chester, 47 has maintained a widely-used open source library for over a decade,
+  with a global community of contributors and users across research, education, and industry.
+  The project has never had a budget beyond occasional small grants, and the underlying technology
+  landscape is shifting in ways that would require a significant rewrite to stay relevant.
+  They want to wind things down with care for the community that has grown around the project,
+  document what was learned, and make space for successor projects rather than let it quietly decay.
+
 <div class="row" markdown="1">
 <div class="col-6" markdown="1">
 
