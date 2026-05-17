@@ -10,8 +10,8 @@
 <span id="advance-directive">advance directive</a>
 :   A document written while a project is still healthy that specifies conditions for shutdown,
     who has authority to decide,
-	what assets must be preserved,
-	and what obligations must be honored.
+    what assets must be preserved,
+    and what obligations must be honored.
 
 <span id="anticipatory-mourning">anticipatory mourning</a>
 :   Grief that begins before an expected loss rather than after it,
@@ -49,7 +49,7 @@
 <span id="continuing-bonds">continuing bonds</a>
 :   A theory of bereavement that states that
     healthy mourning does not require severing the relationship with what was lost
-	but can instead involve ongoing connections.
+    but can instead involve ongoing connections.
 
 <span id="cosmology-episode">cosmology episode</a>
 :   A moment during a crisis when the world stops making sense and people freeze
@@ -62,7 +62,7 @@
 <span id="dignity-therapy">dignity therapy</a>
 :   A brief structured intervention involving a guided life-review interview
     in which a person reflects on what has mattered most,
-	producing a legacy document intended to extend their influence.
+    producing a legacy document intended to extend their influence.
 
 <span id="doi">digital object identifier (DOI)</a>
 :   A persistent unique identifier assigned to a digital object such as a dataset or software release
@@ -125,8 +125,8 @@
 <span id="recognition-primed-decision-making">recognition-primed decision making</a>
 :   A form of decision-making in which
     an expert recognizes a situation as an instance of a familiar type
-	and acts on the first workable response
-	rather than comparing alternatives.
+    and acts on the first workable response
+    rather than comparing alternatives.
 
 <span id="rse">research software engineer</a>
 :   A professional who develops software as an integral part of academic research,
@@ -139,7 +139,7 @@
 <span id="succession-plan">succession plan</a>
 :   A document specifying what a departing leader is handing over,
     when each element will transfer,
-	and what the successor will be responsible for.
+    and what the successor will be responsible for.
 
 <span id="suffrage">suffrage</a>
 :   The right to participate in a binding governance decision,

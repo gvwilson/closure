@@ -27,23 +27,23 @@ This workshop therefore caters to two different learners:
 -   Liam, 41, is a software developer whose company was acquired sixteen months ago.
     After a change in leadership,
     management has decided to halt work on the open source tool he has built
-	and focus their efforts on a closed-source alternative.
+    and focus their efforts on a closed-source alternative.
     He has been given until the end of the week to wind things down.
 
 -   Jun, 38, is a data scientist who released an open source project as part of her work at a tech company.
     After a reorg moved her to a different division,
-	internal funding for the project dried up and she lost the time to maintain it.
+    internal funding for the project dried up and she lost the time to maintain it.
     She wants to step back gracefully,
-	keeping in mind that how she accomplishes this will reflect on her and on the compaany she works for.
-	She would therefore like to leave the door open for a community member to take over if one wants to.
+    keeping in mind that how she accomplishes this will reflect on her and on the compaany she works for.
+    She would therefore like to leave the door open for a community member to take over if one wants to.
 
 -   Chetan, 47 has maintained a widely-used open source library for over a decade,
     with a global community of contributors and users across research, education, and industry.
     The project has never had a budget beyond occasional small grants,
-	and shifts in the underlying technology mean that
-	it would require a major rewrite to stay relevant.
+    and shifts in the underlying technology mean that
+    it would require a major rewrite to stay relevant.
     They want to wind things down with care
-	and make space for successor projects rather than let it quietly decay.
+    and make space for successor projects rather than let it quietly decay.
 
 <div class="row" markdown="1">
 <div class="col-6" markdown="1">

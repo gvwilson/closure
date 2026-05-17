@@ -59,7 +59,7 @@
     and directly interferes with the ability to learn from the experience
     -   Grief recovery is not linear and is not accelerated by forcing lessons-learned conversations too early
     -   Structured reflection is most productive after a period of acknowledgement,
-	    not immediately after the loss
+        not immediately after the loss
     -   A retrospective held a month after closure captures more than one held the week it closes
 
 ## Practical Care
@@ -82,11 +82,11 @@
 -   The [%g continuing-bonds "continuing bonds" %] theory of bereavement [%b Klass1996 %]
     challenged the idea that healthy mourning requires severing the relationship with what was lost
     -   People who maintain an ongoing connection through story-telling,
-	    souvenirs,
+        souvenirs,
         or integration of the lost thing's values are exhibiting a normal, healthy form of grief
     -   Framing closure around what continues, rather than only what ends,
         reduces distress and lets participants frame archiving, citation, and attribution
-		as genuine acts of preservation, not bureaucratic compliance
+        as genuine acts of preservation, not bureaucratic compliance
 
 <section class="exercise" markdown="1">
 

@@ -248,7 +248,7 @@
     "10 Quick Tips for Making Your Software Outlive Your Job."
     <https://arxiv.org/abs/2505.06484>,
     2025,
-	viewed 2026-08-10.
+    viewed 2026-08-10.
 
 <span id="Marks2022">Marks2022</span>
 :   Kenneth H. Marks, Christian W. Blees, Michael R. Nall, and Thomas A. Stewart:
@@ -268,8 +268,8 @@
 <span id="OSS1944">OSS1944</span>
 :   United States Office of Strategic Services:
     *Simple Sabotage Field Manual*.
-	1944,
-	979-8405796871.
+    1944,
+    979-8405796871.
 
 <span id="Palazzo2025">Palazzo2025</span>
 :   Guido Palazzo and Ulrich Hoffrage:

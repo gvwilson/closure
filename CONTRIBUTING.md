@@ -25,7 +25,7 @@ Why is this material free?
 -   Create a virtual environment by running `uv venv` in the root directory.
 -   Activate it by running `source .venv/bin/activate` in your shell.
 -   Install dependencies by running `uv sync`.
--   Run `make` on its own to see a list of common commands.
+-   Run `task --list` to see a list of common commands.
 
 [email]: mailto:gvwilson@third-bit.com
 [repo]: https://github.com/gvwilson/closure

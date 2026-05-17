@@ -24,16 +24,16 @@
     if they become unable to speak for themselves
 -   So write an [%g advance-directive "advance directive" %] for the project while it is still healthy [%b Towey2026 %]:
     -   Conditions for shutdown
-	-   Who has authority to make the call
+    -   Who has authority to make the call
     -   What assets must be preserved
-	-   What obligations must be honoured
+    -   What obligations must be honoured
 -   A closure plan that sits in a drawer and has never been tested is a [%g fantasy-document "fantasy document" %]
     [%b Clarke1999 %]
     -   Organizations routinely produce plans that reassure regulators and funders
         but bear no relationship to what would actually happen under stress
     -   A `HANDOVER.md` written in an afternoon that no one outside the core team has read
     -   Ideally,
-	    walk through the closure plan periodically
+        walk through the closure plan periodically
         to check that each step is actually executable with the people available
     -   But the word "ideally" is doing a lot of work in that sentence
 
@@ -58,10 +58,10 @@
         the original legal entity persists or is wound down separately
     -   An entity transfer moves the entire legal entity including unknown liabilities
     -   Being explicit about what is and is not transferred
-	    protects both the outgoing team and the incoming maintainers
+        protects both the outgoing team and the incoming maintainers
 -   As noted in the [introduction](@/intro/),
     there are legal obligations and restrictions around many of these
-	-   Do *not* assume the law is comprehensible or sensible
+    -   Do *not* assume the law is comprehensible or sensible
 
 ## Permissions
 
@@ -81,7 +81,7 @@
 
 1.  Compare lists with others in your group.
     What did they include that you missed and vice versa?
-	What did someone include that other people think isn't actually part of the project?
+    What did someone include that other people think isn't actually part of the project?
 
 </section>
 

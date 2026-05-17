@@ -24,8 +24,8 @@
 -   "Tell people what you know, as soon as you know it" is easy to say but hard to do
     -   Information gaps cause more anxiety than difficult truths
     -   Conflicting verbal and written instructions cause lasting harm
-	-   On the other hand, you often *don't* know what's happening
-	-   And constantly-changing pronouncements raise the temperature as well
+    -   On the other hand, you often *don't* know what's happening
+    -   And constantly-changing pronouncements raise the temperature as well
 -   [%b Wruck1990 %] found that indirect costs of financial distress
     (lost contributors, cancelled collaborations, management distraction)
     are substantially larger than direct costs such as legal fees or asset sales
@@ -50,9 +50,9 @@
     -   Next steps or alternatives for users
 -   Don't bother with:
     -   User-facing tutorials
-	-   Exhaustive dependency documentation
-	-   Adding additional tests as if you were doing a new release
-	-   Bug triage
+    -   Exhaustive dependency documentation
+    -   Adding additional tests as if you were doing a new release
+    -   Bug triage
 -   If possible, have someone outside the project run structured exit interviews
     to find out what should survive rather than what went wrong
 -   Hold a wake for the project (i.e., a combination group retrospective and memorial)

@@ -6,11 +6,11 @@
     and the most likely to cause problems later
 -   Most important thing is to *keep a record* of decisions made during shutdown:
     what was transferred, to whom, and when
-	-   And make sure that record is available *after* shutdown
+    -   And make sure that record is available *after* shutdown
 -   Determine who *legally* owns the project's outputs:
     individual contributors, an institution, or a formal entity
     -   IP policies differ between universities, companies, and grant-funded projects
-	-   Check, don't assume
+    -   Check, don't assume
 -   Open source licenses are irrevocable,
     but closing repositories is still a meaningful decision for your community
 -   Confidential and personally identifiable data has specific legal obligations

@@ -11,7 +11,7 @@
     what worked, what was broken, what was left undone
 -   Archive to a persistent location, e.g., Zenodo or Software Heritage
     -   Be wary of institutional repositories:
-	    you may lose access or (in event of a community or global threat) they may go away as well
+        you may lose access or (in event of a community or global threat) they may go away as well
 -   Assign a [%g doi "DOI" %] to the final release so it can be cited
 -   Mark deprecated versions in every relevant package registry,
     not just in the repository
@@ -64,7 +64,7 @@ because of the protocol's resilience.
 -   [%b Vaughan1996 %] showed that the Challenger disaster resulted not from a single catastrophic decision
     but from a long sequence of small ones in which warning signals were repeatedly noticed,
     reinterpreted as acceptable,
-	and filed away until deviation had become the norm
+    and filed away until deviation had become the norm
 -   Teams approaching closure often carry the same kind of backlog
 -   Deliberate closure should therefore include an explicit audit of
     [%g normalization-of-deviance "normalized deviations" %]:
@@ -97,7 +97,7 @@ Work individually for ten minutes, then debrief in groups:
 
 1.  Write down three things in your project that everyone on the team knows are wrong
     but that you have all learned to live with
-	(e.g., a dependency nobody wants to touch
+    (e.g., a dependency nobody wants to touch
     or a process that only works because one person knows the trick).
 
 1.  For each item, explain whether you would

@@ -5,7 +5,7 @@
 -   Abrupt closure means you get one shot and cannot correct course
 -   Under time pressure, experts do not compare options:
     they recognize a situation as an instance of a familiar type
-	and act on the first workable course of action that comes to mind [%b Klein1998 %]
+    and act on the first workable course of action that comes to mind [%b Klein1998 %]
 -   This is called [%g recognition-primed-decision-making "recognition-primed decision making" %]:
     the decision is primed by experience, not constructed from first principles
 -   Experience that team members have handling emergencies in other domains can be misleading
@@ -69,9 +69,9 @@ it is a predictable feature of how the brain responds to pressure.
 -   Rapid, honest, minimal communication is best
     *even when you do not yet know what you will do*
     -   A single paragraph saying
-	    "here is what we know, here is what we do not know, here is when we expect more information"
-		is not a plan
-	-   But prevents the harms of silence
+        "here is what we know, here is what we do not know, here is when we expect more information"
+        is not a plan
+    -   But prevents the harms of silence
 
 ## …then Act
 
@@ -124,11 +124,11 @@ The two streams of work need to run in parallel.
     -   Emergent groups with no prior or subsequent existence
         -   They invent both their structure and their tasks in the moment, with no existing template to follow
 -   Research shows that people converge on a crisis without being told to [%b Fritz1957 %]
-	-   People who step forward do so because the project mattered
+    -   People who step forward do so because the project mattered
     -   They are likely to help if given the minimum viable information
     -   In software and research projects this translates into unofficial mirrors,
-	    public documentation posts,
-		and community email threads
+        public documentation posts,
+        and community email threads
 -   If you can support this without endangering yourself, do so
 
 ## A Loose Interpretation of the Rules
@@ -141,7 +141,7 @@ The two streams of work need to run in parallel.
     -   Waiting for formal approval that cannot be obtained is itself a decision, and usually a worse one
 -   When formal procedures are inapplicable because time or infrastructure is unavailable,
     the people present should act within their own discretion
-	rather than waiting for authorization they cannot obtain
+    rather than waiting for authorization they cannot obtain
     -   Copying data, setting up a forwarding address, or sending a brief notice
         are all within the discretion of the people present
 -   Members of marginalized groups often have more practice navigating hostile bureaucracies
@@ -156,7 +156,7 @@ The two streams of work need to run in parallel.
     -   In most jurisdictions you have a right to record phone calls you are part of
     -   If that feels confrontational, insist on communicating by email
     -   If they insist on calling,
-	    follow up immediately with an email summary and CC your personal account
+        follow up immediately with an email summary and CC your personal account
 -   Pause before speaking or posting publicly
     -   If possible, have someone you trust review everything before you say or send it
     -   Do not use someone who still works for the same organization,
@@ -165,7 +165,7 @@ The two streams of work need to run in parallel.
     -   If you do sign, make sure the agreement explicitly excludes those concerns before signing
 -   This is privileged advice:
     -   Someone whose visa, health coverage, or family income is threatened may not have a choice
-	-   Which is precisely why those who do have a choice should exercise it
+    -   Which is precisely why those who do have a choice should exercise it
 
 <section class="exercise" markdown="1">
 
@@ -184,7 +184,7 @@ The two streams of work need to run in parallel.
 
 1.  Debrief as a group.
     Most lists focus heavily on one or two categories (usually code or data)
-	while omitting others entirely
+    while omitting others entirely
     (credentials, legal obligations, community communication, contributor welfare, domain names).
     This is not a failure of knowledge,
     but a predictable failure of recall under pressure.

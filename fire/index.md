@@ -90,7 +90,7 @@
 
 -   I hope you're never fired,
     -   Or if you are,
-	    that the company handles it more professionally than [DataCamp][buzzfeed-datacamp] did
+        that the company handles it more professionally than [DataCamp][buzzfeed-datacamp] did
 
 ### Keep Public Statements Brief
 
@@ -101,7 +101,7 @@
 
 -   If you need to correct something, don't just take it down or edit it
     -   If you do, you will be accused of rewriting history,
-	-   Muddied waters only help whoever fired you
+    -   Muddied waters only help whoever fired you
 -   Instead, add a timestamped correction
 -   Be prepared for them to dig through everything you've ever said online
     and re-post parts selectively to discredit you
@@ -117,8 +117,8 @@
 -   Don't sign any agreement that might prevent you from speaking about moral or legal concerns
 -   Or if you do, make sure the agreement explicitly excludes your concerns before signing it
     -   And yes, it's very privileged of me to be able to say this
-	-   Someone whose immigration status, essential health benefits, or family income is being threatened
-	    may not have a choice
+    -   Someone whose immigration status, essential health benefits, or family income is being threatened
+        may not have a choice
 -   That is why I think people who *do* have a choice also have an obligation to fight
 
 ### You Are Not a Lawyer
@@ -137,8 +137,8 @@
 
 -   Go for long walks
     -   Or cook some healthy meals
-	-   Or pick up the guitar you haven't touched in years
-	-   anything that requires you to focus on something else for a while
+    -   Or pick up the guitar you haven't touched in years
+    -   anything that requires you to focus on something else for a while
 -   This isn't just for your mental health
     -   Exhausted people make poor decisions, and you need to be at the top of your game
 -   And remember, other people *do* care about you

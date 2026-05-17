@@ -10,7 +10,7 @@
     -   Because mortality scares us
 -   Preparing for the end can make it less painful
     -   And less likely:
-	    if we think about how things might end, we might be able to prevent some endings
+        if we think about how things might end, we might be able to prevent some endings
     -   It also helps make what happens before then more enjoyable
 
 ## Two Kinds of Ending
@@ -147,7 +147,7 @@ people turn to [%g civil-society "civil society" %] for help [%b Solnit2010 %].
 -   Ensuring your work remains usable is not worth putting yourself at legal risk
     -   Institutions, journals, and funders have policies for licensing and sharing [%b Katz2018 %].
     -   So find out what those rules are and make sure you stay within them
-	-   Which isn't necessarily the same thing as saying "follow them" [%b OSS1944 %]
+    -   Which isn't necessarily the same thing as saying "follow them" [%b OSS1944 %]
 -   If you don't know if there is a policy or not, *ask someone*
     -   Look for an [Open Source Program Office][ospo] (OSPO) or intellectual property (IP) office
 -   Here and elsewhere, use email rather than chat or video calls
