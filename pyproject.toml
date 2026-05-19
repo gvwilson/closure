@@ -37,6 +37,7 @@ cmd = """
 """
 
 [tool.mccole]
+brand = "closure"
 skips = [
     "*~",
     "docs/**",
