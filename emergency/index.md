@@ -14,7 +14,7 @@
 
 <div class="callout" markdown="1">
 
-[%b Weick1993 %] introduced the idea of a *cosmology episode*:
+[%b Weick1993 %] introduced the idea of a [%g cosmology-episode "cosmology episode" %]:
 a moment when the world stops making sense and actors freeze.
 These can occur during abrupt project closures
 when the governance structures that normally coordinate work suddenly disappear.
@@ -49,7 +49,8 @@ and that they will be out of date by the time they're needed.
 
 <div class="callout" markdown="1">
 
-Under acute stress, attention narrows and cognitive stress specifically impairs
+Under acute stress, [%g attention-narrowing "attention narrows" %]
+and cognitive stress specifically impairs
 the ability to hold multiple competing priorities in mind simultaneously
 [%b Easterbrook1959 Starcke2012 %].
 As a result,

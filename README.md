@@ -73,11 +73,12 @@ This workshop therefore caters to two different learners:
 1.  [License](@/license/)
 1.  [Code of Conduct](@/conduct/)
 1.  [Contributing](@/contributing/)
+1.  [Bibliography](@/bibliography/)
+1.  [Glossary](@/glossary/)
 1.  [Miscellaneous](@/misc/)
 1.  [Firing and Being Fired](@/fire/)
 1.  [Handing Over](@/handover/)
-1.  [Bibliography](@/bibliography/)
-1.  [Glossary](@/glossary/)
+1.  [Dumb Ways to Die](@/nesbitt/)
 
 </div>
 </div>

@@ -4,6 +4,15 @@ Contributions are very welcome;
 please contact us [by email][email] or by filing an issue in [our repository][repo].
 All contributors must abide by our Code of Conduct.
 
+## Contributors {: #contributors}
+
+[*Greg Wilson*][wilson-greg] is a programmer, author, and educator based in Toronto.
+He was the co-founder and first Executive Director of Software Carpentry
+and received ACM SIGSOFT's Influential Educator Award in 2020.
+
+Thanks to [Andrew Nesbitt][nesbitt-andrew] for permission to re-use
+[Dumb Ways for an Open Source Project to Die](@/nesbitt/).
+
 ## FAQ
 
 Do you need help?
@@ -28,5 +37,7 @@ Why is this material free?
 -   Run `task --list` to see a list of common commands.
 
 [email]: mailto:gvwilson@third-bit.com
+[nesbitt-andrew]: https://nesbitt.io/
 [repo]: https://github.com/gvwilson/closure
 [uv]: https://github.com/astral-sh/uv
+[wilson-greg]: https://third-bit.com/

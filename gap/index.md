@@ -52,7 +52,7 @@
 -   Handing over a GitHub organization and a domain name is not the same as
     handing over governance obligations or data privacy commitments
 -   Treat any single point of control that cannot survive 48-hour unavailability as a bug
--   And treat every handover as an explicit asset transfer,
+-   And treat every handover as an explicit [%g asset-transfer "asset transfer" %],
     not a transfer of "the project" as a whole [%b Marks2022 %]
     -   An asset transfer moves selected assets and obligations;
         the original legal entity persists or is wound down separately
