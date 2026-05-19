@@ -210,7 +210,7 @@
     "10 Quick Tips for Making Your Software Outlive Your Job."
     <https://arxiv.org/abs/2505.06484>,
     2025,
-    viewed 2026-08-10.
+    viewed 2026-05-19.
 
 ## M
 
