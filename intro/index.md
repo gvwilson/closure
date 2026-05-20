@@ -24,7 +24,7 @@
     -   You only get one shot at it and aren't able to make changes as you go along
 -   We want the former, but often have to deal with the latter
 -   [%b Wilson2014 %] outlined how [%g rse "research software engineers" %]
-    should organize their projetcs
+    should organize their projects
 -   [%b Wilson2017 %] was in part a rebuttal
     -   Most people don't have time to do everything the "right" way
     -   By which we usually mean "their employers don't give them enough time"
