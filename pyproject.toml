@@ -40,6 +40,7 @@ cmd = """
 brand = "closure"
 skips = [
     "*~",
-    "docs/**",
+    "docs",
+    "typos.toml",
     "uv.lock"
 ]
