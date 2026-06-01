@@ -45,6 +45,7 @@
 
 ## Further Reading
 
+-   [%b Foster2026 %] is one of the few end-to-end guides out there
 -   [Repository Resilience][repository-resilience]
 -   [Beyond the Bus Factor][beyond-bus-factor]
 

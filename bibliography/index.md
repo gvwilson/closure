@@ -99,6 +99,12 @@
 
 ## F
 
+<span id="Foster2026">Foster2026</span>
+:   Dawn Foster et al:
+    "CHAOSS Practitioner Guide: Getting Started with Sunsetting an Open Source Project."
+    Viewed 2026-06-01,
+    <https://chaoss.community/practitioner-guide-sunset/>.
+
 <span id="Frankfurt2005">Frankfurt2005</span>
 :   Harry G. Frankfurt:
     *On Bullshit*.
