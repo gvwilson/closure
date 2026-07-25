@@ -88,18 +88,16 @@
         reduces distress and lets participants frame archiving, citation, and attribution
         as genuine acts of preservation, not bureaucratic compliance
 
-<section class="exercise" markdown="1">
-
 ## Exercises
+
+<section class="exercise" markdown="1">
 
 ### Plan the People Side
 
 In small groups:
 
 1.  Who are the people most affected by closing your project, in order of impact?
-
 1.  What does each group need to hear, and by when?
-
 1.  What would a good wake look like for your project?
     What would you want people to remember?
 

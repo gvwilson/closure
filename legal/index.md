@@ -24,26 +24,43 @@
 -   Build exit clauses into contracts and development agreements from the start, not when you need them
 -   The difference between rules as written and rules as enforced matters most during institutional turmoil
 
-<section class="exercise" markdown="1">
-
 ## Exercises
+
+<section class="exercise" markdown="1">
 
 ### Sequence Under Constraint
 
-> An open-source data analysis tool maintained as a US-based nonprofit.
-> Primary funding is a three-year NSF grant with 18 months remaining.
-> The GitHub organization has 400 stars and 12 contributors,
-> two of whom are on visas.
-> The mailing list has 800 subscribers whose email addresses are stored on a paid service.
-> The project holds a registered trademark on its name.
+An open-source data analysis tool maintained as a US-based nonprofit.
+Primary funding is a three-year NSF grant with 18 months remaining.
+The GitHub organization has 400 stars and 12 contributors,
+two of whom are on visas.
+The mailing list has 800 subscribers whose email addresses are stored on a paid service.
+The project holds a registered trademark on its name.
 
 1.  Working individually, list the legal or administrative obligations
     that arise when this project shuts down.
-
 1.  Put them in the order they must be addressed.
     Which obligations create deadlines that constrain everything else?
-
 1.  Compare your sequence with a partner.
     Where do your orderings differ, and why?
+
+</section>
+
+<section class="exercise" markdown="1">
+
+### Financial Wind-down
+
+Your project has a bank account with $4,200 remaining from a completed grant,
+a recurring $45/month hosting bill on a team member's personal credit card,
+and a paid GitHub organization plan that renews annually in three months.
+The fiscal sponsor requires a final financial report within 60 days of closure.
+
+1.  List every financial action that must be completed before the project is fully closed,
+    including transfers, reimbursements, and reports.
+2.  Sequence them in dependency order:
+    which actions must happen before which others?
+    Which have hard deadlines imposed by external parties?
+3.  Identify which actions require sign-off from someone other than the project lead,
+    and draft the email requesting that sign-off.
 
 </section>

@@ -70,9 +70,9 @@ or English speakers in particular.
 
 </div>
 
-<section class="exercise" markdown="1">
-
 ## Exercises
+
+<section class="exercise" markdown="1">
 
 ### Before
 
@@ -81,6 +81,10 @@ or English speakers in particular.
     and/or post on your project website
     announcing your departure,
     and review it with others in a small group.
+
+</section>
+
+<section class="exercise" markdown="1">
 
 ### During
 
@@ -91,10 +95,33 @@ or English speakers in particular.
     and which can only be done when the time comes?
 1.  What is the most satisfying small thing you could do before you step away?
 
+</section>
+
+<section class="exercise" markdown="1">
+
 ### After
 
 1.  Write down (at least) three things you think you accomplished while leading your project.
 1.  Write down (at most) three things that you think you could have done better.
 1.  What are three things you would like to do after you leave your project?
+
+</section>
+
+<section class="exercise" markdown="1">
+
+### Succession Failure
+
+You identified a successor and spent six weeks gradually handing over responsibilities.
+Two weeks before your planned departure,
+they accept a job at a company,
+and their contract prohibits outside open source work.
+Your other potential successors have already made other plans based on your original timeline.
+
+1.  List every option available to you at this point,
+    including options you would prefer not to consider
+    (e.g., delaying your own departure, mothballing the project, appointing a less-qualified successor).
+2.  For each option, identify who would be most affected and what they would need to hear.
+3.  Write the message you would send to the community explaining the change of plan.
+    What do you owe them to disclose about what happened, and what is appropriately kept private?
 
 </section>

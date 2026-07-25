@@ -108,7 +108,9 @@ Recognizing them early can give people warning that projects are going to fail.
       <br>
       slippery slope
     </td>
+  </tr>
 </table>
+</div>
 
 </div>
 

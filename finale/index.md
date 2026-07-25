@@ -49,9 +49,9 @@
 -   [Repository Resilience][repository-resilience]
 -   [Beyond the Bus Factor][beyond-bus-factor]
 
-<section class="exercise" markdown="1">
-
 ## Exercises
+
+<section class="exercise" markdown="1">
 
 ### One Thing to Do This Week
 
@@ -59,13 +59,16 @@ Identify one concrete action you will take in the next five working days
 to make your project easier to close when the time comes.
 Write it down and share it with a partner, who will follow up with you next week.
 
+</section>
+
+<section class="exercise" markdown="1">
+
 ### Make a Pitch
 
 1.  Draft a 90-second verbal pitch to convince one skeptical colleague
     to join a professional organization or sign onto a collective statement.
     The pitch must name a specific organization or action,
     not just the general idea of getting involved.
-
 1.  Deliver the pitch to a partner playing a genuinely skeptical colleague:
     someone who is too busy, thinks individual action is futile,
     or worries about political exposure in their institution.

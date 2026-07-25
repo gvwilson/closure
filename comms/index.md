@@ -97,7 +97,6 @@ rather than what went wrong.
     give a concrete timeline,
     tell people  what will happen to the data and the website,
     and point users to alternatives or successors.
-
 1.  After drafting,
     swap with another pair and identify one thing the other pair's notice does well
     and one thing it could improve.
@@ -112,10 +111,8 @@ Using your project or Vaida's erosion data project,
 draft one-sentence messages for three audiences:
 
 1.  An email to a researcher who uses the data pipeline daily in their own analysis scripts.
-
 1.  A note on an outstanding pull request for
     a contributor who submitted three other pull requests in the past year.
-
 1.  A written notice to the project's institutional funder.
 
 In groups of three, compare:
@@ -123,5 +120,25 @@ In groups of three, compare:
 -   What information appears in all three messages?
 -   What appears in only one?
 -   What differs in tone, level of detail, and lead time given?
+
+</section>
+
+<section class="exercise" markdown="1">
+
+### Leak Response
+
+You planned to announce your project's shutdown next Monday
+with a carefully drafted message to contributors, users, and funders.
+On Thursday afternoon,
+a community member posts on social media that the project is being killed by management.
+You haven't notified your team or your funder yet,
+but the post is gathering attention. 
+
+1.  Draft the message you send to your team in the first 30 minutes.
+    What do you tell them, and what do you ask them *not* to do?
+2.  Draft the public post you publish within the next 2 hours.
+    How does the premature leak change the tone, timing, and content of what you had planned to say?
+3.  In groups, discuss which stakeholder relationships are most at risk from the leak.
+    What can you realistically salvage, and what is likely already damaged beyond repair?
 
 </section>

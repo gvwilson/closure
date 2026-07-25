@@ -78,7 +78,6 @@
 
 1.  Work individually for ten minutes
     to make a list of everything that belongs to your project.
-
 1.  Compare lists with others in your group.
     What did they include that you missed and vice versa?
     What did someone include that other people think isn't actually part of the project?
@@ -104,7 +103,6 @@ Add one thing to each of the following lists:
 ### Who and What
 
 1.  What would your project be unable to do if you were unavailable for three months?
-
 1.  Which of your project's activities depend on personal accounts
     rather than accounts dedicated to the project?
 
@@ -121,7 +119,6 @@ Add one thing to each of the following lists:
         (distinguish between who must be consulted and who has an actual veto)
     -   What assets must be preserved before shutdown is complete, and how
     -   What obligations must be honoured before the project can be considered closed
-
 1.  Give your document to a partner and ask them to find one realistic scenario
     it does not handle.
     What happens if the person with authority is unavailable?

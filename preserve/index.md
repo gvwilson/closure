@@ -74,9 +74,29 @@ because of the protocol's resilience.
 -   Document these to record the project's actual state
     and to avoid passing silent assumptions to anyone who inherits the work
 
+## Exercises
+
 <section class="exercise" markdown="1">
 
-## Exercises
+### Downstream Impact
+
+1.  Map your project's downstream dependencies,
+    i.e.,
+    the other projects, tools, services, or workflows that depend on yours.
+    Include both declared dependencies (packages that list you as a requirement)
+    and undeclared ones (researchers who download your data,
+    instructors who use your tutorials,
+    and community groups that rely on your infrastructure).
+2.  Categorize each dependent by impact severity if your project disappeared tomorrow:
+    critical (their work stops),
+    significant (their work is impaired),
+    or minor (an inconvenience).
+3.  Prioritize your notification list and draft a one-sentence message tailored to each category.
+    What lead time does each group need, and what alternatives can you point them to?
+
+</section>
+
+<section class="exercise" markdown="1">
 
 ### Write a Last Known Good State Document
 
@@ -91,6 +111,10 @@ Each participant drafts a one-page "last known good state" document for their ow
 
 Compare drafts in groups of three: what did others ask about that you had not thought to include?
 
+</section>
+
+<section class="exercise" markdown="1">
+
 ## Normalized Deviations List
 
 Work individually for ten minutes, then debrief in groups:
@@ -99,7 +123,6 @@ Work individually for ten minutes, then debrief in groups:
     but that you have all learned to live with
     (e.g., a dependency nobody wants to touch
     or a process that only works because one person knows the trick).
-
 1.  For each item, explain whether you would
     document it honestly in the last known good state document,
     fix it before shutdown,

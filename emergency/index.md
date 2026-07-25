@@ -168,9 +168,9 @@ The two streams of work need to run in parallel.
     -   Someone whose visa, health coverage, or family income is threatened may not have a choice
     -   Which is precisely why those who do have a choice should exercise it
 
-<section class="exercise" markdown="1">
-
 ## Exercises
+
+<section class="exercise" markdown="1">
 
 ### Categories Before Tasks
 
@@ -178,11 +178,9 @@ The two streams of work need to run in parallel.
     take three minutes to write down every *category* of thing
     that would need to be addressed if your project shut down at the end of this week.
     Write only categories, not specific tasks.
-
 1.  Compare your list with a partner.
     What categories did your partner include that you missed?
     What did you over-specify?
-
 1.  Debrief as a group.
     Most lists focus heavily on one or two categories (usually code or data)
     while omitting others entirely
@@ -191,15 +189,17 @@ The two streams of work need to run in parallel.
     but a predictable failure of recall under pressure.
     The point of making a MoSCoW checklist is to counteract this.
 
+</section>
+
+<section class="exercise" markdown="1">
+
 ### Triage Under Pressure
 
 Use Liam's scenario (end-of-week shutdown of an open source tool):
 
 1.  List everything that would need to be done to close the project properly.
-
 1.  Apply MoSCoW: sort each item into must, should, could, or won't,
     given a five-day deadline and one person working half-time.
-
 1.  Identify the single most important thing Liam can do in the first two hours.
 
 </section>
