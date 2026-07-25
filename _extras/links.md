@@ -1,5 +1,5 @@
-[asf]: https://apache.org/
 [asf-attic]: https://attic.apache.org/process.html
+[asf]: https://apache.org/
 [beyond-bus-factor]: https://beyondthebusfactor.org/
 [bitbucket]: https://bitbucket.org/
 [blue-oak]: https://blueoakcouncil.org/license/1.0.0
@@ -10,14 +10,15 @@
 [citation-cff]: https://citation-file-format.github.io/
 [climategate]: https://en.wikipedia.org/wiki/Climatic_Research_Unit_email_controversy
 [codeberg]: https://codeberg.org/
-[codemeta]: https://codemeta.github.io
 [codemeta-gen]: https://codemeta.github.io/codemeta-generator/
+[codemeta]: https://codemeta.github.io
 [creative-commons]: https://creativecommons.org/
 [ethical-source]: https://ethicalsource.dev/
-[github]: https://github.com/
 [github-takedowns]: https://github.com/github/transparency/tree/main/data/government_takedowns
+[github]: https://github.com/
 [gitlab]: https://gitlab.com/
 [gna-wiki]: https://en.wikipedia.org/wiki/Gna!
+[healthchecks]: https://healthchecks.io/
 [hoye-retire]: https://exple.tive.org/blarg/2025/11/11/historical-reasons-2/
 [jeff]: https://third-bit.com/2018/03/20/goodbye-jeff/
 [ocos]: https://gvwilson.github.io/change/
@@ -27,3 +28,4 @@
 [ospo]: https://sustainoss.org/academic-map/universities/index.html
 [repository-resilience]: https://www.esipfed.org/repository-resilience/
 [sourceforge-wiki]: https://en.wikipedia.org/wiki/SourceForge
+[uptime-robot]: https://uptimerobot.com/

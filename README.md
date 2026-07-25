@@ -79,6 +79,7 @@ This workshop therefore caters to two different learners:
 1.  [Firing and Being Fired](@/fire/)
 1.  [Handing Over](@/handover/)
 1.  [Dumb Ways to Die](@/nesbitt/)
+1.  [Disasters](@/disaster/)
 
 </div>
 </div>
