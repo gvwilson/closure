@@ -138,7 +138,7 @@
 -   Go for long walks
     -   Or cook some healthy meals
     -   Or pick up the guitar you haven't touched in years
-    -   anything that requires you to focus on something else for a while
+    -   Anything that requires you to focus on something else for a while
 -   This isn't just for your mental health
     -   Exhausted people make poor decisions, and you need to be at the top of your game
 -   And remember, other people *do* care about you
