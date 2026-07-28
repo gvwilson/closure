@@ -1,408 +1,302 @@
 # Disasters for Small Teams
 
-This appendix is a short guide to disaster planning and recovery
-for organizations whose "IT department" fits around a single table,
-such as a small company or a research software team.
-The recommendations assume you are doing everything yourself,
-on top of your day job,
+In 2025, the US government launched an unprecedented series of
+short-notice cuts and shutdowns at its own scientific research groups.
+Twelve months later, GitHub briefly dropped below 90% availability for
+the first time, and at the time of writing, wildfires in France, Spain,
+and elsewhere have forced researchers from the homes and labs. These
+events and others have reminded us just how dependent we have become on
+computing to do science, and just how fragile our computing systems can
+be.
+
+This paper is a short guide to disaster planning and recovery for a
+research software team whose "IT department" fits around a single table.
+The recommendations assume you are doing everything yourself on top of
+your regular job, that you *aren't* an experienced system administrator,
 and that a single person's absence can leave a critical gap.
 
-The goal is not a perfect plan.
-The goal is a plan that works well enough for you to survive the worst day of your team's existence,
-written by people who have a dozen other things to do.
-Keep it short,
-keep it tested,
-and keep it alive.
+## Tip 1: Know your risks.
 
-## Risk Assessment and Impact Analysis
+For a small team, the most likely disasters are a stolen or dead laptop,
+a team member who takes the only knowledge of something with them, an
+online service provider that locks you out or disappears (including
+another research project that loses its funding), or a mistaken
+`DROP TABLE` or `rm -rf` that wipes something important. Plan for these
+specifically before worrying about floods or fires.
 
--   Make a simple list of every service your team depends on to function:
-    source control (GitHub/GitLab), email, chat, CI/CD,
-    your production application, your database, your domain registrar,
-    your cloud provider, and the laptops your team codes on.
-    If you are a research team, add your data repository,
-    your grant-management portal,
-    and any shared lab instrument controllers.
--   For each service, answer two questions and write the answers in a shared document:
-    1.  How long can we be without it before work stops dead?
-        This is your Recovery Time Objective (RTO).
-    2.  How much data can we afford to lose: the last hour's? The last day's? A week's?
-        This is your Recovery Point Objective (RPO).
--   Identify the single points of failure that are within your control.
-    Common ones in a small team are:
-    -   the one person who knows the deployment process
-    -   the one credit card that pays for all the cloud services
-    -   the one SSH key that can access production
-    -   one laptop that holds the only copy of the code-signing certificate
--   List every external service you cannot control and ask what happens if it disappears.
-    -   If GitHub is down for a day, can you still ship?
-    -   If your cloud provider suspends your account by mistake,
-        do you have a recent database dump outside that provider?
-    -   If your domain registrar is compromised, how quickly can you point DNS somewhere else?
--   For a small team, the most realistic threat scenarios are listed below.
-    Plan for these specifically before worrying about floods or fires.
-    -   A laptop is stolen or dies
-    -   A team member leaves suddenly and takes the only knowledge of something with them
-    -   A SaaS provider locks you out or goes out of business
-    -   A ransomware attack encrypts your shared files
-    -   A mistaken `DROP TABLE` or `rm -rf` wipes something important
--   Revisit this list whenever there's a new dependency,
-    a new team member,
-    or a new project.
-    For a team of this size,
-    this should take thirty minutes over coffee once a quarter.
+Start by making a point-form list of every service your team depends on
+to function, such as source code hosting, email, chat, your own
+database, the external data repository you share data with, the web
+service you provide to colleagues, the web services they provide that
+you use, your grant-management portal, your domain registrar, your cloud
+provider, the laptops your team work on, and any shared lab instrument
+controllers. For a small team, this will take about an hour the first
+time through, and 15-30 minutes per quarter for review and upate.
 
-## Planning and Governance
+A Markdown file in your source control repository or a shared Google Doc
+is the right tool for this. For each service, answer two questions in
+that document:
 
--   You do not need a steering committee.
-    You need one person (probably you) who has authority to declare "this is a disaster"
-    and who knows where the recovery checklist lives.
-    Make sure you have an alternate in case that person is the one who has lost their laptop.
--   Write the plan in a single *shared* document.
-    It doesn't need to be signed off by anyone,
-    but everyone on the team needs to be able to find it in thirty seconds or less.
-    Put the link in your team chat's pinned messages and
-    (if you have a physical office)
-    tape it to the fridge.
--   State the disaster-declaration criteria in plain language,
-    such as,
-    "we haven't been able to deploy for more than two hours",
-    "our site is 404'ing for more than 10% of users",
-    "the production database is unreachable",
-    or,
-    "we have confirmed ransomware encryption on a shared drive".
--   The recovery checklist should be a numbered point-form list of concrete actions.
-    If a step requires a command that only one person knows,
-    you have a bus-factor problem:
-    fix it *before* you need the checklist.
-    For example:
-    1. Send a message to #incidents in Slack.
-    2. SSH into the database host.
-    3. Run `./restore-db.sh prod 2026-07-25`.
-    4. Verify the health-check endpoint returns 200.
--   Store the plan in at least two places that cannot fail simultaneously,
-    e.g.,
-    the shared team drive plus a printed copy in a desk drawer
-    or a PDF on a personal phone.
-    If the plan lives only on GitHub and GitHub is down,
-    you effectively have no plan.
--   At this scale, every team member is part of the recovery team.
-    Make sure everyone has read the plan at least once
-    and knows their first action if a disaster is declared.
+1.  How long can you be without it before work stops dead? This is your
+    *Recovery Time Objective* (RTO).
 
-## Communication and Notification
+2.  How much data can you afford to lose: the last hour's work, the last
+    day's, a week's? This is your *Recovery Point Objective* (RPO).
 
--   Maintain a single out-of-band communication channel
-    that does not depend on your normal infrastructure.
-    For example,
-    if you use Slack,
-    agree *in advance* on the Signal group or plain old phone tree
-    that you will use if Slack goes down.
-    Make sure the fallback is written in your plan.
--   Keep a printed (or phone-screenshot) contact list
-    with every team member's mobile number and a personal email address.
-    As with the plan itself,
-    do not store this only in a shared drive:
-    it may be part of the outage.
--   Pre-write three messages and store them with the plan
-    (because copying and pasting is faster than composing under stress):
-    1.  One for the team:
-        "This is a declared incident: meet in the Signal group".
-    2.  One for users or stakeholders
-        "We are investigating an outage and will update you within 60 minutes".
-    3.  One for after recovery
-        "Service is restored: this is what happened and what we are doing to prevent recurrence".
--   If you have customers, users, or a PI who needs to know what's going on,
-    designate one person as the communicator
-    so that everyone else can focus on fixing the problem.
-    That person does not need to be technical:
-    they need to be calm and reliable.
--   Silence erodes trust faster than bad news,
-    so update stakeholders at regular intervals
-    (e.g., every 60 minutes or at 10:00 am and 3:00 pm)
-    even if the update is "still working on it".
+Next, identify the single points of failure that are within your
+control. Common ones in a small team are the person who knows the
+deployment process, the credit card that pays for all the cloud
+services, and the SSH key that can access production. For each one, ask
+what happens if it disappears. For example, if your cloud provider
+suspends your account by mistake, can you still run analysis pipelines?
+Or if your domain registrar is compromised, how quickly can you point
+DNS somewhere else?
 
-## Testing and Exercises
+## Tip 2: Make a plan.
 
--   An hour-long walkthrough is the best (or only) way
-    to test your plan.
-    Once a quarter, gather the team and talk through a scenario:
-    "It's Tuesday morning and the production database is refusing connections.
-    What do we do?"
-    Walk through the checklist step by step and fix anything that is missing,
-    wrong,
-    or stale right there and then.
--   Test a single critical piece every quarter.
-    Don't try to test everything: you don't have the time or resources.
-    Instead, pick the thing that scares you most.
-    For example,
-    if you have never actually restored the database from a backup, do that.
--   Time every test and compare against your RTO.
-    If restoring the database takes four hours but your RTO is two hours,
-    you must either fix the former or adjust the latter.
--   The cheapest and most revealing test for a small team
-    is to hand the recovery checklist to the newest team member,
-    give them credentials to a sandbox environment,
-    and ask them to execute it without help.
-    Every point where they get stuck is a documentation or automation gap.
--   After any real incident,
-    write down what happened, what worked, what did not,
-    and one thing you will change before the end of the month.
-    Share your notes with the team.
+Once you have an idea of risks and impact, write a plan in a single
+shared document that everyone on the team can find in thirty seconds or
+less. Remember that if the plan lives only on Dropbox and Dropbox is
+down, you effectively have no plan. You should therefore store the plan
+in at least two places that cannot fail simultaneously, such as the
+shared team drive *plus* a printed copy in a desk drawer or a PDF saved
+on your phone (or better yet, every team member's phone). Pin the link
+to the document in your team chat, and if you have a physical office,
+tape a printed copy to the fridge.
 
-## Backup and Recovery Strategy
+State the disaster declaration criteria in plain language, such as "our
+data repository has been offline for more than a day" or "we have found
+ransomware encryption on a shared drive". At this scale, every team
+member is part of the recovery team, so make sure everyone has read the
+plan, understands the criteria, and knows their first action if a
+disaster is declared.
 
--   Back up your knowledge:
-    for every critical process,
-    maintain a README that another team member could follow.
-    The test is: if Alice wins the lottery and moves to Bali tomorrow,
-    can the rest of the team keep things running?
-    This is the hardest task by far,
-    because Alice probably doesn't recognize all the things she does
-    that no one else knows how to do,
-    and no one else does either because they aren't doing them.
--   Follow the 3-2-1 rule:
-    three copies of every critical dataset,
-    on two different types of media,
-    with one copy off-site.
-    For a small team this usually means the live production data,
-    an automated nightly backup to the cloud,
-    and a weekly manual download to drive stored in someone's home
-    (*not* the office).
--   Automate database backups with a script that runs nightly,
-    names the backup file with the date,
-    and uploads it to cloud storage.
-    If you have to remember to run it, it will not get run.
--   Test a full restore from backup at least once a year.
-    (Anecdotally, about a third of backups fail to restore completely.)
--   Back up your source code repositories.
-    GitHub is becoming less and less reliable,
-    and every service is subject to account bans or billing failures.
-    Run a weekly script that clones or mirrors every critical repository to a different provider,
-    or at minimum to a machine you own that is *not* in your office.
--   Back up your configuration,
-    such DNS records, environment variables, and CI/CD pipeline definitions.
-    These are small in size but catastrophic to reconstruct from memory
-    (and no, AI can't presently do it for you).
-    A single file YAML export once a week, stored alongside your code backups, is sufficient.
+Your plan should consist of a checklist for each scenario, written as a
+numbered series of specific actions like this:
 
-## Infrastructure Resilience
+1.  Send a message to `#incidents` in Slack.
 
--   Use infrastructure-as-code for everything you can.
-    A well-commented shell script that calls your cloud provider's CLI
-    is infinitely better than clicking through a web console to recreate resources.
-    Store the code in version control and mirror it somewhere safe.
--   Register your domain with a registrar that supports two-factor authentication
-    and lock your domain against transfers.
-    Enable auto-renewal on every domain and every TLS certificate.
-    Set a calendar reminder to check that auto-renewal is still working once a quarter.
--   Make sure at least two people have critical administrative credentials,
-    such the cloud root account,
-    the domain registrar login,
-    and the payment method for infrastructure,
-    and make sure they *aren't* tied to a single phone number or email address.
--   For on-premises equipment like a lab server or a NAS,
-    buy a cheap UPS and configure it to trigger a clean shutdown when battery reaches 20%.
-    Replace the UPS battery every three years:
-    they have a tendency to degrade silently.
--   For advanced teams:
-    if your application runs in the cloud,
-    configure it to run across at least two availability zones (AZs) within a single region.
-    This protects against a single-zone outage
-    (the most common cloud failure mode)
-    without the cost and complexity of multi-region hosting.
--   Think about using managed databases with automated daily snapshots
-    and point-in-time recovery enabled.
-    They cost more than running your own PostgreSQL on an EC2 instance,
-    but they are also more likely to still be running when you wake up in the morning.
-    On the other hand,
-    they make you dependent on yet another cloud service.
+2.  SSH into the database host.
 
-## Cybersecurity and Ransomware Preparedness
+3.  Run `./restore-db.sh prod latest`.
 
--   Enable multi-factor authentication (MFA) on every account that supports it.
-    SMS-based MFA is better than no MFA,
-    but an authenticator app (or passkey) is better than SMS.
-    For small teams,
-    this is the highest-impact security measure you can take.
--   Use a password manager (1Password, Bitwarden, or similar) for the whole team.
-    Every shared credential goes in the password manager:
-    no one shares passwords over chat or email.
-    Print the password manager's recovery code and store it somewhere physically safe,
-    because if you lose access to the password manager you lose access to everything.
--   Keep your laptops and servers patched.
-    Enable automatic updates for operating systems, browsers, and any server-side package manager.
-    The inconvenience of an unexpected reboot is less than the inconvenience of ransomware.
--   Make a simple, explicit policy about where data lives,
-    such as 
-    "production data never leaves the production environment",
-    "patient data is never copied to a personal laptop",
-    or "database dumps are encrypted at rest".
-    If your policy won't fit comfortably on a single page in an 11-point font,
-    rewrite it until it does.
--   Prepare a short, written response for ransomware.
-    If someone on the team sees a ransom note on a shared drive,
-    their first action is to
-    physically disconnect the affected machine from the network
-    and then call the designated incident lead.
-    Do not try to negotiate or pay without consulting legal counsel:
-    most jurisdictions have regulations about ransomware payments.
--   If you can,
-    segment your network,
-    e.g.,
-    put backup storage on a separate cloud account
-    with credentials that are not stored on any production server.
-    If an attacker compromises your application server,
-    they should not get your backups as well.
--   For a research team handling sensitive data,
-    check whether your institution has a security office that offers free consultation.
-    You may have obligations you are not aware of
-    under HIPAA, GDPR, or your funder's data-management plan.
+4.  Verify the database now returns an HTTP 200 status code.
 
-## Incident Response
+> If a step requires a command that only one person knows, you have a
+> *lottery-factor* problem. At this point you should therefore ask
+> yourself, "If Alice wins the lottery and moves to Bali tomorrow, can the
+> rest of the team keep things running?" This is the hardest part of
+> planning by far, because Alice probably doesn't recognize all the things
+> she does that no one else knows how to do, and no one else does either
+> because they are not doing them.
 
--   Stabilize first, investigate later:
-    your first goal when something breaks is to contain the damage,
-    not to find the root cause.
--   Assign clear roles for the duration of the incident:
-    one person leads the technical response,
-    one person handles communication,
-    everyone else does what the leads tell them to.
--   Create an incident log *as you work*:
-    a shared Google Doc or a thread in your out-of-band chat is good enough.
-    Timestamp every significant action,
-    e.g.,
-    "14:32: noticed database unreachable",
-    "14:35: attempted restart.
-    The log keeps the team in sync and gives you a record for the post-incident review.
--   Escalate early.
-    If you are on a cloud provider's support plan,
-    open a ticket the moment you suspect the problem is on their side.
-    You can close it if you fix things yourself;
-    you cannot get back the two hours something outside your control.
--   Conduct a review within 48 hours of the incident.
-    The goal is to identify what in the system allowed the incident to happen,
-    not who made a mistake.
-    Write down one concrete action item and assign it to one person with a deadline.
-    (It helps to have someone outside the team moderate this review.)
--   Treat every incident as a disaster-recovery test.
-    If the incident revealed that your backup script had been silently failing for three weeks,
-    fix the monitoring today.
+## Tip 3: Back up everything.
 
-## People and Knowledge Resilience
+Follow the *3-2-1 rule* [%b Krogh2009 %]: three copies of every critical
+dataset, on two different types of media, with one copy off-site. For a
+small team these three copies are usually (a) the live production
+database, (b) an automated nightly backup to the cloud, and (c) a weekly
+download to a drive stored in someone's home (*not* the office).
 
--   The single biggest risk for a small team is the lottery factor,
-    i.e.,
-    the number of people who would have to win the lottery and move to Bali
-    in order for work to grind to halt.
-    For most small teams that number is one;
-    it isn't always possible to increase it,
-    but there *are* steps you can take.
--   Cross-train on every critical operation.
-    Deployments, database restores, DNS changes, certificate renewals, and billing
-    should all be practiced by at least two people.
-    (This is a great way to do professional development.)
--   Maintain a README that describes how to onboard a new hire,
-    how to ship a release,
-    how to restore the database,
-    how to rotate secrets
-    and how to pay the bills.
-    Make a habit of going through it each time you do the task
-    so that you're more likely to be aware of what needs to be added, updated, or removed.
--   Maintain an offboarding checklist,
-    and when someone leaves, revoke their access within hours.
-    The offboarding checklist is part of the disaster plan:
-    a disgruntled former team member with lingering access is a disaster waiting to happen.
+Automate backups by writing a shell script that runs nightly, names the
+backup file with the date and time, and uploads it to the cloud. Use
+`cron` or systemd timers to schedule it. Automation is crucial: if you
+have to remember to run the script, it will not get run. The small-team
+tool is as simple as `pg_dump` plus `aws s3 sync`: nothing more
+expensive or complicated is needed.
 
-## Tooling and Automation
+Back up your source code to at least two different services (*not* two
+different repositories on the same service). GitHub is becoming less and
+less reliable, and every service is subject to account bans or billing
+failures. As we learned from the demise of SourceForge [%b Tamburri2020 %],
+a `git push --mirror` to a secondary remote may be the most
+cost-effective one-liner you ever write.
 
--   Use the cheapest and simplest tools you can.
-    If you are reading this guide,
-    you almost certainly *don't* need Terraform Cloud or Pulumi Enterprise:
-    you need a Git repository with a shell script.
-    Similarly,
-    you don't need an enterprise-ready incident-management platform:
-    you need a shared document and a Signal group.
--   Automate the things that happen most often
-    and the things that are most dangerous to get wrong.
-    Deployments, backups, and certificate renewals are top items for most small teams.
--   Monitor the things that you would get out of bed at 3 a.m. to fix.
-    (Disk space on a production server you share with team members on another continent
-    is top of my list.)
-    A free-tier monitoring service like [Uptime Robot][uptime-robot]
-    or [Healthchecks.io][healthchecks] is infinitely better than no monitoring.
-    Don't roll your own, at least not to start with.
--   Have at least one independent channel for critical alerts,
-    e.g., email to a personal address or an SMS gateway.
-    After all,
-    if your monitoring system can only send alerts through Slack and Slack is what is down,
-    you won't get the alert. 
--   In a real disaster,
-    you may need to restore several times.
-    A recovery script that corrupts data the second time it is run
-    is therefore as bad as no script at all.
-    You should therefore check that your automation is *idempotent*
-    by running it and then running it again.
+Back up your configuration as well, such as DNS records, environment
+variables, and CI/CD pipeline definitions. These are small in size but
+catastrophic to reconstruct from memory (and no, AI cannot presently do
+it for you). A single export once a week, stored alongside your code
+backups, is sufficient.
 
-## Chaos Engineering
+Finally, *test a full restore from backup* at least once a year.
+Anecdotally, about a third of backups fail to restore completely.
+Remember that you may need to restore several times in a real disaster.
+A recovery script that corrupts data the second time it is run is
+therefore as bad as no script at all. Check that your automation is
+*idempotent* by running it and then running it again.
 
--   *Chaos engineering* is a practice of deliberately breaking things in controlled ways
-    to see if your systems and your team respond the way you expect.
-    Start with the smallest possible experiment:
-    kill one non-critical process on your server,
-    then verify that your monitoring catches it
-    and that the service recovers without manual intervention.
--   Work up to "is the database really failing over?":
-    manually trigger a failover on your database during a quiet period
-    and confirm that your application handles the brief interruption gracefully.
--   Similarly,
-    try pulling the plug on a dependency,
-    e.g.,
-    temporarily block your application's access to an external API
-    and observe check that your retry logic and error messages behave sanely.
--   Run experiments during working hours when the whole team is available.
-    The goal is not to cause pain:
-    it is to verify that your recovery mechanisms work
-    and that everyone knows what to do when things go wrong.
-    (And yes,
-    give any external users a heads-up before you do this…)
--   Keep a log of experiments in the same shared document as your DR plan.
-    If an experiment reveals a gap, add it to your recovery checklist immediately.
+> More advanced teams should consider using managed databases with
+> automated daily snapshots and point-in-time recovery enabled. They cost
+> more than running your own PostgreSQL on an EC2 instance, but they are
+> also more likely to still be running when you wake up in the morning. On
+> the other hand, they make you dependent on yet another cloud service. If
+> you can put backup storage on a separate cloud account with credentials
+> that are not stored on any production server, do so. If an attacker
+> compromises your application server, they should not get your backups as
+> well.
 
-## Financial Planning
+## Tip 4: Communicate clearly.
 
--   You do not have a DR budget line item, but you still have DR costs.
-    Identify them: the extra cloud spend for backup storage,
-    the cost of a password manager,
-    the domain and certificate renewals,
-    and perhaps a small monthly fee for an off-site backup service.
--   Calculate what a day of downtime costs you in concrete terms,
-    e.g., lost sales, missed experiment time, or failing to meet a grant deadline blown.
-    That number tells you whether it is worth spending $50/month on a managed database
-    or $200/year on a backup service.
--   If the primary credit card expires or is cancelled,
-    you do not want your infrastructure shut down while you sort out billing,
-    so have a second payment method on file for your cloud provider and your domain registrar.
-    A second team member's card,
-    or a prepaid card with a small balance and auto-top-up,
-    is usually good enough.
--   Check the cloud bill at least once a month.
-    A misconfigured resource can generate a catastrophic bill even for a small team.
-    If you can,
-    set budget alerts in your cloud provider's console at 50% and 90% of your normal monthly spend,
-    sent to at least two people.
+Choose a single communication channel that does not depend on your
+normal infrastructure. For example, if you use Slack, agree *in advance*
+on a Signal group or plain old phone tree that you will use if Slack
+goes down. Make sure the fallback is written in your plan.
 
-## Final Checkpoints
+Keep a printed (or phone-screenshot) contact list with every team
+member's mobile number and a personal email address. As with the plan
+itself, do not store this only in a shared drive that may be affected by
+an outage.
 
--   Once a quarter, read and update the recovery document.
-    At the same time,
-    check that every named person still works on the team
-    and that every phone number still rings the right phone.
--   Verify that the backup scripts are running
-    by actually checking the backup bucket for recent files.
-    A "success" email from a task that has been writing to `/dev/null` for a month
-    is worse than a failure email.
-    (Go ahead, ask me how I know…)
--   Ask the person who joined the team most recently to find the recovery document
-    and explain the first three steps.
-    If it takes more than two minutes, make it easier to find.
+Copying and pasting is faster than composing under stress, so pre-write
+three messages and store them with the plan and in your password
+manager's shared vault:
+
+1.  For the team: "This is a declared incident: meet in the Signal
+    group."
+
+2.  For users or stakeholders: "We are investigating an outage and will
+    update you within 60 minutes."
+
+3.  For afterward: "Service is restored: this is what happened and what
+    we are doing to prevent recurrence."
+
+If you have customers, users, or a PI who needs to know what is going
+on, designate one person as the communicator so that everyone else can
+focus on fixing the problem. The communicator does not need to be
+technical: they need to be calm and reliable. Remember that silence
+erodes trust faster than bad news, so update stakeholders at regular
+intervals (for example, every 60 minutes or at 10:00 am and 3:00 pm)
+even if the update is "still working on it."
+
+## Tip 5: Test the plan.
+
+The most revealing test for a small team is to hand the recovery
+checklist to the newest team member, create a sandboxed environment for
+them to make mistakes in, and ask them to execute the plan without help.
+Every point where they get stuck is a documentation or automation gap.
+
+If no one has joined your team recently, the second-best way to test
+your plan is an hour-long walkthrough. Gather the team and present a
+scenario, such as, "It's Tuesday morning and all of Monday's data has
+disappeared from the database. What do we do?" Try to pick the thing
+that scares you most. For example, if you have never actually restored
+the database from a backup, do that. Walk through the checklist step by
+step and fix anything that is missing, wrong, or stale then and there.
+Only test one thing a quarter: your team has other things to do, and you
+don't want them to file this under "chore to avoid".
+
+Keep track of how long tests take and compare against your RTO. If
+restoring the database takes four hours but your RTO is two hours, you
+must either fix the former or adjust the latter.
+
+## Tip 6: Watch for trouble.
+
+Monitor the things that you would get out of bed at 3:00 a.m. to fix.
+Free-tier monitoring services like [Uptime Robot](https://uptimerobot.com/)
+and [Healthchecks.io](https://healthchecks.io/) are infinitely better
+than no monitoring. Do not roll your own, at least not to start with.
+
+Check your cloud bill at least once a month: a misconfigured resource
+can generate a catastrophic bill even for a small team. If you can, set
+budget alerts in your cloud provider's console at 50% and 90% of your
+normal monthly spend, sent to at least two people. Most cloud providers
+offer free-tier budget alerting adequate for a small team.
+
+## Tip 7: Lock down your accounts.
+
+Enable multi-factor authentication (MFA) on every account: this is the
+highest-impact security measure you can take [%b Smalls2021 %]. SMS-based
+MFA is better than no MFA, but an authenticator app or passkey is better
+than SMS.
+
+Use a password manager like 1Password or Bitwarden for the whole team.
+Bitwarden's free tier is often enough for a 3--5 person team. Every
+shared credential goes in the password manager: no one shares passwords
+over chat or email. Print the password manager's recovery code and store
+it somewhere physically safe, because if you lose access to the password
+manager you lose access to everything.
+
+Register your domain with a registrar that supports two-factor
+authentication and lock your domain against transfers. Enable
+auto-renewal on every domain and every TLS certificate. Set a calendar
+reminder to check that auto-renewal is still working once a quarter.
+Make sure at least two people have critical administrative credentials,
+such as the cloud root account, the domain registrar login, and the
+payment method for infrastructure, and make sure these credentials are
+not tied to a single phone number or email address.
+
+Finally, maintain an offboarding checklist, and when someone leaves,
+revoke their access as soon as you can. The offboarding checklist is a
+form of disaster prevention: a disgruntled former team member with
+lingering access is trouble you don't need.
+
+## Tip 8: Harden your systems.
+
+Make a simple, explicit policy about where data lives, such as "patient
+data is never copied to a personal laptop," or "database dumps are
+encrypted at rest." If your policy will not fit comfortably on a single
+page in an 11-point font, rewrite it until it does.
+
+> If you are handling sensitive data, check whether your institution has a
+> security office that offers free consultation. You may have obligations
+> you are not aware of under HIPAA, GDPR, or your funder's data-management
+> plan.
+
+Keep your laptops and servers patched. Enable automatic updates for
+operating systems, browsers, and any server-side package manager. The
+inconvenience of an unexpected reboot is less than the inconvenience of
+ransomware.
+
+For on-premises equipment like a lab server or a NAS, buy a cheap UPS
+and configure it to trigger a clean shutdown when the battery reaches
+20%. Replace the UPS battery every three years: they have a tendency to
+degrade silently.
+
+Prepare a short, written response for ransomware. If someone on the team
+sees a ransom note on a shared drive, their first action is to
+physically disconnect the affected machine from the network and then
+call the designated incident lead. Do not try to negotiate or pay
+without consulting legal counsel: most jurisdictions have regulations
+about ransomware payments.
+
+## Tip 9: Stabilize, then investigate.
+
+The most important rule of incident response is, "Stabilize first,
+investigate later." Your first goal when something breaks is to contain
+the damage, not to find the root cause.
+
+Assign clear roles for the duration of the incident: one person leads
+the technical response, one person handles communication using the
+pre-written messages from Tip 4, and everyone else does what the leads
+tell them to.
+
+Create an incident log *as you work*: a shared Google Doc or a thread in
+your out-of-band Signal group is good enough. Timestamp every
+significant action, such as "14:32: noticed database unreachable" and
+"14:35: attempted restart." The log keeps the team in sync and gives you
+a record for the post-incident review.
+
+Escalate early. If you are on a cloud provider's support plan, open a
+ticket the moment you suspect the problem is on their side. You can
+close it if you fix things yourself; you cannot get back the two hours
+you spent hoping something outside your control would resolve itself.
+
+Finally, treat every incident as a disaster-recovery test, and conduct a
+short review within 48 hours of the incident. The goal is to identify
+what in the system allowed the incident to happen, not who made a
+mistake. Write down one concrete action item and assign it to one person
+with a deadline. If you cannot find an outside moderator for the review,
+have the team member *least* involved in the incident lead it.
+
+## Tip 10: Count the cost.
+
+You probably don't have a budget line item for disaster recovery, but
+you still have costs. Identify them: the extra cloud spend for backup
+storage, the cost of a password manager, the domain and certificate
+renewals, and perhaps a small monthly fee for an off-site backup
+service. Calculate what a day of downtime costs you in concrete terms,
+such as lost sales, missed experiment time, or a blown grant deadline.
+For a grant-funded research software team, "cost" also includes lost
+experiment time, missed paper deadlines, and collaborators who stop
+trusting you. That number tells you whether it is worth spending
+$50/month on a managed database or $200/year on a backup service.

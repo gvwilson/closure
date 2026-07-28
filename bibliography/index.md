@@ -173,6 +173,13 @@
     1998,
     [9780262611466](https://isbnsearch.org/isbn/9780262611466).
 
+<span id="Krogh2009">Krogh2009</span>
+:   Peter Krogh:
+    *The DAM Book*.
+	O'Reilly,
+	2009,
+	[9780596523572](https://isbnsearch.org/isbn/9780596523572).
+
 <span id="Kuchner2011">Kuchner2011</span>
 :   Marc J. Kuchner:
     *Marketing for Scientists: How to Shine in Tough Times*.
@@ -327,6 +334,14 @@
     2023,
     [9781982129668](https://isbnsearch.org/isbn/9781982129668).
 
+<span id="Smalls2021">Smalls2021</span>
+:   Danielle Smalls and Greg Wilson:
+    "Ten quick tips for staying safe online."
+	*PLOS Computational Biology*,
+	17(3),
+	2021,
+	[10.1371/journal.pcbi.1008563](https://doi.org/10.1371/journal.pcbi.1008563).
+
 <span id="Solnit2010">Solnit2010</span>
 :   Rebecca Solnit:
     *A Paradise Built in Hell: The Extraordinary Communities That Arise in Disaster*.
@@ -350,6 +365,14 @@
     [10.1016/j.neubiorev.2012.02.003](https://doi.org/10.1016/j.neubiorev.2012.02.003).
 
 ## T
+
+<span id="Tamburri2020">Tamburri2020</span>
+:   Damian Andrew Tamburri, Kelly Blincoe, and Fabio Palomba, and Rick Kazman:
+    "'The Canary in the Coal Mine…' A cautionary tale from the decline of SourceForge".
+    *Software: Practice and Experience*,
+	50(10),
+	2020,
+	[10.1002/spe.2874](http://dx.doi.org/10.1002/spe.2874).
 
 <span id="Towey2026">Towey2026</span>
 :   Jim Towey:
