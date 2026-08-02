@@ -41,11 +41,12 @@
 
 An [%g abstinence-solution "abstinence solution" %] is one that requires people
 to do things we know they actually won't
-(See also "[%g bullshit "bullshit" %]" [%b Frankfurt2005 %].)
-In particular, "document everything" doesn't work:
-people will always short-change writing descriptions of work in favor of actually doing work
-and fail to write down the parts of their work that they think are obvious
-in part because most of what we can write today doesn't actually address tomorrow's actual needs.
+(see also "[%g bullshit "bullshit" %]" [%b Frankfurt2005 %]).
+In particular, "document everything" doesn't work.
+People will always short-change writing descriptions of work in favor of actually doing work,
+and fail to write down the parts of their work that they think are obvious.
+This isn't laziness:
+most of what we can write today doesn't actually address tomorrow's actual needs.
 
 </div>
 
@@ -81,7 +82,7 @@ in part because most of what we can write today doesn't actually address tomorro
 
 <div class="callout" markdown="1">
 
-[%b Palazzo2025 %] identified patterns in the dynamics of corporate scandals.
+One special case is patterns in the dynamics of corporate scandals [%b Palazzo2025 %].
 Recognizing them early can give people warning that projects are going to fail.
 
 <div class="center">

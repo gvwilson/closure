@@ -86,9 +86,11 @@ rather than what went wrong.
 -   *Ambassadors* leave willingly, remain available to successors, and are the most satisfied post-exit
 -   *Governors* leave cleanly for new pursuits and disengage entirely
 
+## Exercises
+
 <section class="exercise" markdown="1">
 
-## Exercise: Write a Shutdown Notice
+### Write a Shutdown Notice
 
 1.  In pairs,
     draft a short announcement (3-5 bullet points) for your own project
@@ -105,7 +107,7 @@ rather than what went wrong.
 
 <section class="exercise" markdown="1">
 
-## Exercise: Stakeholder Message Matrix
+### Stakeholder Message Matrix
 
 Using your project or Vaida's erosion data project,
 draft one-sentence messages for three audiences:

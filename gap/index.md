@@ -2,7 +2,10 @@
 
 <p class="subtitle">start with the easy stuff</p>
 
--   Deliberate closure first: less traumatic, and the practices are good project hygiene anyway
+-   Look at deliberate closure first
+    -   Less traumatic
+    -   And the practices are good project hygiene
+-   Use software-intensive projects for most examples because they're what the author is most familiar with
 
 ## Governance
 

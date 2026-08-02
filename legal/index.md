@@ -30,8 +30,8 @@
 
 ### Sequence Under Constraint
 
-An open-source data analysis tool maintained as a US-based nonprofit.
-Primary funding is a three-year NSF grant with 18 months remaining.
+An open-source data analysis tool is maintained by a US-based nonprofit.
+Its primary funding is a three-year NSF grant with 18 months remaining.
 The GitHub organization has 400 stars and 12 contributors,
 two of whom are on visas.
 The mailing list has 800 subscribers whose email addresses are stored on a paid service.
@@ -50,7 +50,7 @@ The project holds a registered trademark on its name.
 
 ### Financial Wind-down
 
-Your project has a bank account with $4,200 remaining from a completed grant,
+Your project has a bank account with $4200 remaining from a completed grant,
 a recurring $45/month hosting bill on a team member's personal credit card,
 and a paid GitHub organization plan that renews annually in three months.
 The fiscal sponsor requires a final financial report within 60 days of closure.

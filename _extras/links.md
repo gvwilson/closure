@@ -21,7 +21,7 @@
 [healthchecks]: https://healthchecks.io/
 [hoye-retire]: https://exple.tive.org/blarg/2025/11/11/historical-reasons-2/
 [jeff]: https://third-bit.com/2018/03/20/goodbye-jeff/
-[ocos]: https://gvwilson.github.io/change/
+[ocos]: https://third-bit.com/change/
 [offline-issues]: https://github.com/jlord/offline-issues
 [orcid]: https://orcid.org/
 [osi-licenses]: https://opensource.org/licenses
