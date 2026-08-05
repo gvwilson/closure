@@ -43,17 +43,16 @@ Managing data
     -   A field laptop is stolen and the data on it has not been backed up.
     -   Your data repository announces it is shutting down.
 
-Managing a physical laboratory and/or field staff
+Managing a physical laboratory
 :   This category includes teams working in wet labs, field stations, or with
     sample collections.  Scenarios include:
-    -   A freezer fails over a long weekend.
-    -   A field researcher is injured and cannot complete data collection.
-    -   A key piece of equipment is discontinued and can no longer be serviced.
+    -   A specimen freezer fails over a long weekend.
+    -   A key piece of equipment is out of warranty and can no longer be serviced.
+    -   The notebook containing the labeling key for a set of specimens is lost.
 
-To make the advice concrete, we will use a running example: a five-person
-ecology lab that publishes an R package, runs a Shiny dashboard for
-collaborators, manages a ten-year field dataset, and maintains a wet lab
-with freezers and sample collections.
+These categories overlap: for example, a five-person ecology lab may publish an
+R package, run a Shiny dashboard for collaborators, manage a ten-year field
+dataset, and maintain a wet lab with freezers and sample collections.
 
 > **Before you start:** Many universities have research-computing groups, data
 > librarians, and environmental-health-and-safety offices whose entire job is to
@@ -63,25 +62,12 @@ with freezers and sample collections.
 
 ## Tip 1: Know your risks.
 
-For a small research group, the most likely disasters span four domains:
-
-- Software packages: a registry token expires and the person who created it has
-  left; your source-code forge suspends your account.
-- Online services: your cloud provider suspends your account; the graduate
-  student who deployed the dashboard leaves and no one else has credentials; an
-  external service your app depends on shuts down.
-- Data: a lab server's hard drive fails; a field laptop is stolen; your data
-  repository announces it is shutting down.
-- Physical lab and field work: a freezer fails over a long weekend; a field
-  researcher is injured and cannot complete data collection; a key piece of
-  equipment is discontinued.
-
-Start by making a point-form list of every service and physical asset your
-team depends on. For our ecology lab, this includes: where the R package is
-published, where the Shiny dashboard is hosted, where the ten-year field
-dataset lives, where the freezers and their contents are, and the laptops
-the team works on. For a small team, this will take about an hour the first
-time through, and 15-30 minutes per quarter for review.
+Start by making a point-form list of every service and physical asset your team
+depends on. For our ecology lab, this includes where the R package is published,
+where the Shiny dashboard is hosted, where the ten-year field dataset lives,
+where the freezers and their contents are, and the laptops the team works
+on. For a small team, this will take about an hour the first time through, and
+15-30 minutes per quarter for review.
 
 A Markdown file in a shared folder or a Google Doc is the right tool for
 this. For each item, answer two questions:
@@ -107,26 +93,28 @@ every team member's phone. Pin the link in your team chat, and if you have
 a physical office, tape a printed copy to the fridge.
 
 State the disaster declaration criteria in plain language: "our dashboard
-has been offline for more than a day," "we have found ransomware encryption
-on a shared drive," or "the -80°C freezer has been above -70°C for more
-than an hour." Every team member is part of the recovery team, so make sure
+has been offline for more than a day", "we have found ransomware encryption
+on a shared drive", or "the -80°C freezer has been above -70°C for more
+than an hour". Every team member is part of the recovery team, so make sure
 everyone has read the plan, understands the criteria, and knows their first
 action if a disaster is declared.
 
-Your plan should include a short checklist for each scenario, written as a
-numbered series of specific actions. For example:
+Your plan should include a short checklist for each scenario, written
+as a numbered series of specific actions. For example, for an online
+service outage:
 
--   For an online service outage:
-    1.  Send a message to the Signal group.
-    2.  Log into the database management console and click "Restore from
-        snapshot."
-    3.  Check that the dashboard loads and returns data correctly.
--   For a freezer failure:
-    1.  Call the lab manager at the emergency number on the printed contact
-        sheet.
-    2.  Move samples to the backup freezer in Building C, Room 112.
-    3.  Log the time, temperature, and which samples were moved in the lab
-        notebook.
+1.  Send a message to the Signal group.
+2.  Log into the database management console and click "Restore from
+    snapshot."
+3.  Check that the dashboard loads and returns data correctly.
+
+For a freezer failure:
+
+1.  Call the lab manager at the emergency number on the printed contact
+    sheet.
+2.  Move samples to the backup freezer in Building C, Room 112.
+3.  Log the time, temperature, and which samples were moved in the lab
+    notebook.
 
 > If a step requires knowledge or access that only one person has, you have a
 > *lottery-factor* problem. Ask yourself, "If Alice wins the lottery and moves
@@ -157,11 +145,10 @@ For our ecology lab, the three copies are typically:
     lab notebooks, scan or photograph key pages quarterly and save them with
     your other backups.
 
-Back up your source code to at least two different software forges
-([%b Tamburri2020 %] is a cautionary tale about relying on just one), and turn
-on automatic mirroring in GitHub or [GitLab][gitlab]'s settings.  A `git push`
-to a secondary remote is the most cost-effective one-liner you will ever write,
-but automatic mirroring is even better.
+Back up your source code to at least two different software forges, and turn on
+automatic mirroring in GitHub or [GitLab][gitlab]'s settings. A `git push` to a
+secondary remote is the most cost-effective one-liner you will ever write, but
+automatic mirroring is even better.
 
 Back up your configuration as well: DNS records, environment variables, and
 pipeline definitions. These are small in size but catastrophic to reconstruct
@@ -225,12 +212,12 @@ a.m. and no one was in the building." Pick the thing that scares you most. Walk
 through the checklist step by step and fix anything that is missing, wrong, or
 stale then and there.
 
-Over the course of a year, aim to test one scenario from each domain:
+Over the course of a year, aim to test one scenario from each applicable domain:
 
 - Restore the database from a snapshot.
-- Release your software package from the mirrored repository.
+- Release your software package from the mirrored repository (not the usual one).
 - Download and verify your dataset from its repository deposit.
-- Walk through a freezer-failure or field-evacuation drill.
+- Walk through a freezer-failure drill.
 
 Keep track of how long tests take and compare against your RTO. If restoring the
 database takes four hours but your RTO is two hours, you must either fix the
@@ -333,9 +320,13 @@ messages from Tip 4, and everyone else does what the leads tell them to.
 
 Create an incident log *as you work*: a shared Google Doc or a thread in your
 out-of-band Signal group is good enough. Timestamp every significant action:
-"14:32: freezer alarm triggered," "14:35: temperature reading -50°C and rising,"
-"14:40: began sample transfer to Building C." The log keeps the team in sync and
-gives you a record for the post-incident review.
+
+-   14:32: freezer alarm triggered
+-   14:35: temperature reading -50°C and rising
+-   14:40: began sample transfer to Building C
+
+The log keeps the team in sync and gives you a record for the post-incident
+review.
 
 Escalate early. If you are on a cloud provider's support plan, open a ticket the
 moment you suspect the problem is on their side. If the freezer repair
@@ -355,17 +346,40 @@ member *least* involved in the incident lead it.
 You probably don't have a budget line item for disaster recovery, but you still
 have costs. Identify them all:
 
-- Digital costs: cloud backup storage, password-manager subscription, domain and
-  certificate renewals, managed-database fees, repository deposit charges.
-- Physical costs: backup freezer space, equipment maintenance contracts, UPS
-  battery replacements, field-safety gear, sample-replacement materials.
-- Software costs: registry fees (if any), cloud-platform subscriptions,
-  monitoring-service fees.
+-   Digital costs: cloud backup storage, password-manager subscription, domain
+    and certificate renewals, managed-database fees, repository deposit charges.
+  
+-   Physical costs: backup freezer space, equipment maintenance contracts, UPS
+    battery replacements, field-safety gear, sample-replacement materials.
+
+-   Personnel costs: time spent on quarterly plan reviews, annual backup-restore
+    tests and disaster drills, cross-training to reduce lottery factors, and the
+    hours lost to incident response instead of research.
 
 Calculate what a day of downtime costs you in concrete terms: lost experiment
 time, missed paper deadlines, collaborators who stop trusting you, a blown grant
 deadline, or samples that cannot be replaced. For a grant-funded research group,
 "cost" also includes the graduate student who cannot finish their thesis chapter
 and the field season that cannot be re-run. That number tells you whether it is
-worth spending $50/month on a managed database or $200/year on a backup
-service. For most groups, it is.
+worth spending $50/month on a managed database or $200/year on a backup service.
+For most groups, it is.
+
+[1password]: https://1password.com/
+[bitwarden]: https://bitwarden.com/
+[cloud-sql]: https://cloud.google.com/sql
+[cran]: https://cran.r-project.org/
+[dataverse]: https://dataverse.org/
+[dryad]: https://datadryad.org/
+[duplicati]: https://duplicati.com/
+[github]: https://github.com/
+[gitlab]: https://gitlab.com/
+[healthchecks]: https://healthchecks.io/
+[osf]: https://osf.io/
+[pypi]: https://pypi.org/
+[rds]: https://aws.amazon.com/rds/
+[shiny]: https://shiny.posit.co/
+[signal]: https://signal.org/
+[slack]: https://slack.com/
+[streamlit]: https://streamlit.io/
+[uptime]: https://uptimerobot.com/
+[zenodo]: https://zenodo.org/
