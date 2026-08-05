@@ -176,9 +176,9 @@
 <span id="Krogh2009">Krogh2009</span>
 :   Peter Krogh:
     *The DAM Book*.
-	O'Reilly,
-	2009,
-	[9780596523572](https://isbnsearch.org/isbn/9780596523572).
+    O'Reilly,
+    2009,
+    [9780596523572](https://isbnsearch.org/isbn/9780596523572).
 
 <span id="Kuchner2011">Kuchner2011</span>
 :   Marc J. Kuchner:
@@ -337,10 +337,10 @@
 <span id="Smalls2021">Smalls2021</span>
 :   Danielle Smalls and Greg Wilson:
     "Ten quick tips for staying safe online."
-	*PLOS Computational Biology*,
-	17(3),
-	2021,
-	[10.1371/journal.pcbi.1008563](https://doi.org/10.1371/journal.pcbi.1008563).
+    *PLOS Computational Biology*,
+    17(3),
+    2021,
+    [10.1371/journal.pcbi.1008563](https://doi.org/10.1371/journal.pcbi.1008563).
 
 <span id="Solnit2010">Solnit2010</span>
 :   Rebecca Solnit:
@@ -370,9 +370,9 @@
 :   Damian Andrew Tamburri, Kelly Blincoe, and Fabio Palomba, and Rick Kazman:
     "'The Canary in the Coal Mine…' A cautionary tale from the decline of SourceForge".
     *Software: Practice and Experience*,
-	50(10),
-	2020,
-	[10.1002/spe.2874](http://dx.doi.org/10.1002/spe.2874).
+    50(10),
+    2020,
+    [10.1002/spe.2874](http://dx.doi.org/10.1002/spe.2874).
 
 <span id="Towey2026">Towey2026</span>
 :   Jim Towey:
