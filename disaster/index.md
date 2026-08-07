@@ -365,6 +365,87 @@ and the field season that cannot be re-run. That number tells you whether it is
 worth spending $50/month on a managed database or $200/year on a backup service.
 For most groups, it is.
 
+## Tip 11: Support your team during the crisis.
+
+The disasters discussed in the opening are not just logistics problems: each is
+a shock to your team and to the people who depend on them.  Team members may be
+scared, angry, or ashamed, particularly if they believe they caused the problem.
+Handling the human damage is therefore just as important as handling the
+technical aspects.
+
+During the acute phase of a disaster, apply the same five principles that the
+World Health Organization recommends for crisis responders:
+
+Promote safety.
+:   Before asking for status updates, confirm that everyone is not in immediate
+    personal danger.  Someone whose field laptop was stolen may not be thinking
+    clearly about data loss because they are still shaken from the theft itself.
+
+Calm the environment.
+:   Do not add to the panic.  Use a steady voice in your out-of-band chat.
+    Remind the team that the plan exists and that they have rehearsed for this.
+    Panic is contagious, but so is calm.
+
+Build self-efficacy.
+:   Remind people that they have handled difficult things before.  Give each
+    person one concrete task from the checklist so that everyone feels useful
+    rather than helpless.
+
+Foster connectedness.
+:   Use your fallback communication channel to keep the team together.
+    Isolation amplifies distress, so do not let anyone absorb the news alone.
+
+Maintain hope.
+:   In particular, do not speculate about worst cases before you have confirmed
+    them.
+
+Protect the person who may have caused the problem.  If a team member
+accidentally dropped a table from a database, left the freezer door ajar, or
+clicked a phishing link, they probably feel worse than anyone else.  Assign them
+a recovery task, even a small one, so they can contribute to the fix rather than
+sitting in the corner imagining their career is over.  Blame can wait; recovery
+cannot.
+
+Watch for exhaustion.  Disaster response is an adrenaline sprint followed by a
+long slog.  Two people working four hours each will make fewer mistakes than one
+person working eight straight, so rotate people out of the incident response
+when the acute phase is over, even if they insist they are fine.  The person who
+pulled the all-nighter to restore the database should not also be the person
+writing the post-mortem the next morning.
+
+## Tip 12: Help your team recover after the disaster.
+
+In Tip 9 said to hold the review within 48 hours. That is for gathering facts
+while memory is fresh; a second, more reflective conversation a week or two
+later gives people time to process what happened emotionally.  The goal of this
+second conversation is not to find root causes but to ask: "How are we doing?"
+
+If someone on the team caused the disaster, handle it carefully.  Most people
+who make a costly mistake are already punishing themselves more harshly than you
+ever would.  Ask them privately if they are OK.  Tell them explicitly that the
+team does not blame them, and then make sure the rest of the team acts that way.
+If you find yourself wanting to revisit the mistake in every team meeting, you
+are the one who hasn't moved on.
+
+Recognize that people recover at different speeds.  One team member may be
+joking about it by Tuesday while another is still waking up anxious on Friday.
+Both responses are normal.  Check in with each person individually a week after
+the incident, and again a month later.  Again, the question is simply: "How are
+you doing with what happened?"
+
+Watch for survivors' guilt.  For example, if your lab's data survived a building
+fire but a neighbouring group lost everything, your team may feel they got lucky
+rather than prepared.  They may not want to celebrate their own recovery when
+others are still suffering.  Let them talk about it.  If possible, offer
+practical help to affected colleagues, such as sharing backup space, offering
+spare equipment, or simply bringing them coffee.
+
+Finally, celebrate the recovery, not just the disaster.  When the dashboard is
+back, the data is restored, or the samples are safe, take a moment to
+acknowledge the work that made it possible.  A short thank-you message that says
+"we handled this" costs nothing and pays dividends the next time something goes
+wrong.
+
 [1password]: https://1password.com/
 [bitwarden]: https://bitwarden.com/
 [cloud-sql]: https://cloud.google.com/sql
