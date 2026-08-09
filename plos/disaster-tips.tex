@@ -1,0 +1,527 @@
+\documentclass[10pt,letterpaper]{article}
+\input{settings}
+
+\begin{document}
+\vspace*{0.2in}
+
+\begin{flushleft}
+{\Large
+\textbf\newline{Ten Quick Tips for Managing IT Disasters in Small Research Teams}
+}
+\newline
+\\
+{Greg Wilson}\textsuperscript{1*}
+\\
+\bigskip
+\textbf{1} Third Bit, Toronto, Ontario, Canada\\
+* Corresponding author, gvwilson@third-bit.com.
+\end{flushleft}
+
+In 2025, the US government launched an unprecedented series of attacks on its
+own scientific research groups.  Twelve months later, \withurl{GitHub}{https://github.com/}
+briefly dropped below 90\% availability for the first time, and at the time of
+writing, wildfires in Canada, France, Spain, and elsewhere have forced
+researchers from the homes and labs. These events and others have reminded us
+just how fragile research computing systems can be.
+
+This paper is a short guide to disaster planning and recovery for a research
+software team that fits comfortably around a single table.  The tips assume you
+are doing everything yourself on top of your regular job, and that you *aren't*
+an experienced system administrator.
+
+\section*{Four Kinds of Teams}
+
+Despite the disclaimer above, early versions of this guide focused primarily on
+teams that run online services that other researchers use.  This version
+generalizes the advice to handle three other types of groups as well.
+
+\begin{description}
+
+\item[Providing a simple online service]
+Your research group runs a \withurl{Shiny}{https://shiny.posit.co/} app or a \withurl{Streamlit}{https://streamlit.io/}
+dashboard so that collaborators can query data.  Disasters scenarios
+include:
+\begin{itemize}
+\item Your cloud provider suspends your account.
+\item The graduate student who deployed the service leaves and no one else has credentials.
+\item Your service depends on a database that another group maintains, and that group shuts down on short notice.
+\end{itemize}
+
+\item[Publishing a software package]
+Your group releases software to public registries like \withurl{PyPI}{https://pypi.org/} or
+\withurl{CRAN}{https://cran.r-project.org/} and wants those releases to survive the group's dissolution.
+Scenarios include:
+\begin{itemize}
+\item Your PyPI token expires and the person who created it has left.
+\item GitHub suspends your account.
+\item Your institutional web hosting is turned off.
+\end{itemize}
+
+\item[Managing data]
+Your group produces datasets in the lab or in the field that are shared with
+collaborators and deposited in repositories.  Scenarios include:
+\begin{itemize}
+\item A lab server's hard drive fails.
+\item A field laptop is stolen and the data on it has not been backed up.
+\item Your data repository announces it is shutting down.
+\end{itemize}
+
+\item[Managing a physical laboratory]
+This category includes teams working in wet labs, field stations, or with
+sample collections.  Scenarios include:
+\begin{itemize}
+\item A specimen freezer fails over a long weekend.
+\item A key piece of equipment is out of warranty and can no longer be serviced.
+\item The notebook containing the labeling key for a set of specimens is lost.
+\end{itemize}
+
+\end{description}
+
+These categories overlap: for example, a five-person ecology lab may publish an
+R package, run a Shiny dashboard for collaborators, manage a ten-year field
+dataset, and maintain a wet lab with freezers and sample collections.
+
+\begin{notebox}
+
+Before you start: Many universities have research-computing groups, data
+librarians, and environmental-health-and-safety offices whose entire job is to
+help with exactly these problems. Find those people and ask for help before
+assuming you must do everything yourself. This paper tells you what to ask
+for; they can often provide it.
+
+\end{notebox}
+
+\section*{Tip 1: Know your risks.}
+
+Start by making a point-form list of every service and physical asset your
+team depends on. For our ecology lab, this includes: where the R package is
+published, where the Shiny dashboard is hosted, where the ten-year field
+dataset lives, where the freezers and their contents are, and the laptops
+the team works on. For a small team, this will take about an hour the first
+time through, and 15-30 minutes per quarter for review.
+
+A Markdown file in a shared folder or a Google Doc is the right tool for
+this. For each item, answer two questions:
+
+\begin{enumerate}
+
+\item
+  How long can you be without it before work stops dead? This is your
+  \emph{Recovery Time Objective} (RTO).
+
+\item
+  How much data can you afford to lose: the last hour's work, the last
+  day's, a week's? This is your \emph{Recovery Point Objective} (RPO).
+
+\end{enumerate}
+
+Next, identify the single points of failure within your control: the person
+who knows the deployment process, the credit card that pays for cloud
+services, the person with the only key to the -80°C freezer. For each, ask
+what happens if it disappears.
+
+\section*{Tip 2: Make a plan.}
+
+Once you understand your risks, write a plan in a single shared document
+that everyone on the team can find in thirty seconds or less. Store the
+plan in at least two places that cannot fail simultaneously, such as the
+shared team drive *plus* a printed copy in a desk drawer or a PDF saved on
+every team member's phone. Pin the link in your team chat, and if you have
+a physical office, tape a printed copy to the fridge.
+
+State the disaster declaration criteria in plain language: ``our dashboard
+has been offline for more than a day'', ``we have found ransomware encryption
+on a shared drive'', or ``the -80°C freezer has been above -70°C for more
+than an hour''. Every team member is part of the recovery team, so make sure
+everyone has read the plan, understands the criteria, and knows their first
+action if a disaster is declared.
+
+Your plan should include a short checklist for each scenario, written as a
+numbered series of specific actions. For example, for an online service outage:
+
+\begin{enumerate}
+\item Send a message to the Signal ghttps://signal.org/.
+\item Log into the database management console and click ``Restore from snapshot''.
+\item Check that the dashboard loads and returns data correctly.
+\end{enumerate}
+
+For a freezer failure:
+
+\begin{enumerate}
+\item Call the lab manager at the emergency number on the printed contact sheet.
+\item Move samples to the backup freezer in Building C, Room 112.
+\item Log the time, temperature, and which samples were moved in the lab notebook.
+\end{enumerate}
+
+\begin{notebox}
+
+If a step requires knowledge or access that only one person has, you have a
+\emph{lottery-factor} problem. Ask yourself, "If Alice wins the lottery and moves
+to Bali tomorrow, can the rest of the team keep things running?"  This is the
+hardest part of planning by far, because Alice probably doesn't recognize all
+the things only she knows how to do, and no one else does either because they
+are not doing them.
+
+\end{notebox}
+
+\section*{Tip 3: Back up everything.}
+
+Follow the \emph{3-2-1 rule} \cite{krogh2009}: three copies of every critical
+asset, on two different types of media, with one copy off-site. This applies to
+datasets, software releases, lab notebooks, and configuration information
+equally.
+
+For our ecology lab, the three copies are typically:
+
+\begin{enumerate}
+\item
+  The working copy on a lab server or shared drive.
+\item
+  An automated backup. If your institution offers a research computing backup
+  service, use it. If not, use a managed database (e.g., \withurl{Amazon RDS}{https://aws.amazon.com/rds/} or
+  \withurl{Google Cloud SQL}{https://cloud.google.com/sql}) with automatic daily snapshots (no scripting
+  required). For files, GUI tools like \withurl{Duplicati}{https://duplicati.com/} or your cloud
+  provider's desktop sync app are sufficient.
+\item
+  An off-site deposit. For datasets, deposit snapshots in an institutional or
+  domain repository (\withurl{Dataverse}{https://dataverse.org/},
+  \withurl{Dryad}{https://datadryad.org/}, \withurl{Zenodo}{https://zenodo.org/},
+  or \withurl{OSF}{https://osf.io/}) that provides a DOI. For software, connect Zenodo or figshare
+  to your repository so every tagged release is automatically archived. For
+  lab notebooks, scan or photograph key pages quarterly and save them with
+  your other backups.
+\end{enumerate}
+
+Back up your source code to at least two different software forges, and turn on
+automatic mirroring in GitHub or \withurl{GitLab}{https://gitlab.com/}'s settings. A
+\texttt{git push} to a secondary remote is the most cost-effective one-liner you
+will ever write, but automatic mirroring is even better.
+
+Back up your configuration as well: DNS records, environment variables, and
+pipeline definitions. These are small in size but catastrophic to reconstruct
+from memory. A single export once a week, stored alongside your other backups,
+is sufficient.
+
+Finally, \emph{test a full restore from backup} at least once a year.
+Anecdotally, about a third of backups fail to restore completely. Remember that
+you may need to restore several times in a real disaster. Check that your
+restore process is *idempotent* by running it and then running it again: a
+recovery that corrupts data the second time is as bad as no recovery at all.
+
+\begin{notebox}
+
+If you can store backups on a separate cloud account with credentials that are
+not stored on any production server, do so. If an attacker compromises your
+main account, they should not get your backups as well.
+
+\end{notebox}
+
+\section*{Tip 4: Communicate clearly.}
+
+Choose a single communication channel that does not depend on your normal
+infrastructure. If you use \withurl{Slack}{https://slack.com/}, agree \emph{in
+advance} on a \withurl{Signal}{signal} group or a phone tree for when Slack is
+unavailable.  Make sure the fallback is written in your plan.
+
+For lab and field staff, maintain a printed contact tree: if the freezer alarms
+at 2:00 a.m., who calls whom? Post it on the lab fridge and save a photo on
+every team member's phone.
+
+Keep a printed (or phone-screenshot) contact list with every team member's
+mobile number and a personal email address. Do not store this only in a shared
+drive that may be affected by an outage.
+
+Pre-write messages and store them with the plan and in your password manager's
+shared vault:
+
+\begin{enumerate}
+\item
+  For the team: ``This is a declared incident: meet in the Signal group.''
+\item
+  For users of your online service: ``We are investigating an outage and
+  will update you within 60 minutes.''
+\item
+  For collaborators waiting on field data: ``We have lost connectivity at
+  the field site. Data collected so far is safe; expect a delay of [X]
+  days.''
+\item
+  For afterward: ``Service is restored / the situation is under control.
+  Here is what happened and what we are doing to prevent recurrence.''
+\end{enumerate}
+
+Designate one person as the communicator so that everyone else can focus on
+fixing the problem. The communicator does not need to be technical: they need to
+be calm and reliable. Silence erodes trust faster than bad news, so update
+stakeholders at regular intervals (for example, every 60 minutes or at 10:00 am
+and 3:00 pm) even if the update is "still working on it."
+
+\section*{Tip 5: Test the plan.}
+
+The most revealing test for a small team is to hand the recovery checklist to
+the newest team member, give them a test copy that they can break without
+consequences, and ask them to execute the plan without help. Every point where
+they get stuck is a documentation or automation gap.
+
+If no one has joined your team recently, gather everyone for an hour-long
+walkthrough. Present a scenario: ``It's Tuesday morning and all of Monday's data
+has disappeared from the database'', or ``The -80°C freezer alarm went off at 3:00
+a.m. and no one was in the building''. Pick the thing that scares you most. Walk
+through the checklist step by step and fix anything that is missing, wrong, or
+stale then and there.
+
+Over the course of a year, aim to test one scenario from each applicable domain:
+
+\begin{itemize}
+\item Restore the database from a snapshot.
+\item Release your software package from the mirrored repository (not the usual one).
+\item Download and verify your dataset from its repository deposit.
+\item Walk through a freezer-failure drill.
+\end{itemize}
+
+Keep track of how long tests take and compare against your RTO. If restoring the
+database takes four hours but your RTO is two hours, you must either fix the
+former or adjust the latter.
+
+\section*{Tip 6: Watch for trouble.}
+
+Monitor the things that would get you out of bed at 3:00 a.m. For online
+services, free-tier monitoring like \withurl{Uptime Robot}{https://uptimerobot.com/}
+and \withurl{Healthchecks.io}{https://healthchecks.io/} require no code and are
+infinitely better than nothing.
+
+For physical assets, install temperature alarms on freezers and incubators, CO2
+monitors where needed, and power-failure alerts for field stations.  Many of
+these are available as off-the-shelf WiFi sensors with smartphone alerting.
+
+Check that your dataset's DOI still resolves and that your package is still
+installable from its registry. If your software has a "downloads per month"
+badge, a sudden drop to zero may be the first sign that your registry listing is
+broken.
+
+Check your cloud bill at least once a month: a misconfigured resource can
+generate a catastrophic bill even for a small team. Set budget alerts in your
+cloud provider's console at 50\% and 90\% of your normal monthly spend, sent to
+at least two people. Most cloud providers offer free-tier budget alerting
+adequate for a small team.
+
+\section*{Tip 7: Lock down your accounts.}
+
+Enable multi-factor authentication (MFA) on every digital account: this is the
+highest-impact security measure you can take \cite{smalls2021}. An authenticator
+app or passkey is better than SMS-based MFA, though SMS is better than no MFA at
+all.
+
+Use a password manager like \withurl{1Password}{https://1password.com/} or
+\withurl{Bitwarden}{https://bitwarden.com/} for the whole team.  Bitwarden's free tier is
+often enough for a 3-5 person team. Every shared credential goes in the password
+manager: never send credentials over chat or email. Print the password manager's
+recovery code and store it somewhere physically safe, because if you lose access
+to the password manager you lose access to everything.
+
+For physical access, maintain a list of who has keys to the lab, who knows the
+alarm code, and who is authorized to move or discard samples. Update this list
+as part of your offboarding process; a former team member with an unreturned key
+is a risk you can eliminate.
+
+If you have a custom domain, know who manages it: institutional IT, a commercial
+registrar, or someone on the team. Make sure that person's contact information
+is in the disaster plan, that auto-renewal is enabled, and that at least two
+people can access the account. Set a quarterly calendar reminder to verify that
+auto-renewal is still working.
+
+Make sure at least two people have critical administrative credentials, such as
+the cloud root account, the domain registrar login, the payment method for
+infrastructure, and the password-manager administrator account.  These
+credentials should not be tied to a single phone number or email address.
+
+Finally, maintain an offboarding checklist. When someone leaves, revoke their
+digital access and collect their physical keys as soon as you can. A disgruntled
+former team member with lingering access is trouble you don't need.
+
+\section*{Tip 8: Protect your assets.}
+
+Make a simple, explicit policy about where things live, such as, ``patient data
+is never copied to a personal laptop'', ``database dumps are encrypted at rest'',
+or ``freezer samples are logged with location and sample ID''.  If your policy
+will not fit comfortably on a single page in an 11-point font, rewrite it until
+it does.
+
+\begin{notebox}
+
+If you are handling sensitive data, check whether your institution has a
+security office, ethics board, or data-protection officer that offers free
+consultation. You may have obligations you are not aware of under HIPAA, GDPR,
+or your funder's data-management plan.
+
+\end{notebox}
+
+Keep laptops and servers patched: enable automatic updates for operating
+systems, browsers, and any server-side software. The inconvenience of an
+unexpected reboot is less than the inconvenience of ransomware.
+
+For on-premises equipment like a lab server or a freezer, buy a cheap
+uninterruptible power supply (UPS) and configure it to trigger a clean shutdown
+when the battery reaches 20\%.  Replace the UPS battery every three years: they
+have a tendency to degrade silently.
+
+Prepare a short, written response for ransomware. If someone on the team sees a
+ransom note on a shared drive, their first action is to physically disconnect
+the affected machine from the network and then call the designated incident
+lead. Do not try to negotiate or pay without consulting legal counsel: most
+jurisdictions have regulations about ransomware payments.
+
+\section*{Tip 9: Stabilize, then investigate.}
+
+The most important rule of incident response is, ``Stabilize first, investigate
+later''. Your first goal when something breaks is to contain the damage, not to
+find the root cause. This applies to physical disasters as much as digital ones:
+contain the water leak before mopping up; move samples to backup storage before
+diagnosing what killed the freezer.
+
+Assign clear roles for the duration of the incident: one person leads the
+technical response, one person handles communication using the pre-written
+messages from Tip 4, and everyone else does what the leads tell them to.
+
+Create an incident log \emph{as you work}: a shared Google Doc or a thread in
+your out-of-band Signal group is good enough. Timestamp every significant
+action:
+
+\begin{itemize}
+\item  14:32: freezer alarm triggered
+\item 14:35: temperature reading -50°C and rising
+\item 14:40: began sample transfer to Building C
+\end{itemize}
+
+The log keeps the team in sync and gives you a record for the post-incident
+review.
+
+Escalate early. If you are on a cloud provider's support plan, open a ticket the
+moment you suspect the problem is on their side. If the freezer repair
+contractor has a 24-hour emergency line, call them before you have finished
+diagnosing the compressor.  You can cancel if you fix it yourself, but you
+cannot get back the two hours you spent hoping something outside your control
+would resolve itself.
+
+Finally, conduct a short review within 48 hours of any incident. The goal is to
+identify what in the system allowed the incident to happen, not who made a
+mistake. Write down one concrete action item and assign it to one person with a
+deadline. If you cannot find an outside moderator for the review, have the team
+member \emph{least} involved in the incident lead it.
+
+\section*{Tip 10: Count the cost.}
+
+You probably don't have a budget line item for disaster recovery, but you still
+have costs. Identify them all:
+
+\begin{itemize}
+\item
+  Digital costs: cloud backup storage, password-manager subscription, domain and
+  certificate renewals, managed-database fees, repository deposit charges.
+
+\item
+  Physical costs: backup freezer space, equipment maintenance contracts, UPS
+  battery replacements, field-safety gear, sample-replacement materials.
+
+\item
+  Personnel costs: time spent on quarterly plan reviews, annual backup-restore
+  tests and disaster drills, cross-training to reduce lottery factors, and the
+  hours lost to incident response instead of research.
+\end{itemize}
+
+Calculate what a day of downtime costs you in concrete terms: lost experiment
+time, missed paper deadlines, collaborators who stop trusting you, a blown grant
+deadline, or samples that cannot be replaced. For a grant-funded research group,
+"cost" also includes the graduate student who cannot finish their thesis chapter
+and the field season that cannot be re-run. That number tells you whether it is
+worth spending \$50/month on a managed database or \$200/year on a backup
+service.  For most groups, it is.
+
+\section*{Tip 11: Support your team during the crisis.}
+
+The disasters discussed in the opening are not just logistics problems: each is
+a shock to your team and to the people who depend on them.  Team members may be
+scared, angry, or ashamed, particularly if they believe they caused the problem.
+Handling the human damage is therefore just as important as handling the
+technical aspects.
+
+During the acute phase of a disaster, apply the same five principles that the
+World Health Organization recommends for crisis responders:
+
+\begin{description}
+
+\item[Promote safety.]
+Before asking for status updates, confirm that everyone is not in immediate
+personal danger.  Someone whose field laptop was stolen may not be thinking
+clearly about data loss because they are still shaken from the theft itself.
+
+\item[Calm the environment.]
+Do not add to the panic.  Use a steady voice in your out-of-band chat.
+Remind the team that the plan exists and that they have rehearsed for this.
+Panic is contagious, but so is calm.
+
+\item[Build self-efficacy.]
+Remind people that they have handled difficult things before.  Give each
+person one concrete task from the checklist so that everyone feels useful
+rather than helpless.
+
+\item[Foster connectedness.]
+Use your fallback communication channel to keep the team together.
+Isolation amplifies distress, so do not let anyone absorb the news alone.
+
+\item[Maintain hope.]
+In particular, do not speculate about worst cases before you have confirmed
+them.
+
+\end{description}
+
+Protect the person who may have caused the problem.  If a team member
+accidentally dropped a table from a database, left the freezer door ajar, or
+clicked a phishing link, they probably feel worse than anyone else.  Assign them
+a recovery task, even a small one, so they can contribute to the fix rather than
+sitting in the corner imagining their career is over.  Blame can wait; recovery
+cannot.
+
+Watch for exhaustion.  Disaster response is an adrenaline sprint followed by a
+long slog.  Two people working four hours each will make fewer mistakes than one
+person working eight straight, so rotate people out of the incident response
+when the acute phase is over, even if they insist they are fine.  The person who
+pulled the all-nighter to restore the database should not also be the person
+writing the post-mortem the next morning.
+
+\section*{Tip 12: Help your team recover after the disaster.}
+
+In Tip 9 said to hold the review within 48 hours. That is for gathering facts
+while memory is fresh; a second, more reflective conversation a week or two
+later gives people time to process what happened emotionally.  The goal of this
+second conversation is not to find root causes but to ask: ``How are we doing?''
+
+If someone on the team caused the disaster, handle it carefully.  Most people
+who make a costly mistake are already punishing themselves more harshly than you
+ever would.  Ask them privately if they are OK.  Tell them explicitly that the
+team does not blame them, and then make sure the rest of the team acts that way.
+If you find yourself wanting to revisit the mistake in every team meeting, you
+are the one who hasn't moved on.
+
+Recognize that people recover at different speeds.  One team member may be
+joking about it by Tuesday while another is still waking up anxious on Friday.
+Both responses are normal.  Check in with each person individually a week after
+the incident, and again a month later.  Again, the question is simply: ``How are
+you doing with what happened?''
+
+Watch for survivors' guilt.  For example, if your lab's data survived a building
+fire but a neighbouring group lost everything, your team may feel they got lucky
+rather than prepared.  They may not want to celebrate their own recovery when
+others are still suffering.  Let them talk about it.  If possible, offer
+practical help to affected colleagues, such as sharing backup space, offering
+spare equipment, or simply bringing them coffee.
+
+Finally, celebrate the recovery, not just the disaster.  When the dashboard is
+back, the data is restored, or the samples are safe, take a moment to
+acknowledge the work that made it possible.  A short thank-you message that says
+``we handled this'' costs nothing and pays dividends the next time something goes
+wrong.
+
+\nocite{*}
+\bibliography{disaster-tips}
+
+\end{document}

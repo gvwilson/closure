@@ -1,3 +1,12 @@
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls 
+*.log
+*.log
+*.out
+*.pdf
 *~
 .*.bkp
 .DS_Store
