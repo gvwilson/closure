@@ -196,7 +196,7 @@ than members of privileged groups [%b Scott1987 %].
 
 <section class="slide" markdown="1">
 
-## Quick Check
+## *Quick Check*
 
 1.  Are you handing over or shutting down?
     -   Think of shutdown as "succession to zero"

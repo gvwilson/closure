@@ -98,3 +98,53 @@ title: Closing Time — Governance, Assets, and Permissions
 -   Use a [%g password-manager "password manager" %] for all organizational credentials
 
 </section>
+
+<section class="slide" markdown="1">
+
+## *Project Inventory*
+
+1.  Work individually for ten minutes
+    to make a list of everything that belongs to your project.
+1.  Compare lists with others in your group.
+    What did they include that you missed and vice versa?
+    What did someone include that other people think isn't actually part of the project?
+
+</section>
+
+<section class="slide" markdown="1">
+
+## *Assets and Obligations*
+
+Add one thing to each of the following lists:
+
+-   Code, data, discussion archives, website, social media accounts,
+    domain name, hardware, and…?
+-   Hosting costs, software licenses, bank accounts, trademarks,
+    partially-completed contracts, funding reports, confidential data obligations, and…?
+-   Community goodwill, points of contact, and…?
+
+</section>
+
+<section class="slide" markdown="1">
+
+## *Who and What*
+
+1.  What would your project be unable to do if you were unavailable for three months?
+1.  Which of your project's activities depend on personal accounts
+    rather than accounts dedicated to the project?
+
+</section>
+
+<section class="slide" markdown="1">
+
+## *Write a Project Advance Directive*
+
+1.  Write a one-page document covering:
+    -   The conditions under which this project should be wound down
+    -   Who has the authority to make that call
+    -   What assets must be preserved before shutdown is complete, and how
+    -   What obligations must be honoured
+1.  Give your document to a partner and ask them to find one realistic scenario
+    it does not handle.
+
+</section>

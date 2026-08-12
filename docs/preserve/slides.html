@@ -91,6 +91,38 @@
 <li>Document these to avoid passing silent assumptions to anyone who inherits the work</li>
 </ul>
 </section>
+<section class="slide">
+<h3>Downstream Impact</h3>
+<ol>
+<li>Map your project's downstream dependencies.</li>
+<li>Categorize each dependent by impact severity:
+    critical (their work stops),
+    significant (their work is impaired),
+    or minor (an inconvenience).</li>
+<li>Prioritize your list and draft a one-sentence message for each category.</li>
+</ol>
+</section>
+<section class="slide">
+<h3>Write a Last Known Good State Document</h3>
+<ol>
+<li>What does this project do, and what problem does it solve?</li>
+<li>What is currently working?</li>
+<li>What is broken or incomplete?</li>
+<li>Where does the data or code live, and how would someone get it?</li>
+<li>What are the most important things a successor would need to know?</li>
+</ol>
+</section>
+<section class="slide">
+<h2>Normalized Deviations List</h2>
+<ol>
+<li>Write down three things in your project that everyone on the team knows are wrong
+    but that you have all learned to live with.</li>
+<li>For each, explain whether you would
+    document it honestly in the last known good state document,
+    fix it before shutdown,
+    or leave it undocumented?</li>
+</ol>
+</section>
 <div aria-live="polite" id="slide-counter"></div>
 </div>
 <script src="../_static/shower.js"></script>

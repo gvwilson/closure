@@ -58,3 +58,30 @@ title: Closing Time — Legal and Administrative Matters
 -   Check whether a final grant report is due — reporting obligations survive shutdown
 
 </section>
+
+<section class="slide" markdown="1">
+
+## *Sequence Under Constraint*
+
+See the notes for the project description.
+
+1.  Working individually, list the legal or administrative obligations
+    that arise when this project shuts down.
+1.  Put them in the order they must be addressed.
+    Which obligations create deadlines that constrain everything else?
+1.  Compare with a partner.
+
+</section>
+
+<section class="slide" markdown="1">
+
+## *Financial Wind-down*
+
+See the notes for the project description.
+
+1.  List every financial action that must be completed before the project is fully closed.
+2.  Sequence them in dependency order.
+3.  Identify which actions require sign-off from someone other than the project lead.
+4.  Draft the email requesting that sign-off.
+
+</section>

@@ -83,3 +83,41 @@ title: Closing Time — Preserving Your Work
 -   Document these to avoid passing silent assumptions to anyone who inherits the work
 
 </section>
+
+<section class="slide" markdown="1">
+
+### Downstream Impact
+
+1.  Map your project's downstream dependencies.
+2.  Categorize each dependent by impact severity:
+    critical (their work stops),
+    significant (their work is impaired),
+    or minor (an inconvenience).
+3.  Prioritize your list and draft a one-sentence message for each category.
+
+</section>
+
+<section class="slide" markdown="1">
+
+### Write a Last Known Good State Document
+
+1.  What does this project do, and what problem does it solve?
+1.  What is currently working?
+1.  What is broken or incomplete?
+1.  Where does the data or code live, and how would someone get it?
+1.  What are the most important things a successor would need to know?
+
+</section>
+
+<section class="slide" markdown="1">
+
+## Normalized Deviations List
+
+1.  Write down three things in your project that everyone on the team knows are wrong
+    but that you have all learned to live with.
+1.  For each, explain whether you would
+    document it honestly in the last known good state document,
+    fix it before shutdown,
+    or leave it undocumented?
+
+</section>

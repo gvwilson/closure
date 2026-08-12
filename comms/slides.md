@@ -97,3 +97,39 @@ it is personal, narrative, and explicitly oriented toward what should survive.
 -   Recognizing your pattern in advance shapes the handover conversations
 
 </section>
+
+<section class="slide" markdown="1">
+
+## *Write a Shutdown Notice*
+
+1.  Draft a short announcement (3-5 bullet points) for your own project.
+1.  Swap and identify one thing the other notice does well
+    and one thing it could improve.
+
+</section>
+
+<section class="slide" markdown="1">
+
+## *Stakeholder Message Matrix*
+
+Draft one-sentence messages for three audiences:
+
+1.  An email to a researcher who uses the data pipeline daily in their own analysis scripts.
+1.  A note on an outstanding pull request for
+    a contributor who submitted three other pull requests in the past year.
+1.  A written notice to the project's institutional funder.
+
+</section>
+
+<section class="slide" markdown="1">
+
+## *Leak Response*
+
+1.  Draft the message you send to your team in the first 30 minutes.
+    What do you tell them, and what do you ask them *not* to do?
+2.  Draft the public post you publish within the next 2 hours.
+    How does the premature leak change the tone, timing, and content of what you had planned to say?
+3.  In groups, discuss which stakeholder relationships are most at risk from the leak.
+    What can you realistically salvage, and what is likely already damaged beyond repair?
+
+</section>

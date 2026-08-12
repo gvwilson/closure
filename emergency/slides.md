@@ -192,3 +192,28 @@ Six actions that must happen, in this order, by the day of shutdown:
 -   This is privileged advice: someone whose visa or income is threatened may not have a choice
 
 </section>
+
+<section class="slide" markdown="1">
+
+## *Categories Before Tasks*
+
+1.  Working individually,
+    write down every *category* of thing
+    that would need to be addressed if your project shut down at the end of this week.
+1.  Compare your lists with a partner.
+1.  Debrief as a group.
+
+</section>
+
+<section class="slide" markdown="1">
+
+## *Triage Under Pressure*
+
+Use Liam's scenario (end-of-week shutdown of an open source tool):
+
+1.  List everything that would need to be done to close the project properly.
+1.  Apply MoSCoW: sort each item into must, should, could, or won't,
+    given a five-day deadline and one person working half-time.
+1.  Identify the single most important thing Liam can do in the first two hours.
+
+</section>

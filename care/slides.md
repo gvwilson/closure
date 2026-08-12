@@ -112,3 +112,14 @@ title: Closing Time — Preserving Your People
         not bureaucratic compliance
 
 </section>
+
+<section class="slide" markdown="1">
+
+## *Plan the People Side*
+
+1.  Who are the people most affected by closing your project, in order of impact?
+1.  What does each group need to hear, and by when?
+1.  What would a good wake look like for your project?
+    What would you want people to remember?
+
+</section>

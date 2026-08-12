@@ -70,3 +70,27 @@ title: Closing Time — Conclusion
   </div>
 
 </section>
+
+<section class="slide" markdown="1">
+
+## *One Thing to Do This Week*
+
+Identify one concrete action you will take in the next five working days
+to make your project easier to close when the time comes.
+Write it down and share it with a partner, who will follow up with you next week.
+
+</section>
+
+<section class="slide" markdown="1">
+
+## *Make a Pitch*
+
+1.  Draft a 90-second verbal pitch to convince one skeptical colleague
+    to join a professional organization or sign onto a collective statement.
+1.  Deliver the pitch to a partner playing a genuinely skeptical colleague.
+
+What objections came up?
+Which were hardest to answer?
+What would you need to know or believe differently to answer them convincingly?
+
+</section>
