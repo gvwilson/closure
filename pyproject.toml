@@ -41,6 +41,7 @@ brand = "closure"
 skips = [
     "*~",
     "docs",
+    "plos",
     "typos.toml",
     "uv.lock"
 ]
