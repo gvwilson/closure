@@ -60,6 +60,25 @@ title: Closing Time — Introduction
 
 <section class="slide" markdown="1">
 
+## Abstinence Solutions
+
+<div class="callout" markdown="1">
+
+An [%g abstinence-solution "abstinence solution" %] is one that requires people
+to do things we know they actually won't
+(see also "[%g bullshit "bullshit" %]" [%b Frankfurt2005 %]).
+In particular, "document everything" doesn't work.
+People will always short-change writing descriptions of work in favor of actually doing work,
+and fail to write down the parts of their work that they think are obvious.
+This isn't laziness:
+most of what we can write today doesn't actually address tomorrow's actual needs.
+
+</div>
+
+</section>
+
+<section class="slide" markdown="1">
+
 ## The Survival Arc
 
 -   [%b Ripley2008 %] identified a three-stage [%g survival-arc "survival arc" %]:
@@ -132,9 +151,9 @@ title: Closing Time — Introduction
 
 ## Stay Within the Law
 
--   Ensuring work remains usable is not worth putting yourself at legal risk
+-   Ensuring work remains usable is not worth legal risk
     -   Institutions, journals, and funders have policies for licensing and sharing [%b Katz2018 %]
-    -   Know what the rules are — which isn't the same as "follow them" [%b OSS1944 %]
+    -   Know the rules (which isn't the same as "follow them" [%b OSS1944 %])
 -   If you don't know if there's a policy, *ask someone*
     -   Look for an [Open Source Program Office][ospo] or IP office
 -   Use email rather than chat or video calls

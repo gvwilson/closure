@@ -84,6 +84,58 @@ it recovers the categories that stress makes invisible.
 
 <section class="slide" markdown="1">
 
+## Step 2: Speak
+
+-   [%b Coombs2019 %] identified three communication errors that increase reputational damage:
+    -   **Silence**: stakeholders fill the vacuum with rumour
+    -   **Denial**: asserting the crisis is not serious
+    -   **Diminishment**: acknowledging it but minimising its severity
+-   Rapid, honest, minimal communication is best
+    *even when you do not yet know what you will do*
+    -   "Here is what we know, here is what we do not know,
+        here is when we expect more information"
+
+</section>
+
+<section class="slide" markdown="1">
+
+## Two Kinds of Coping
+
+<div class="callout" markdown="1">
+
+[%b Lazarus1984 %] distinguishes:
+[%g problem-focused-coping "problem-focused coping" %]
+(addresses the situation) and
+[%g emotion-focused-coping "emotion-focused coping" %]
+(addresses the person's internal response).
+
+Abrupt project closure combines both.
+The person who immediately starts triaging data is not more competent than
+the person who needs an hour to absorb what has happened:
+they are applying different coping modes.
+Managing an unplanned closure means making space for both responses simultaneously.
+
+</div>
+
+</section>
+
+<section class="slide" markdown="1">
+
+## Convergence as a Resource
+
+-   [%b Dynes1970 %] describes four types of groups that form in emergencies:
+    -   Established organizations following routines
+    -   Organizations extending routines to cover the new situation
+    -   Ad hoc groups that form specifically to respond
+    -   Emergent groups with no prior or subsequent existence
+-   People converge on a crisis without being told to [%b Fritz1957 %]
+    -   Translates into unofficial mirrors, public documentation posts, community email threads
+    -   If you can support this without endangering yourself, do so
+
+</section>
+
+<section class="slide" markdown="1">
+
 ## The Minimal Action Sequence
 
 Six actions that must happen, in this order, by the day of shutdown:

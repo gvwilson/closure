@@ -46,3 +46,15 @@ title: Closing Time — Legal and Administrative Matters
 -   Grant reporting obligations survive project shutdown
 
 </section>
+
+<section class="slide" markdown="1">
+
+## Be Proactive
+
+-   Build exit clauses into contracts and development agreements from the start,
+    not when you need them
+-   The difference between rules as written and rules as enforced
+    matters most during institutional turmoil
+-   Check whether a final grant report is due — reporting obligations survive shutdown
+
+</section>
