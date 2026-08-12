@@ -84,6 +84,21 @@ This workshop therefore caters to two different learners:
 </div>
 </div>
 
+## Slides
+
+<div id="slides" markdown="1">
+
+1.  [Introduction](@/intro/slides.html)
+1.  [Governance, Assets, and Permissions](@/gap/slides.html)
+1.  [Communicating During a Deliberate Shutdown](@/comms/slides.html)
+1.  [On Short Notice](@/emergency/slides.html)
+1.  [Preserving Your Work](@/preserve/slides.html)
+1.  [Preserving Your People](@/care/slides.html)
+1.  [Legal and Administrative Matters](@/legal/slides.html)
+1.  [Conclusion](@/finale/slides.html)
+
+</div>
+
 ## Acknowledgments {: #acknowledgments}
 
 [*Greg Wilson*][wilson-greg] is a programmer, author, and educator based in Toronto.
