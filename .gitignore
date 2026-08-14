@@ -2,7 +2,7 @@
 *.bbl
 *.blg
 *.fdb_latexmk
-*.fls 
+*.fls
 *.log
 *.log
 *.out
@@ -13,3 +13,6 @@
 .\#*
 .venv
 __pycache__
+
+/.quarto/
+**/*.quarto_ipynb

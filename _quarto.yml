@@ -1,0 +1,42 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Closing Time"
+  author: "Greg Wilson"
+  repo-url: "https://github.com/gvwilson/closure"
+  repo-actions: [edit, source, issue]
+  chapters:
+    - index.qmd
+    - intro/index.qmd
+    - gas/index.qmd
+    - handover/index.qmd
+    - deliberate/index.qmd
+    - disaster/index.qmd
+    - abrupt/index.qmd
+    - care/index.qmd
+    - finale/index.qmd
+  appendices:
+    - license/index.qmd
+    - conduct/index.qmd
+    - contributing/index.qmd
+    - bibliography/index.qmd
+    - glossary/index.qmd
+    - fire/index.qmd
+    - nesbitt/index.qmd
+
+bibliography: bibliography/references.bib
+csl: bibliography/apa.csl
+
+filters:
+  - bin/links.lua
+
+shortcodes:
+  - bin/g.lua
+  - bin/inc-noh1.lua
+
+format:
+  html:
+    theme: cosmo
+    toc: true

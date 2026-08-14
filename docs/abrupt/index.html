@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix B — Code of Conduct – Closing Time</title>
+<title>7&nbsp; Abrupt Closure – Closing Time</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,8 +53,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../contributing/index.html" rel="next">
-<link href="../license/index.html" rel="prev">
+<link href="../care/index.html" rel="next">
+<link href="../disaster/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -85,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../license/index.html">Appendices</a></li><li class="breadcrumb-item"><a href="../conduct/index.html"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Code of Conduct</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../abrupt/index.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Abrupt Closure</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../abrupt/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../abrupt/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Abrupt Closure</span></span></a>
   </div>
 </li>
@@ -184,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../conduct/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../conduct/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Code of Conduct</span></span></a>
   </div>
 </li>
@@ -230,20 +250,31 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#our-standards" id="toc-our-standards" class="nav-link active" data-scroll-target="#our-standards"><span class="header-section-number">B.1</span> Our Standards</a></li>
-  <li><a href="#our-responsibilities" id="toc-our-responsibilities" class="nav-link" data-scroll-target="#our-responsibilities"><span class="header-section-number">B.2</span> Our Responsibilities</a></li>
-  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope"><span class="header-section-number">B.3</span> Scope</a></li>
-  <li><a href="#enforcement" id="toc-enforcement" class="nav-link" data-scroll-target="#enforcement"><span class="header-section-number">B.4</span> Enforcement</a></li>
-  <li><a href="#attribution" id="toc-attribution" class="nav-link" data-scroll-target="#attribution"><span class="header-section-number">B.5</span> Attribution</a></li>
+  <li><a href="#what-people-actually-do" id="toc-what-people-actually-do" class="nav-link active" data-scroll-target="#what-people-actually-do"><span class="header-section-number">7.1</span> What People Actually Do</a></li>
+  <li><a href="#convergence-as-a-resource" id="toc-convergence-as-a-resource" class="nav-link" data-scroll-target="#convergence-as-a-resource"><span class="header-section-number">7.2</span> Convergence as a Resource</a></li>
+  <li><a href="#a-loose-interpretation-of-the-rules" id="toc-a-loose-interpretation-of-the-rules" class="nav-link" data-scroll-target="#a-loose-interpretation-of-the-rules"><span class="header-section-number">7.3</span> A Loose Interpretation of the Rules</a></li>
+  <li><a href="#pause" id="toc-pause" class="nav-link" data-scroll-target="#pause"><span class="header-section-number">7.4</span> Pause…</a></li>
+  <li><a href="#then-speak" id="toc-then-speak" class="nav-link" data-scroll-target="#then-speak"><span class="header-section-number">7.5</span> …then Speak…</a></li>
+  <li><a href="#then-act" id="toc-then-act" class="nav-link" data-scroll-target="#then-act"><span class="header-section-number">7.6</span> …then Act</a>
+  <ul class="collapse">
+  <li><a href="#when-youre-the-one-being-hit" id="toc-when-youre-the-one-being-hit" class="nav-link" data-scroll-target="#when-youre-the-one-being-hit"><span class="header-section-number">7.6.1</span> When You’re the One Being Hit</a></li>
+  </ul></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">7.7</span> Exercises</a>
+  <ul class="collapse">
+  <li><a href="#categories-before-tasks" id="toc-categories-before-tasks" class="nav-link" data-scroll-target="#categories-before-tasks"><span class="header-section-number">7.7.1</span> Categories Before Tasks</a></li>
+  <li><a href="#triage-under-pressure" id="toc-triage-under-pressure" class="nav-link" data-scroll-target="#triage-under-pressure"><span class="header-section-number">7.7.2</span> Triage Under Pressure</a></li>
+  <li><a href="#leak-response" id="toc-leak-response" class="nav-link" data-scroll-target="#leak-response"><span class="header-section-number">7.7.3</span> Leak Response</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gvwilson/closure/edit/main/conduct/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gvwilson/closure/blob/main/conduct/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/gvwilson/closure/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/gvwilson/closure/edit/main/abrupt/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gvwilson/closure/blob/main/abrupt/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/gvwilson/closure/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../license/index.html">Appendices</a></li><li class="breadcrumb-item"><a href="../conduct/index.html"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Code of Conduct</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix B — Code of Conduct</h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Abrupt Closure</span></h1>
+<p class="subtitle lead">when the future arrives too soon and in the wrong order</p>
 </div>
 
 
@@ -260,45 +291,200 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
-<section id="our-standards" class="level2" data-number="B.1">
-<h2 data-number="B.1" class="anchored" data-anchor-id="our-standards"><span class="header-section-number">B.1</span> Our Standards</h2>
-<p>Examples of behavior that contributes to creating a positive environment include:</p>
 <ul>
-<li>using welcoming and inclusive language,</li>
-<li>being respectful of differing viewpoints and experiences,</li>
-<li>gracefully accepting constructive criticism,</li>
-<li>focusing on what is best for the community, and</li>
-<li>showing empathy towards other community members.</li>
+<li>Worst case: the project does not continue and you get one shot to close it down</li>
 </ul>
-<p>Examples of unacceptable behavior by participants include:</p>
+<section id="what-people-actually-do" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="what-people-actually-do"><span class="header-section-number">7.1</span> What People Actually Do</h2>
 <ul>
-<li>the use of sexualized language or imagery and unwelcome sexual attention or advances,</li>
-<li>trolling, insulting/derogatory comments, and personal or political attacks,</li>
-<li>public or private harassment,</li>
-<li>publishing others’ private information, such as a physical or electronic address, without explicit permission, and</li>
-<li>other conduct which could reasonably be considered inappropriate in a professional setting</li>
+<li>Under time pressure, experts do not compare options: they recognize a situation as an instance of a familiar type and act on the first workable course of action that comes to mind <span class="citation" data-cites="Klein1998">(<a href="#ref-Klein1998" role="doc-biblioref">Klein, 1998</a>)</span>
+<ul>
+<li>This is called <a href="../glossary/index.html#recognition-primed-decision-making">recognition-primed decision making</a>: the decision is primed by experience, not constructed from first principles</li>
+<li>Experience that team members have handling emergencies in other domains can be misleading</li>
+<li>But is also more useful than they realize</li>
+<li>Asking “has anyone seen something like this before?” activates usable tacit knowledge under pressure</li>
+</ul></li>
+<li>Similarly, <a href="../glossary/index.html#attention-narrowing">attention narrows</a> under acute stress
+<ul>
+<li>Specifically, this impairs the ability to hold multiple competing priorities in mind simultaneously <span class="citation" data-cites="Easterbrook1959 Starcke2012">(<a href="#ref-Easterbrook1959" role="doc-biblioref">Easterbrook, 1959</a>; <a href="#ref-Starcke2012" role="doc-biblioref">Starcke &amp; Brand, 2012</a>)</span></li>
+<li>As a result, teams focus intensely on the most visible problem while forgetting entire categories that would be obvious under calmer circumstances</li>
+<li>This is not a failure of knowledge: it is a predictable feature of how the brain responds to pressure</li>
+</ul></li>
 </ul>
 </section>
-<section id="our-responsibilities" class="level2" data-number="B.2">
-<h2 data-number="B.2" class="anchored" data-anchor-id="our-responsibilities"><span class="header-section-number">B.2</span> Our Responsibilities</h2>
-<p>Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.</p>
-<p>Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.</p>
+<section id="convergence-as-a-resource" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="convergence-as-a-resource"><span class="header-section-number">7.2</span> Convergence as a Resource</h2>
+<ul>
+<li><span class="citation" data-cites="Dynes1970">(<a href="#ref-Dynes1970" role="doc-biblioref">Dynes, 1970</a>)</span> describes four types of groups that form in emergencies:
+<ul>
+<li>Established organizations that stick to their routines despite breakdown</li>
+<li>Other organizations that extend their routines to cover the new situation</li>
+<li>Ad hoc groups form specifically to respond
+<ul>
+<li>Their tasks are modeled on those of established organizations:</li>
+<li>They know what to do, they just need to come together</li>
+</ul></li>
+<li>Emergent groups with no prior or subsequent existence
+<ul>
+<li>They invent both their structure and their tasks in the moment with no existing template to follow</li>
+</ul></li>
+</ul></li>
+<li>Research shows that people converge on a crisis without being told to <span class="citation" data-cites="Fritz1957">(<a href="#ref-Fritz1957" role="doc-biblioref">Fritz &amp; Mathewson, 1957</a>)</span>
+<ul>
+<li>People who step forward do so because the project mattered</li>
+<li>They are likely to help if given the minimum viable information</li>
+<li>In software and research projects this translates into unofficial mirrors, public documentation posts, and community email threads</li>
+<li>If you can support this without endangering yourself, do so</li>
+</ul></li>
+</ul>
 </section>
-<section id="scope" class="level2" data-number="B.3">
-<h2 data-number="B.3" class="anchored" data-anchor-id="scope"><span class="header-section-number">B.3</span> Scope</h2>
-<p>This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project email address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.</p>
+<section id="a-loose-interpretation-of-the-rules" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="a-loose-interpretation-of-the-rules"><span class="header-section-number">7.3</span> A Loose Interpretation of the Rules</h2>
+<ul>
+<li><span class="citation" data-cites="Lipsky1980">(<a href="#ref-Lipsky1980" role="doc-biblioref">Lipsky, 1980</a>)</span> found that frontline workers routinely depart from formal rules when applying them mechanically would produce worse outcomes than exercising judgment
+<ul>
+<li>This is called <a href="../glossary/index.html#street-level-bureaucracy">street-level bureaucracy</a>: the real policy of an organisation is made in the moment-to-moment decisions of frontline workers, not in headquarters</li>
+<li>Waiting for formal approval that cannot be obtained is itself a decision, and usually a worse one</li>
+</ul></li>
+<li>When formal procedures are inapplicable because time or infrastructure is unavailable, the people present should act within their own discretion rather than waiting for authorization they cannot obtain
+<ul>
+<li>Copying data, setting up a forwarding address, or sending a brief notice are all within the discretion of the people present</li>
+</ul></li>
+<li>Members of marginalized groups often have more practice navigating hostile bureaucracies their tactics can be instructive</li>
+</ul>
 </section>
-<section id="enforcement" class="level2" data-number="B.4">
-<h2 data-number="B.4" class="anchored" data-anchor-id="enforcement"><span class="header-section-number">B.4</span> Enforcement</h2>
-<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by emailing the project team. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.</p>
-<p>Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project’s leadership.</p>
+<section id="pause" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="pause"><span class="header-section-number">7.4</span> Pause…</h2>
+<ul>
+<li><span class="citation" data-cites="Gawande2009">(<a href="#ref-Gawande2009" role="doc-biblioref">Gawande, 2009</a>)</span> found that the most common failures in surgery were not failures of skill but failures to perform steps the surgeon already knew needed to be done
+<ul>
+<li>The intervention that worked was not additional training but a checklist</li>
+<li>The same principle applies directly to abrupt project closure</li>
+</ul></li>
+<li>First, establish exactly how much time you have and what constraints are non-negotiable
+<ul>
+<li>Organizations sometimes keep shutdown news secret to prevent morale collapse</li>
+<li>This backfires: rumors and information vacuums are more destructive than bad news</li>
+<li>Silence, denial, and diminishment all increase reputational and community harm</li>
+</ul></li>
+<li>Second, spend a few minutes writing down every <em>category</em> of thing that must be addressed before attempting to resolve any of them
+<ul>
+<li>Access credentials, data backups, stakeholder notifications, community communication, legal obligations</li>
+<li>The list does not need to be complete or correctly ordered</li>
+<li>It just needs to exist so that urgency doesn’t lead to tunnel vision</li>
+</ul></li>
+<li>Second, triage ruthlessly using the <a href="../glossary/index.html#moscow-method">MoSCoW method</a>:
+<ul>
+<li>Must do: obligations that carry legal or financial risk if unmet</li>
+<li>Should do: the minimum viable record of the project’s work</li>
+<li>Could do: give the community a way to find each other after you are gone</li>
+<li>Won’t do: everything else, including anything that amounts to “do it properly”</li>
+</ul></li>
+</ul>
 </section>
-<section id="attribution" class="level2" data-number="B.5">
-<h2 data-number="B.5" class="anchored" data-anchor-id="attribution"><span class="header-section-number">B.5</span> Attribution</h2>
-<p>This Code of Conduct is adapted from the <a href="https://www.contributor-covenant.org/">Contributor Covenant</a> version 1.4.</p>
+<section id="then-speak" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="then-speak"><span class="header-section-number">7.5</span> …then Speak…</h2>
+<ul>
+<li><span class="citation" data-cites="Coombs2019">(<a href="#ref-Coombs2019" role="doc-biblioref">Coombs, 2021</a>)</span> identified three communication errors that increase reputational damage:
+<ul>
+<li>Silence: stakeholders fill the vacuum with rumour</li>
+<li>Denial: asserting the crisis is not serious</li>
+<li>Diminishment: acknowledging it but minimising its severity</li>
+</ul></li>
+<li>Rapid, honest, minimal communication is best <em>even when you do not yet know what you will do</em>
+<ul>
+<li>A single paragraph saying “here is what we know, here is what we do not know, here is when we expect more information” is not a plan</li>
+<li>But prevents the harms of silence</li>
+</ul></li>
+</ul>
+</section>
+<section id="then-act" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="then-act"><span class="header-section-number">7.6</span> …then Act</h2>
+<ul>
+<li>You probably don’t have time to clean up code, data, or publications
+<ul>
+<li>A README and a runnable script are a viable minimum handover for research software</li>
+</ul></li>
+<li>Notify funders and stakeholders with binding claims before the project goes dark</li>
+<li>Provide a forwarding address:
+<ul>
+<li>A working email address is better than silence</li>
+</ul></li>
+<li>Do not let guilt, pressure, or optimism make you promise maintenance you cannot deliver</li>
+<li>The first conversations after the announcement are not about logistics: the <a href="../care/index.html">next section</a> covers the human side</li>
+</ul>
+<section id="when-youre-the-one-being-hit" class="level3" data-number="7.6.1">
+<h3 data-number="7.6.1" class="anchored" data-anchor-id="when-youre-the-one-being-hit"><span class="header-section-number">7.6.1</span> When You’re the One Being Hit</h3>
+<ul>
+<li>Most participants in project closure are not the ones making the decision
+<ul>
+<li>The advice above is written from the project lead’s perspective</li>
+<li>This section addresses the individual contributor</li>
+</ul></li>
+<li>If your own work is about to disappear, do the minimum viable handover yourself: push a copy somewhere public, and export your issues and notes.
+<ul>
+<li>Hand credentials to a trusted person outside the organization <em>if it’s safe to do so</em></li>
+</ul></li>
+<li>Pause before speaking or posting publicly: have someone you trust review anything before you say or send it</li>
+<li>Broader individual-level advice lives in <a href="../fire/index.html">an appendix</a></li>
+</ul>
+</section>
+</section>
+<section id="exercises" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="exercises"><span class="header-section-number">7.7</span> Exercises</h2>
+<section id="categories-before-tasks" class="level3" data-number="7.7.1">
+<h3 data-number="7.7.1" class="anchored" data-anchor-id="categories-before-tasks"><span class="header-section-number">7.7.1</span> Categories Before Tasks</h3>
+<ol type="1">
+<li>Working individually, take three minutes to write down every <em>category</em> of thing that would need to be addressed if your project shut down at the end of this week. Write only categories, not specific tasks.</li>
+<li>Compare your list with a partner. What categories did your partner include that you missed? What did you over-specify?</li>
+<li>Debrief as a group. Most lists focus heavily on one or two categories (usually code or data) while omitting others entirely (credentials, legal obligations, community communication, contributor welfare, domain names). This is not a failure of knowledge, but a predictable failure of recall under pressure.</li>
+</ol>
+</section>
+<section id="triage-under-pressure" class="level3" data-number="7.7.2">
+<h3 data-number="7.7.2" class="anchored" data-anchor-id="triage-under-pressure"><span class="header-section-number">7.7.2</span> Triage Under Pressure</h3>
+<p>You have just been told that your project is shutting down in 48 hours.</p>
+<ol type="1">
+<li>Apply MoSCoW: sort the categories from the previous exercise into must, should, could, or won’t, given a five-day deadline and one person working half-time.</li>
+<li>Identify the single most important thing you can do in the first two hours.</li>
+</ol>
+</section>
+<section id="leak-response" class="level3" data-number="7.7.3">
+<h3 data-number="7.7.3" class="anchored" data-anchor-id="leak-response"><span class="header-section-number">7.7.3</span> Leak Response</h3>
+<p>You planned to announce your project’s shutdown next Monday with a carefully drafted message to contributors, users, and funders. On Thursday afternoon, a community member posts on social media that the project is being killed by management. You haven’t notified your team or your funder yet, but the post is gathering attention.</p>
+<ol type="1">
+<li>Draft the message you send to your team in the first 30 minutes. What do you tell them, and what do you ask them <em>not</em> to do?</li>
+<li>Draft the public post you publish within the next 2 hours. How does the premature leak change the tone, timing, and content of what you had planned to say?</li>
+<li>In groups, discuss which stakeholder relationships are most at risk from the leak. What can you realistically salvage, and what is likely already damaged beyond repair?</li>
+</ol>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Coombs2019" class="csl-entry" role="listitem">
+Coombs, W. T. (2021). <em>Ongoing crisis communication: Planning, managing, and responding</em> (6th ed.). SAGE Publications.
+</div>
+<div id="ref-Dynes1970" class="csl-entry" role="listitem">
+Dynes, R. R. (1970). <em>Organized behavior in disaster</em>. D.C. Heath.
+</div>
+<div id="ref-Easterbrook1959" class="csl-entry" role="listitem">
+Easterbrook, J. A. (1959). The effect of emotion on cue utilization and the organization of behavior. <em>Psychological Review</em>, <em>66</em>(3). <a href="https://doi.org/10.1037/h0047707">https://doi.org/10.1037/h0047707</a>
+</div>
+<div id="ref-Fritz1957" class="csl-entry" role="listitem">
+Fritz, C. E., &amp; Mathewson, J. H. (1957). <em>Convergence behavior in disasters: A problem in social control</em>. National Academy of Sciences / National Research Council.
+</div>
+<div id="ref-Gawande2009" class="csl-entry" role="listitem">
+Gawande, A. (2009). <em>The checklist manifesto: How to get things right</em>. Metropolitan Books.
+</div>
+<div id="ref-Klein1998" class="csl-entry" role="listitem">
+Klein, G. (1998). <em>Sources of power: How people make decisions</em>. MIT Press.
+</div>
+<div id="ref-Lipsky1980" class="csl-entry" role="listitem">
+Lipsky, M. (1980). <em>Street-level bureaucracy: Dilemmas of the individual in public services</em>. Russell Sage Foundation.
+</div>
+<div id="ref-Starcke2012" class="csl-entry" role="listitem">
+Starcke, K., &amp; Brand, M. (2012). Decision making under stress: A selective review. <em>Neuroscience and Biobehavioral Reviews</em>, <em>36</em>(4). <a href="https://doi.org/10.1016/j.neubiorev.2012.02.003">https://doi.org/10.1016/j.neubiorev.2012.02.003</a>
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -704,13 +890,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../license/index.html" class="pagination-link" aria-label="License">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">License</span></span>
+      <a href="../disaster/index.html" class="pagination-link" aria-label="Disaster Recovery">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Disaster Recovery</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../contributing/index.html" class="pagination-link" aria-label="Contributing">
-        <span class="nav-page-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Contributing</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../care/index.html" class="pagination-link" aria-label="Caring For Your People">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Caring For Your People</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -719,4 +905,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gvwilson/closure/edit/main/conduct/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gvwilson/closure/blob/main/conduct/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/gvwilson/closure/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gvwilson/closure/edit/main/abrupt/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gvwilson/closure/blob/main/abrupt/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/gvwilson/closure/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

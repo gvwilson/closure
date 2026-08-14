@@ -1,0 +1,115 @@
+# Disaster Recovery
+
+<p class="subtitle">when the project survives the storm</p>
+
+-   A {{<g disaster "disaster" >}} is not the end of the project:
+    it is an unplanned disruption that the team works through and survives
+-   In 2025, the US government launched an unprecedented series of attacks on its
+    own scientific research groups, and soon after [GitHub][github] briefly dropped
+    below 90% availability for the first time
+-   These events reminded us how fragile research computing systems can be
+
+## The Survival Arc
+
+-   [@Ripley2008] synthesised research on how people behave when disaster strikes
+    and identified a three-stage {{<g survival-arc "survival arc" >}}:
+    -   Denial: refusal to believe that the situation is as serious as evidence suggests
+    -   Deliberation: a period of paralysed uncertainty about what to do
+    -   Decision: action, which may or may not be correct
+-   The denial phase usually consumes far more time than people expect
+    -   Thinking through the scenario before it happens dramatically shortens it
+-   The period between a credible sign that a project is in trouble
+    and the first concrete closure action will be longer than planners assume,
+    particularly under abrupt conditions
+    -   Rehearsal converts a novel emergency into a recognized pattern and shortens denial
+    -   The most common mistake is skipping early stages because they feel premature
+
+## Know Your Risks
+
+-   The [Governance, Assets, and State](../gas/index.qmd) section describes inventory taking
+    and the lottery-factor problem
+-   Make a point-form list of every service and physical asset your team depends on
+-   For each item, answer two questions:
+    -   How long can you be without it before work stops dead?
+        This is the <<{g rto "recovery time objective" >>} (RTO).
+    -   How much data can you afford to lose: the last hour, the last day, a week?
+        This is the <<{g rpo "recovery point objective" >>} (RPO).
+-   Identify the single points of failure within your control,
+    e.g., the credit card that pays for cloud services,
+    or the person with the only key to the freezer
+
+## Make and Test a Plan
+
+-   Write a plan in a single shared document that everyone can find in thirty seconds
+    -   Store it in at least two places that cannot fail simultaneously
+-   State the disaster declaration criteria in plain language:
+    "the dashboard has been offline for more than a day"
+    or "the freezer has been above -70°C for more than an hour"
+-   Include a short numbered checklist for each scenario
+-   Test the plan by handing it to the newest team member
+    and asking them to execute it without help
+    -   Every point where they get stuck is a documentation or automation gap
+-   This is the antidote to the "fantasy document" described [earlier](../gas/index.qmd)
+
+## Back Up and Protect
+
+-   Follow the 3-2-1 rule [@Krogh2009]:
+    three copies of every critical asset,
+    on two different types of media,
+    with one copy off-site
+-   Back up source code to at least two different software forges
+    and turn on automatic mirroring
+-   Back up configuration as well: DNS records, environment variables, pipeline definitions
+-   Test a full restore from backup at least once a year
+    -   About a third of backups fail to restore completely
+-   Backups are not the same as preservation:
+    backups protect a *continuing* project from operational loss,
+    while the assets discussed [earlier](../gas/index.qmd) leaves a *closing* project usable by strangers
+
+## Communicate
+
+-   Choose a single communication channel that does not depend on your normal infrastructure
+    -   Agree in advance on a fallback and write it in the plan
+-   Pre-write messages and store them with the plan:
+    one for the team, one for users, one for collaborators, one for afterward
+-   Designate one person as the communicator so everyone else can focus on fixing the problem
+    -   Silence erodes trust faster than bad news,
+        so update stakeholders at regular intervals even if the update is "still working on it"
+-   The [next section](../abrupt/index.qmd) covers the same principle
+    for the case where the project does not continue
+
+## Stabilize, Then Investigate
+
+-   The first goal when something breaks is to contain the damage, not to find the root cause
+    -   Contain the water leak before mopping up
+-   Assign clear roles for the duration of the incident:
+    one person leads the technical response,
+    one person handles communication,
+    everyone else does what the leads tell them
+-   Create an incident log as you work, timestamping every significant action
+    -   14:32: freezer alarm triggered
+    -   14:35: temperature reading -50°C and rising
+    -   14:40: began sample transfer to Building C
+    -   Keeps the team in sync and helps retrospective
+-   Escalate early:
+    open a support ticket the moment you suspect the problem is on someone else's side
+-   Conduct a short review within 48 hours,
+    -   "What in the system allowed the incident", not, "Who made a mistake"
+-   Count the cost:
+    a day of downtime has a concrete price in lost experiments, missed deadlines,
+    and collaborators who stop trusting you
+    -   That number tells you whether a managed database or a backup service is worth it
+
+## Exercises
+
+### RTO and RPO
+
+1.  Pick three services or assets you depend on.
+1.  Identify the single points of failure within your control that could trigger failure of each.
+1.  For each, write down its recovery time objective and recovery point objective.
+
+### Declare a Disaster
+
+1.  Hand your recovery checklist to the newest member of your group.
+1.  Ask them to execute the plan without help.
+1.  Write down the first three gaps you find and who will fix each one.

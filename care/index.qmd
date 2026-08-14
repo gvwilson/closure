@@ -1,0 +1,122 @@
+---
+subtitle: "the most important part"
+---
+# Caring For Your People
+
+-   Projects end, but relationships between people do not have to
+-   The people who depended on you will be hit by multiple shocks at once
+    (just like you)
+-   Acknowledge that shutdown is a loss, even when it was voluntary
+    -   Team members who spent years on a project deserve to have that recognized
+
+## Total Pain
+
+-   {{<g total-pain "Total pain" >}}
+    is used to describe how a dying patient's suffering is never purely physical [@Saunders1963]
+    -   It has physical, psychological, social, and spiritual dimensions
+        that interact and amplify one another
+-   Project closure similarly involves more than logistics
+    -   Team members experience professional identity loss, grief over unfinished work,
+        anxiety about career prospects, and sometimes guilt or anger
+        that can fracture long-standing relationships
+    -   Treating closure as a purely administrative exercise leaves people worse off
+        and makes it harder for the broader community to learn from the experience
+
+## Psychological First Aid
+
+-   [@Hobfoll2007] identified five principles to guide responses in the early stages of a crisis,
+    which became the basis of the WHO's {{<g psychological-first-aid "Psychological First Aid" >}} field guide
+    [@WHO2026]
+    1.  Promote a sense of safety
+    1.  Calm the emotional environment
+    1.  Build self-efficacy and collective efficacy
+    1.  Foster connectedness
+    1.  Maintain hope
+-   The practical translation for project teams is that
+    the first conversations after a closure announcement
+    should not be about logistics
+    -   Confirm that people are not in immediate danger
+    -   Acknowledge what has happened rather than minimizing it
+    -   Remind people that they have handled difficult things before
+    -   Connect people with one another rather than leaving them to absorb the news alone
+    -   Identify what is genuinely uncertain versus irreversibly decided
+-   Sometimes you have to be "honest enough"
+
+## Two Kinds of Coping
+
+-   [@Lazarus1984] distinguishes two types of coping
+-   {{<g problem-focused-coping "Problem-focused coping" >}} addresses the situation itself
+    -   Adopted when people perceive a stressor as controllable
+-   {{<g emotion-focused-coping "Emotion-focused coping" >}} addresses the person's internal response
+    -   Adopted when people perceive it as uncontrollable
+-   Abrupt project closure typically combines both
+    -   So team members will respond to the same event differently
+        depending on whether they feel any agency over it
+-   The person who immediately starts triaging data is not more competent than
+    the person who needs an hour to absorb what has happened
+    -   They are applying different coping modes to the same situation
+-   Managing closure well means making space for both responses simultaneously.
+
+## Grief and Its Timing
+
+-   [@Rando2000] studied {{<g anticipatory-mourning "anticipatory mourning" >}}:
+    grief that begins before an expected loss, not after it
+    -   It involves simultaneous processing of past losses (what the project once was),
+        present losses (what it is becoming),
+	and future losses (what it will never be)
+    -   It is cognitively and emotionally more demanding than grief after the fact
+        because the person must continue to function while still engaged in the thing they are losing
+    -   Planned shutdown triggers this in project teams:
+        people must continue doing the work of closing down
+        while processing the loss of their work relationships and the future they had imagined
+    -   Naming this dynamic explicitly helps people manage it and support one another
+-   [@Shepherd2003;@Shepherd2016] found that the intensity of grief after a failed venture
+    is proportional to personal identification with the project
+    and directly interferes with the ability to learn from the experience
+    -   Grief recovery is not linear and is not accelerated by forcing lessons-learned conversations too early
+    -   Structured reflection is most productive after a period of acknowledgement,
+        not immediately after the loss
+    -   A retrospective held a month after closure captures more than one held the week it closes
+
+## Practical Care
+
+-   Downstream users and contributors deserve advance notice proportional
+    to their dependence on the project
+-   Help community members find each other independently of your infrastructure:
+    a mailing list or forum they control survives your shutdown
+-   Teams that maintained social contact after shutdown were more likely to reform and continue work;
+    those that dispersed without ties were not
+-   Engineers assigned to maintain a cancelled project suffer serious morale damage
+    -   Do not trap people in this role longer than necessary
+-   People often feel liberated rather than bereft when a long-running obligation ends
+    -   Give yourself and others permission to experience this without guilt
+-   Writing about difficult experiences has documented benefits
+-   Small acts of recognition (naming achievements, thanking contributors publicly)
+    matter disproportionately during difficult transitions
+-   A goodbye ceremony, however small, marks the ending and helps people move on
+    -   Closing a project is not erasing it
+-   The {{<g continuing-bonds "continuing bonds" >}} theory of bereavement [@Klass1996]
+    challenged the idea that healthy mourning requires severing the relationship with what was lost
+    -   People who maintain an ongoing connection through story-telling,
+        souvenirs,
+        or integration of the lost thing's values are exhibiting a normal, healthy form of grief
+    -   Framing closure around what continues, rather than only what ends,
+        reduces distress and lets participants frame archiving, citation, and attribution
+        as genuine acts of preservation, not bureaucratic compliance
+
+## Exercises
+
+### Mapping Stakeholder Messages
+
+Using your project:
+
+1.  List the people and groups most affected by closing your project, in order of impact.
+    Include both declared dependents (e.g., packages that list you as a requirement)
+    and undeclared ones (e.g., researchers who download your data).
+1.  Categorize each by impact severity if your project disappeared tomorrow:
+    critical (their work stops), significant (their work is impaired), or minor (an inconvenience).
+1.  Draft a one-sentence message tailored to each category.
+    What lead time does each group need, and what alternatives can you point them to?
+
+What information appears in all messages, and what appears in only one?
+What differs in tone, level of detail, and lead time given?

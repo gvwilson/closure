@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix B — Code of Conduct – Closing Time</title>
+<title>3&nbsp; Governance, Assets, and State – Closing Time</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,8 +53,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../contributing/index.html" rel="next">
-<link href="../license/index.html" rel="prev">
+<link href="../handover/index.html" rel="next">
+<link href="../intro/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -85,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../license/index.html">Appendices</a></li><li class="breadcrumb-item"><a href="../conduct/index.html"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Code of Conduct</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../gas/index.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Governance, Assets, and State</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -127,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../gas/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../gas/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Governance, Assets, and State</span></span></a>
   </div>
 </li>
@@ -184,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../conduct/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../conduct/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Code of Conduct</span></span></a>
   </div>
 </li>
@@ -230,20 +250,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#our-standards" id="toc-our-standards" class="nav-link active" data-scroll-target="#our-standards"><span class="header-section-number">B.1</span> Our Standards</a></li>
-  <li><a href="#our-responsibilities" id="toc-our-responsibilities" class="nav-link" data-scroll-target="#our-responsibilities"><span class="header-section-number">B.2</span> Our Responsibilities</a></li>
-  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope"><span class="header-section-number">B.3</span> Scope</a></li>
-  <li><a href="#enforcement" id="toc-enforcement" class="nav-link" data-scroll-target="#enforcement"><span class="header-section-number">B.4</span> Enforcement</a></li>
-  <li><a href="#attribution" id="toc-attribution" class="nav-link" data-scroll-target="#attribution"><span class="header-section-number">B.5</span> Attribution</a></li>
+  <li><a href="#governance" id="toc-governance" class="nav-link active" data-scroll-target="#governance"><span class="header-section-number">3.1</span> Governance</a></li>
+  <li><a href="#coupling-and-cascading-failure" id="toc-coupling-and-cascading-failure" class="nav-link" data-scroll-target="#coupling-and-cascading-failure"><span class="header-section-number">3.2</span> Coupling and Cascading Failure</a></li>
+  <li><a href="#assets" id="toc-assets" class="nav-link" data-scroll-target="#assets"><span class="header-section-number">3.3</span> Assets</a></li>
+  <li><a href="#specifics" id="toc-specifics" class="nav-link" data-scroll-target="#specifics"><span class="header-section-number">3.4</span> Specifics</a></li>
+  <li><a href="#permissions" id="toc-permissions" class="nav-link" data-scroll-target="#permissions"><span class="header-section-number">3.5</span> Permissions</a></li>
+  <li><a href="#legal-and-administrative" id="toc-legal-and-administrative" class="nav-link" data-scroll-target="#legal-and-administrative"><span class="header-section-number">3.6</span> Legal and Administrative</a></li>
+  <li><a href="#normalized-deviations" id="toc-normalized-deviations" class="nav-link" data-scroll-target="#normalized-deviations"><span class="header-section-number">3.7</span> Normalized Deviations</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises"><span class="header-section-number">3.8</span> Exercises</a>
+  <ul class="collapse">
+  <li><a href="#project-inventory" id="toc-project-inventory" class="nav-link" data-scroll-target="#project-inventory"><span class="header-section-number">3.8.1</span> Project Inventory</a></li>
+  <li><a href="#who-and-what" id="toc-who-and-what" class="nav-link" data-scroll-target="#who-and-what"><span class="header-section-number">3.8.2</span> Who and What</a></li>
+  <li><a href="#normalized-deviations-list" id="toc-normalized-deviations-list" class="nav-link" data-scroll-target="#normalized-deviations-list"><span class="header-section-number">3.8.3</span> Normalized Deviations List</a></li>
+  <li><a href="#project-advance-directive" id="toc-project-advance-directive" class="nav-link" data-scroll-target="#project-advance-directive"><span class="header-section-number">3.8.4</span> Project Advance Directive</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gvwilson/closure/edit/main/conduct/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gvwilson/closure/blob/main/conduct/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/gvwilson/closure/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/gvwilson/closure/edit/main/gas/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gvwilson/closure/blob/main/gas/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/gvwilson/closure/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../license/index.html">Appendices</a></li><li class="breadcrumb-item"><a href="../conduct/index.html"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Code of Conduct</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix B — Code of Conduct</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Governance, Assets, and State</span></h1>
+<p class="subtitle lead">foundations for every ending</p>
 </div>
 
 
@@ -260,45 +290,296 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
-<section id="our-standards" class="level2" data-number="B.1">
-<h2 data-number="B.1" class="anchored" data-anchor-id="our-standards"><span class="header-section-number">B.1</span> Our Standards</h2>
-<p>Examples of behavior that contributes to creating a positive environment include:</p>
 <ul>
-<li>using welcoming and inclusive language,</li>
-<li>being respectful of differing viewpoints and experiences,</li>
-<li>gracefully accepting constructive criticism,</li>
-<li>focusing on what is best for the community, and</li>
-<li>showing empathy towards other community members.</li>
-</ul>
-<p>Examples of unacceptable behavior by participants include:</p>
+<li>Every scenario relies on the same foundations: clear decision-making rules and an accurate inventory of assets</li>
+<li>Put these in place while the project is healthy, because decisions under stress are harder and more error-prone than those made in advance</li>
+<li>Use software-intensive projects for most examples because they’re what the author is most familiar with
 <ul>
-<li>the use of sexualized language or imagery and unwelcome sexual attention or advances,</li>
-<li>trolling, insulting/derogatory comments, and personal or political attacks,</li>
-<li>public or private harassment,</li>
-<li>publishing others’ private information, such as a physical or electronic address, without explicit permission, and</li>
-<li>other conduct which could reasonably be considered inappropriate in a professional setting</li>
+<li>Additions to cover other kinds of projects are very welcome</li>
+</ul></li>
+</ul>
+<section id="governance" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="governance"><span class="header-section-number">3.1</span> Governance</h2>
+<ul>
+<li>Every team needs explicit decision-making rules
+<ul>
+<li>Benevolent dictator for life (also known as <a href="../glossary/index.html#bdfl">BDFL</a> or “principal investigator”)</li>
+<li><p><a href="../glossary/index.html#martha-rules">Martha's Rules</a></p></li>
+</ul></li>
+<li>Rules must include <a href="../glossary/index.html#suffrage">suffrage</a>: who can veto, not just who is consulted</li>
+<li>Few projects have a <code>GOVERNANCE.md</code> file, and fewer still include shutdown criteria</li>
+<li>The [Apache Software Foundation][asf]’s [attic process][asf-attic] is a documented model:
+<ul>
+<li>At least three active respondents required for a viable project</li>
+<li>If they can’t get a release out, shutdown process begins</li>
+</ul></li>
+</ul>
+<figure class="figure">
+<img src="apache-attic.svg" alt="Eight-step Apache Attic Process taken from https://attic.apache.org/process-howto.html" class="figure-img">
+<figcaption>
+Apache Attic Process
+</figcaption>
+</figure>
+<ul>
+<li>In medicine, an <a href="../glossary/index.html#advance-directive">advance directive</a> specifies what care a patient wants if they become unable to speak for themselves</li>
+<li>Write one for the project while it is still healthy <span class="citation" data-cites="Towey2026">(<a href="#ref-Towey2026" role="doc-biblioref">Towey, n.d.</a>)</span>:
+<ul>
+<li>Conditions for shutdown</li>
+<li>Who has authority to make the call</li>
+<li>What assets must be preserved</li>
+<li>What obligations must be honored</li>
+</ul></li>
+<li>A closure plan that sits in a drawer and has never been tested is a <a href="../glossary/index.html#fantasy-document">fantasy document</a> <span class="citation" data-cites="Clarke1999">(<a href="#ref-Clarke1999" role="doc-biblioref">Clarke, 1999</a>)</span>
+<ul>
+<li>Organizations routinely produce plans that reassure regulators and funders but bear no relationship to what would actually happen under stress</li>
+<li>A <code>HANDOVER.md</code> written by one person in an afternoon that no one else has read</li>
+<li>Ideally, walk through the closure plan periodically to check that each step is actually executable with the people available</li>
+<li>But the word “ideally” is doing a lot of work in that sentence</li>
+</ul></li>
 </ul>
 </section>
-<section id="our-responsibilities" class="level2" data-number="B.2">
-<h2 data-number="B.2" class="anchored" data-anchor-id="our-responsibilities"><span class="header-section-number">B.2</span> Our Responsibilities</h2>
-<p>Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.</p>
-<p>Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.</p>
+<section id="coupling-and-cascading-failure" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="coupling-and-cascading-failure"><span class="header-section-number">3.2</span> Coupling and Cascading Failure</h2>
+<ul>
+<li><span class="citation" data-cites="Singer2023">(<a href="#ref-Singer2023" role="doc-biblioref">Singer, 2023</a>)</span>: organisations often invoke individual explanations to deflect systemic accountability
+<ul>
+<li>“The driver wasn’t paying attention” rather than “the dashboard was too complicated”</li>
+</ul></li>
+<li>Project infrastructure is often <a href="../glossary/index.html#tight-coupling">tightly coupled</a> in ways that only become visible during shutdown <span class="citation" data-cites="Perrow1999">(<a href="#ref-Perrow1999" role="doc-biblioref">Perrow, 1999</a>)</span>
+<ul>
+<li>Failures in tightly-coupled systems are not aberrations but predictable outcomes of the system’s design</li>
+</ul></li>
+<li>E.g., an account that pays for ten services, or a single personal login that controls a domain, means that an unexpected departure can cascade into complete loss of access</li>
+<li>Treat any single point of control that cannot survive 48-hour unavailability as a bug</li>
+</ul>
 </section>
-<section id="scope" class="level2" data-number="B.3">
-<h2 data-number="B.3" class="anchored" data-anchor-id="scope"><span class="header-section-number">B.3</span> Scope</h2>
-<p>This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project email address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.</p>
+<section id="assets" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="assets"><span class="header-section-number">3.3</span> Assets</h2>
+<ul>
+<li>Knowing what you have is the first step to preserving it: code, data, discussion archives, credentials and access, the domain and web presence, metadata, and dependencies</li>
+<li>“Preservation” means making work usable by someone who was not part of creating it</li>
+<li>Capture the <em>why</em>, not just the <em>what</em>: a README explaining the problem solved is more durable than API documentation</li>
+<li>Go through each asset type and ask two questions:
+<ul>
+<li>How would someone else find and use this if we disappeared tomorrow?</li>
+<li>Under time pressure, what do we do first?</li>
+</ul></li>
+<li>Treat every handover as an <a href="../glossary/index.html#asset-transfer">asset transfer</a>, not an <a href="../glossary/index.html#entity-transfer">entity transfer</a> <span class="citation" data-cites="Marks2022">(<a href="#ref-Marks2022" role="doc-biblioref">Marks et al., 2022</a>)</span>
+<ul>
+<li>An asset transfer moves selected assets and obligations; the original legal entity persists or is wound down separately</li>
+<li>An entity transfer moves the entire legal entity including unknown liabilities</li>
+<li>Being explicit about what is and is not transferred protects both the outgoing team and the incoming maintainers</li>
+</ul></li>
+</ul>
 </section>
-<section id="enforcement" class="level2" data-number="B.4">
-<h2 data-number="B.4" class="anchored" data-anchor-id="enforcement"><span class="header-section-number">B.4</span> Enforcement</h2>
-<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by emailing the project team. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.</p>
-<p>Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project’s leadership.</p>
+<section id="specifics" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="specifics"><span class="header-section-number">3.4</span> Specifics</h2>
+<dl>
+<dt>Code</dt>
+<dd>
+Archive to a persistent location such as Zenodo or Software Heritage and assign a <a href="../glossary/index.html#doi">DOI</a> to the final release so it can be cited. Under time pressure, prioritize data over code: raw data is often irreplaceable, while code can be recovered or reconstructed
+</dd>
+<dt>Data</dt>
+<dd>
+Record provenance, format, units, and known limitations and follow <a href="../glossary/index.html#fair-principles">FAIR principles</a> where possible. Under time pressure, copy the data out first.
+</dd>
+<dt>Discussion archives</dt>
+<dd>
+Mailing lists and issue trackers are often more valuable than formal documentation, so export and preserve them before paid services lapse <span class="citation" data-cites="Tamburri2020">(<a href="#ref-Tamburri2020" role="doc-biblioref">Tamburri et al., 2020</a>)</span>. Under time pressure, one public copy beats zero private ones: push the repository to a public location immediately, even in its current messy state.
+</dd>
+<dt>Credentials and access</dt>
+<dd>
+Hand them to a trusted person outside the project before access is cut. Do this before anything else in an emergency, because accounts stored in institutional systems will be unreachable once those systems are closed.
+</dd>
+<dt>Domain and web presence</dt>
+<dd>
+Domain names lapse and get squatted, so migrate content to free hosting before letting the domain go.
+</dd>
+<dt>Metadata and identifiers</dt>
+<dd>
+Mark deprecated versions in every relevant package registry, point to alternatives with a migration guide, and write a one-paragraph finder’s note at the root of the archive. Under time pressure, export “everything else”: issue tracker state, wiki pages, CI/CD configuration, deployment settings.
+</dd>
+<dt>Dependencies</dt>
+<dd>
+Dependencies rot, so record exact versions and, if possible, a container image that reproduces the computational environment
+</dd>
+</dl>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Fifteen years ago, a file-sharing system for scientific data based on the BitTorrent protocol failed to find wide adoption because of the (quite reasonable) association in many institutions’ collective minds between BitTorrent and illegal downloading <span class="citation" data-cites="Langille2010">(<a href="#ref-Langille2010" role="doc-biblioref">Langille &amp; Eisen, 2010</a>)</span>. At the time of writing, though, many individuals and groups are turning back to BitTorrent to share datasets that are at risk of disappearing because of the protocol’s resilience.</p>
+</div>
+</div>
 </section>
-<section id="attribution" class="level2" data-number="B.5">
-<h2 data-number="B.5" class="anchored" data-anchor-id="attribution"><span class="header-section-number">B.5</span> Attribution</h2>
-<p>This Code of Conduct is adapted from the <a href="https://www.contributor-covenant.org/">Contributor Covenant</a> version 1.4.</p>
+<section id="permissions" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="permissions"><span class="header-section-number">3.5</span> Permissions</h2>
+<ul>
+<li>The <a href="../glossary/index.html#lottery-factor">lottery factor</a> (also called “bus factor”)
+<ul>
+<li>What stops if someone wins the lottery and moves to Greenland with zero notice?</li>
+</ul></li>
+<li>Use dedicated organizational accounts rather than personal ones
+<ul>
+<li>But keep in mind that this introduces a risk because those accounts can disappear</li>
+<li>So add a personal account as a “backup”</li>
+</ul></li>
+<li>Keep a findable list of privileged actions and the accounts that can perform them</li>
+<li>Use a <a href="../glossary/index.html#password-manager">password manager</a> for all organizational credentials</li>
+<li><a href="../disaster/index.html">Disaster Recovery</a> covers the operational side of this
+<ul>
+<li>The point here is to build the habit before you need it</li>
+</ul></li>
+</ul>
+</section>
+<section id="legal-and-administrative" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="legal-and-administrative"><span class="header-section-number">3.6</span> Legal and Administrative</h2>
+<ul>
+<li>Legal and administrative tasks are the most commonly skipped and the most likely to cause problems later</li>
+<li>Most important thing is to <em>keep a record</em> of decisions made during shutdown: what was transferred, to whom, and when
+<ul>
+<li>Use email rather than chat or video calls so that you have a record of everything said by both parties</li>
+<li>Your memory isn’t perfect (particularly under difficult circumstances)</li>
+<li>And people may change their minds about what they said, meant, or promised</li>
+</ul></li>
+<li>Determine who <em>legally</em> owns the project’s outputs: individual contributors, an institution, or a formal entity
+<ul>
+<li>IP policies differ between universities, companies, and grant-funded projects</li>
+<li>Check, don’t assume</li>
+</ul></li>
+<li>Institutions, journals, and funders have policies for licensing and sharing <span class="citation" data-cites="Katz2018">(<a href="#ref-Katz2018" role="doc-biblioref">Katz et al., 2018</a>)</span>
+<ul>
+<li>If you don’t know if there is a policy or not, <em>ask someone</em></li>
+<li>Look for an [Open Source Program Office][ospo] (OSPO) or intellectual property (IP) office</li>
+</ul></li>
+<li>Open source licenses are irrevocable, but closing repositories is still a meaningful decision for your community</li>
+<li>Confidential and personally identifiable data has specific legal obligations for retention and deletion</li>
+<li>Trademarks, domain names, and social media handles are assets with legal owners
+<ul>
+<li>Transfer or release them explicitly</li>
+</ul></li>
+<li>Financial accounts require formal closure
+<ul>
+<li>Residual funds may need to be donated or returned</li>
+</ul></li>
+<li>Grant reporting obligations survive project shutdown
+<ul>
+<li>Check whether a final report is due</li>
+</ul></li>
+<li>Build exit clauses into contracts and development agreements from the start, not when you need them</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There is often a difference in large bureaucratic organization between the rules as written and the rules as enforced <span class="citation" data-cites="OSS1944">(<a href="#ref-OSS1944" role="doc-biblioref">Strategic Services, 1944</a>)</span>. If you are leaving your position on short notice or under difficult circumstances, you may want to be selective about which forms you fill in proactively and which you “just haven’t gotten around to yet”. Members of marginalized groups have had more practice with these tactics than members of privileged groups <span class="citation" data-cites="Scott1987">(<a href="#ref-Scott1987" role="doc-biblioref">Scott, 1987</a>)</span>; if you belong to the latter, a conversation or two with selected colleagues may help you see your priorities more clearly.</p>
+</div>
+</div>
+</section>
+<section id="normalized-deviations" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="normalized-deviations"><span class="header-section-number">3.7</span> Normalized Deviations</h2>
+<ul>
+<li>The Challenger disaster resulted not from a single catastrophic decision but from a long sequence of small ones in which warning signals were repeatedly noticed, reinterpreted as acceptable, and filed away until deviation had become the norm <span class="citation" data-cites="Vaughan1996">(<a href="#ref-Vaughan1996" role="doc-biblioref">Vaughan, 1996</a>)</span></li>
+<li>Teams approaching closure often carry the same kind of backlog</li>
+<li>Deliberate closure should therefore include an explicit audit of <a href="../glossary/index.html#normalization-of-deviance">normalized deviations</a>: things the team accepted because stopping to fix them felt too costly</li>
+<li>A shutdown retrospective is most valuable when it names the things the team learned to live with, not only when it celebrates successes</li>
+<li>Document these to record the project’s actual state and to avoid passing silent assumptions to anyone who inherits the work</li>
+</ul>
+</section>
+<section id="exercises" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="exercises"><span class="header-section-number">3.8</span> Exercises</h2>
+<section id="project-inventory" class="level3" data-number="3.8.1">
+<h3 data-number="3.8.1" class="anchored" data-anchor-id="project-inventory"><span class="header-section-number">3.8.1</span> Project Inventory</h3>
+<ol type="1">
+<li>Make a list of everything that belongs to your project.</li>
+<li>Compare lists with others. What did they include that you missed and vice versa? What did someone include that other people think isn’t actually part of the project?</li>
+</ol>
+<p>The following may help you write your list:</p>
+<ul>
+<li>Code, data, discussion archives, website, social media accounts, domain name, hardware, and…?</li>
+<li>Hosting costs, software licenses, bank accounts, trademarks, partially-completed contracts, funding reports, confidential data obligations, and…?</li>
+<li>Community goodwill, points of contact, and…?</li>
+</ul>
+</section>
+<section id="who-and-what" class="level3" data-number="3.8.2">
+<h3 data-number="3.8.2" class="anchored" data-anchor-id="who-and-what"><span class="header-section-number">3.8.2</span> Who and What</h3>
+<ol type="1">
+<li>What would your project be unable to do if you were unavailable for three months?</li>
+<li>Which of your project’s activities depend on personal accounts rather than accounts dedicated to the project?</li>
+</ol>
+</section>
+<section id="normalized-deviations-list" class="level3" data-number="3.8.3">
+<h3 data-number="3.8.3" class="anchored" data-anchor-id="normalized-deviations-list"><span class="header-section-number">3.8.3</span> Normalized Deviations List</h3>
+<p>Write down three things in your project that everyone on the team knows are wrong but that you have all learned to live with (e.g., a dependency nobody wants to touch or a process that only works because one person knows the trick).</p>
+<ul>
+<li>Which items were hardest to decide about?</li>
+<li>What did you want to hide, and why?</li>
+<li>What would a successor most need to know?</li>
+</ul>
+</section>
+<section id="project-advance-directive" class="level3" data-number="3.8.4">
+<h3 data-number="3.8.4" class="anchored" data-anchor-id="project-advance-directive"><span class="header-section-number">3.8.4</span> Project Advance Directive</h3>
+<ol type="1">
+<li>Write a one-page document covering:
+<ul>
+<li>The conditions under which this project should be wound down (not just “when funding runs out” but specific observable signals)</li>
+<li>Who has the authority to make that call (distinguish between who must be consulted and who has an actual veto)</li>
+<li>What assets must be preserved before shutdown is complete, and how</li>
+<li>What obligations must be honoured before the project can be considered closed</li>
+</ul></li>
+<li>Give your document to a partner and ask them to find one realistic scenario it does not handle. What happens if the person with authority is unavailable? What happens if two people with veto disagree?</li>
+</ol>
+<p>Which conditions were hardest to write precisely? Where did “who is consulted” blur into “who has a veto”?</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Clarke1999" class="csl-entry" role="listitem">
+Clarke, L. (1999). <em>Mission improbable: Using fantasy documents to tame disaster</em>. University of Chicago Press.
+</div>
+<div id="ref-Katz2018" class="csl-entry" role="listitem">
+Katz, D. S., Niemeyer, K. E., &amp; Smith, A. M. (2018). Publish your software: Introducing the journal of open source software (JOSS). <em>Computing in Science &amp; Engineering</em>, <em>20</em>(3). <a href="https://doi.org/10.1109/MCSE.2018.03221930">https://doi.org/10.1109/MCSE.2018.03221930</a>
+</div>
+<div id="ref-Langille2010" class="csl-entry" role="listitem">
+Langille, M. G. I., &amp; Eisen, J. A. (2010). BioTorrents: A file sharing service for scientific data. <em>PLoS One</em>, <em>4</em>(5). <a href="https://doi.org/10.1371/journal.pone.0010071">https://doi.org/10.1371/journal.pone.0010071</a>
+</div>
+<div id="ref-Marks2022" class="csl-entry" role="listitem">
+Marks, K. H., Blees, C. W., Nall, M. R., &amp; Stewart, T. A. (2022). <em>Middle market m&amp;a: Handbook for advisors, investors, and business owners</em> (2nd ed.). Wiley Finance.
+</div>
+<div id="ref-Perrow1999" class="csl-entry" role="listitem">
+Perrow, C. (1999). <em>Normal accidents: Living with high-risk technologies</em>. Princeton University Press.
+</div>
+<div id="ref-Scott1987" class="csl-entry" role="listitem">
+Scott, J. C. (1987). <em>Weapons of the weak: Everyday forms of peasant resistance</em>. Yale University Press.
+</div>
+<div id="ref-Singer2023" class="csl-entry" role="listitem">
+Singer, J. (2023). <em>There are no accidents: The deadly rise of injury and disaster—who profits and who pays the price</em>. Simon &amp; Schuster.
+</div>
+<div id="ref-OSS1944" class="csl-entry" role="listitem">
+Strategic Services, U. S. O. of. (1944). <em>Simple sabotage field manual</em>.
+</div>
+<div id="ref-Tamburri2020" class="csl-entry" role="listitem">
+Tamburri, D. A., Blincoe, K., Palomba, F., &amp; Kazman, R. (2020). ’The canary in the coal mine…’ a cautionary tale from the decline of SourceForge. <em>Software: Practice and Experience</em>, <em>50</em>(10). <a href="https://doi.org/10.1002/spe.2874">https://doi.org/10.1002/spe.2874</a>
+</div>
+<div id="ref-Towey2026" class="csl-entry" role="listitem">
+Towey, J. (n.d.). <em>Five wishes</em>. Aging with Dignity. Retrieved April 8, 2026, from <a href="https://www.fivewishes.org/">https://www.fivewishes.org/</a>
+</div>
+<div id="ref-Vaughan1996" class="csl-entry" role="listitem">
+Vaughan, D. (1996). <em>The challenger launch decision: Risky technology, culture, and deviance at NASA</em>. University of Chicago Press.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -704,13 +985,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../license/index.html" class="pagination-link" aria-label="License">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">License</span></span>
+      <a href="../intro/index.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../contributing/index.html" class="pagination-link" aria-label="Contributing">
-        <span class="nav-page-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Contributing</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../handover/index.html" class="pagination-link" aria-label="Succession Planning">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Succession Planning</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -719,4 +1000,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gvwilson/closure/edit/main/conduct/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gvwilson/closure/blob/main/conduct/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/gvwilson/closure/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gvwilson/closure/edit/main/gas/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gvwilson/closure/blob/main/gas/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/gvwilson/closure/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

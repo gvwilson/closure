@@ -1,0 +1,160 @@
+---
+subtitle: "when the future arrives too soon and in the wrong order"
+---
+# Abrupt Closure
+
+-   Worst case: the project does not continue and you get one shot to close it down
+
+## What People Actually Do
+
+-   Under time pressure, experts do not compare options:
+    they recognize a situation as an instance of a familiar type
+    and act on the first workable course of action that comes to mind [@Klein1998]
+    -   This is called {{<g recognition-primed-decision-making "recognition-primed decision making" >}}:
+        the decision is primed by experience, not constructed from first principles
+    -   Experience that team members have handling emergencies in other domains can be misleading
+    -   But is also more useful than they realize
+    -   Asking "has anyone seen something like this before?" activates usable tacit knowledge under pressure
+-   Similarly, {{<g attention-narrowing "attention narrows" >}} under acute stress
+    -   Specifically, this impairs the ability to hold multiple competing priorities in mind simultaneously
+        [@Easterbrook1959;@Starcke2012]
+    -   As a result,
+        teams focus intensely on the most visible problem
+	while forgetting entire categories that would be obvious under calmer circumstances
+    -   This is not a failure of knowledge:
+        it is a predictable feature of how the brain responds to pressure
+
+## Convergence as a Resource
+
+-   [@Dynes1970] describes four types of groups that form in emergencies:
+    -   Established organizations that stick to their routines despite breakdown
+    -   Other organizations that extend their routines to cover the new situation
+    -   Ad hoc groups form specifically to respond
+        -   Their tasks are modeled on those of established organizations:
+        -   They know what to do, they just need to come together
+    -   Emergent groups with no prior or subsequent existence
+        -   They invent both their structure and their tasks in the moment with no existing template to follow
+-   Research shows that people converge on a crisis without being told to [@Fritz1957]
+    -   People who step forward do so because the project mattered
+    -   They are likely to help if given the minimum viable information
+    -   In software and research projects this translates into unofficial mirrors,
+        public documentation posts,
+        and community email threads
+    -   If you can support this without endangering yourself, do so
+
+## A Loose Interpretation of the Rules
+
+-   [@Lipsky1980] found that frontline workers routinely depart from formal rules
+    when applying them mechanically would produce worse outcomes than exercising judgment
+    -   This is called {{<g street-level-bureaucracy "street-level bureaucracy" >}}:
+        the real policy of an organisation is made in the moment-to-moment decisions of frontline workers,
+        not in headquarters
+    -   Waiting for formal approval that cannot be obtained is itself a decision, and usually a worse one
+-   When formal procedures are inapplicable because time or infrastructure is unavailable,
+    the people present should act within their own discretion
+    rather than waiting for authorization they cannot obtain
+    -   Copying data, setting up a forwarding address, or sending a brief notice
+        are all within the discretion of the people present
+-   Members of marginalized groups often have more practice navigating hostile bureaucracies
+    their tactics can be instructive
+
+## Pause…
+
+-   [@Gawande2009] found that the most common failures in surgery
+    were not failures of skill but failures to perform steps the surgeon already knew needed to be done
+    -   The intervention that worked was not additional training but a checklist
+    -   The same principle applies directly to abrupt project closure
+-   First, establish exactly how much time you have and what constraints are non-negotiable
+    -   Organizations sometimes keep shutdown news secret to prevent morale collapse
+    -   This backfires: rumors and information vacuums are more destructive than bad news
+    -   Silence, denial, and diminishment all increase reputational and community harm
+-   Second, spend a few minutes writing down every *category* of thing that must be addressed
+    before attempting to resolve any of them
+    -   Access credentials, data backups, stakeholder notifications, community communication, legal obligations
+    -   The list does not need to be complete or correctly ordered
+    -   It just needs to exist so that urgency doesn't lead to tunnel vision
+-   Second, triage ruthlessly using the {{<g moscow-method "MoSCoW method" >}}:
+    -   Must do: obligations that carry legal or financial risk if unmet
+    -   Should do: the minimum viable record of the project's work
+    -   Could do: give the community a way to find each other after you are gone
+    -   Won't do: everything else, including anything that amounts to "do it properly"
+
+## …then Speak…
+
+-   [@Coombs2019] identified three communication errors that increase reputational damage:
+    -   Silence: stakeholders fill the vacuum with rumour
+    -   Denial: asserting the crisis is not serious
+    -   Diminishment: acknowledging it but minimising its severity
+-   Rapid, honest, minimal communication is best
+    *even when you do not yet know what you will do*
+    -   A single paragraph saying
+        "here is what we know, here is what we do not know, here is when we expect more information"
+        is not a plan
+    -   But prevents the harms of silence
+
+## …then Act
+
+-   You probably don't have time to clean up code, data, or publications
+    -   A README and a runnable script are a viable minimum handover for research software
+-   Notify funders and stakeholders with binding claims before the project goes dark
+-   Provide a forwarding address:
+    -   A working email address is better than silence
+-   Do not let guilt, pressure, or optimism make you promise maintenance you cannot deliver
+-   The first conversations after the announcement are not about logistics:
+    the [next section](../care/index.qmd) covers the human side
+
+### When You're the One Being Hit
+
+-   Most participants in project closure are not the ones making the decision
+    -   The advice above is written from the project lead's perspective
+    -   This section addresses the individual contributor
+-   If your own work is about to disappear, do the minimum viable handover yourself:
+    push a copy somewhere public,
+    and export your issues and notes.
+    -   Hand credentials to a trusted person outside the organization *if it's safe to do so*
+-   Pause before speaking or posting publicly:
+    have someone you trust review anything before you say or send it
+-   Broader individual-level advice lives in [an appendix](../fire/index.qmd)
+
+## Exercises
+
+### Categories Before Tasks
+
+1.  Working individually,
+    take three minutes to write down every *category* of thing
+    that would need to be addressed if your project shut down at the end of this week.
+    Write only categories, not specific tasks.
+1.  Compare your list with a partner.
+    What categories did your partner include that you missed?
+    What did you over-specify?
+1.  Debrief as a group.
+    Most lists focus heavily on one or two categories (usually code or data)
+    while omitting others entirely
+    (credentials, legal obligations, community communication, contributor welfare, domain names).
+    This is not a failure of knowledge,
+    but a predictable failure of recall under pressure.
+
+### Triage Under Pressure
+
+You have just been told that your project is shutting down in 48 hours.
+
+1.  Apply MoSCoW: sort the categories from the previous exercise
+    into must, should, could, or won't,
+    given a five-day deadline and one person working half-time.
+1.  Identify the single most important thing you can do in the first two hours.
+
+### Leak Response
+
+You planned to announce your project's shutdown next Monday
+with a carefully drafted message to contributors, users, and funders.
+On Thursday afternoon,
+a community member posts on social media that the project is being killed by management.
+You haven't notified your team or your funder yet,
+but the post is gathering attention.
+
+1.  Draft the message you send to your team in the first 30 minutes.
+    What do you tell them, and what do you ask them *not* to do?
+1.  Draft the public post you publish within the next 2 hours.
+    How does the premature leak change the tone, timing, and content of what you had planned to say?
+1.  In groups, discuss which stakeholder relationships are most at risk from the leak.
+    What can you realistically salvage, and what is likely already damaged beyond repair?

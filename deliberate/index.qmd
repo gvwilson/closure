@@ -1,0 +1,167 @@
+---
+subtitle: ending on your own terms
+---
+# Deliberate Closure
+
+-   The project is not continuing and you have time to plan
+    -   Sometimes thought of as "succession to zero"
+-   Work is less about triage and more about communication and care
+
+## When
+
+-   [@Weitzel1989] describes a five-stage model of organisational decline:
+    -   Blindness: warning signs go unrecognised
+    -   Inaction: signs are seen but nothing changes
+    -   Faulty action: the wrong remedies are tried
+    -   Crisis: resources are depleted and options close off
+    -   Dissolution
+-   The {{<g sunk-cost-fallacy "sunk cost fallacy" >}} keeps projects alive past their useful life
+-   The moment when shutdown becomes undeniable is rarely the moment it became inevitable:
+    the warning signs were there earlier [@Whetten1980]
+    -   Recognizing which stage a project is in determines which interventions are still available
+-   Clinicians systematically fail patients by focusing on what
+    medicine *can* do rather than asking what the patient actually *wants*
+    [@Gawande2014]
+    -   Project closure conversations often fail in the same way
+-   The conditions for shutdown should already be written down in the project's advance directive
+-   If they are not, the first step is to write down who decides and under what conditions
+    -   Distinguish between who must be consulted and who has a veto
+-   Discussions with team members, funders, institutional sponsors, and users should:
+    -   Establish a shared understanding of the situation
+    -   Make each party's values and priorities explicit
+    -   Negotiate a plan that meets those goals rather than being what is technically easiest
+-   Focus on:
+    -   The least bad outcome for each stakeholder
+    -   What trade-offs they are willing to make
+
+:::: {.callout-note}
+
+One special case is patterns in the dynamics of corporate scandals [@Palazzo2025].
+Recognizing them early can give people warning that projects are going to fail.
+
+<div class="center">
+<table>
+  <tr>
+    <td style="border: none; padding-right: 2rem;">
+      rigid ideology
+      <br>
+      toxic leadership
+      <br>
+      manipulative language
+    </td>
+    <td style="border: none; padding-right: 2rem;">
+      corrupting goals
+      <br>
+      destructive incentives
+      <br>
+      ambiguous rules
+    </td>
+    <td style="border: none; padding-right: 2rem;">
+      perceived unfairness
+      <br>
+      dangerous groups
+      <br>
+      slippery slope
+    </td>
+  </tr>
+</table>
+</div>
+
+::::
+
+## Honest Enough
+
+-   Framing matters
+    -   "Putting into hibernation" provokes less hostility than "termination"
+        and keeps the door open for revival
+    -   *If* it is the truth and credible
+    -   It's possible to be one without the other
+-   "Tell people what you know, as soon as you know it" is easy to say but hard to do
+    -   Information gaps cause more anxiety than difficult truths
+    -   Conflicting verbal and written instructions cause lasting harm
+    -   On the other hand, you often *don't* know what's happening
+    -   And constantly-changing pronouncements raise the temperature as well
+-   Remember that this project is probably not the sole relationship you have with others
+    -   [@Wruck1990] found that indirect costs of financial distress
+        (lost contributors, cancelled collaborations, management distraction)
+        are substantially larger than direct costs such as legal fees or asset sales
+    -   Indirect costs arise because distress signals inability to fulfil commitments,
+        triggering defensive behaviour that accelerates decline
+    -   An information vacuum does more damage than an honest announcement would have
+
+## Beginning
+
+-   Don't start by announcing shutdown
+    -   Announce that *you* are stopping work and invite known successors to take over
+    -   Do not accept successors you don't already know ({{<g supply-chain-attack "supply chain attack" >}} risk)
+-   Give users real deadlines and enough time to act
+    -   Two to six months between announcement and shutdown is enough
+-   Use the project's announcement channels and others, not just the repository README or project home page
+    -   The latter reach core project members, not the wider circle
+-   Tell people reasons (as much as you can), timelines, and what will happen to assets
+
+## Middle
+
+-   Update the project home page to list:
+    -   Key achievements
+    -   Current state (working, broken, incomplete)
+    -   Where code, data, and results are (going to be) archived
+    -   Next steps or alternatives for users
+-   Don't bother with:
+    -   User-facing tutorials
+    -   Exhaustive dependency documentation
+    -   Adding additional tests as if you were doing a new release
+    -   Bug triage
+
+## End
+
+-   If possible, have someone outside the project run structured exit interviews
+    to find out what should survive rather than what went wrong
+-   Hold a wake for the project (i.e., a combination group retrospective and memorial)
+    -   What went well, what didn't, and what stories people will remember
+
+:::: {.callout-note}
+
+[@Chochinov2005;@Chochinov2012] advocates {{<g dignity-therapy "dignity therapy" >}}
+as a brief, structured intervention for people near the end of life.
+The central technique is a guided life-review interview
+in which the person reflects on what has mattered most,
+what they are proud of,
+and what they most want future generations to know and remember.
+A similar structured exit interview or retrospective at the end of a project
+is more than a conventional "lessons learned" report
+because it is personal, narrative, and explicitly oriented toward what should survive
+rather than what went wrong.
+
+::::
+
+## Exercises
+
+### Audit Your Dependencies
+
+Read [Dumb Ways for an Open Source Project to Die](../nesbitt/index.qmd),
+then think about the projects you depend on.
+Which of them do you believe are already in one of these states?
+How would you find out?
+
+### Write a Shutdown Notice
+
+1.  Draft a short announcement (3-5 bullet points) for your project.
+    Explain the reasons for closure,
+    give a concrete timeline,
+    tell people what will happen to the data and the website,
+    and point users to alternatives or successors.
+1.  Swap and identify one thing the other notice does well
+    and one thing it could improve.
+
+### Last Known State
+
+Draft a one-page "last known state" document for your project:
+
+1.  What does this project do (i.e., what problem does it solve)?
+1.  What is currently working?
+1.  What is broken or incomplete?
+1.  Where does the data or code live, and how would someone get it?
+1.  What are the most important things a successor would need to know?
+
+Compare drafts: what did others ask about that you had not thought to include?

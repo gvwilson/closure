@@ -1,0 +1,106 @@
+---
+subtitle: "setting the scene"
+---
+# Introduction
+
+-   For every beginning there must be an ending
+-   But we don't like to talk about that
+    -   Thousands of books in print about how to start a business
+    -   Only a handful about how to pass one on or wind one down
+    -   And many of those are really about how to sell out at the right time
+    -   Because mortality scares us
+-   Preparing for possible endings can make them less painful
+    -   And less likely:
+        if we think about how things might end, we might be able to prevent some endings
+-   It also helps make what happens before then more enjoyable
+    -   E.g., business owners who were satisfied with their exits had started planning years in advance
+        [@Burlingham2014]
+
+## The Grid
+
+-   Organize our thoughts on a 2x2 grid
+-   One axis is continuity: does the project continue after the event or not?
+-   The other is pace: is the event gradual (you can plan) or abrupt (you cannot)?
+-   This gives four quadrants (each of which we have matched to a persona):
+    -   {{<g succession-planning "Succession planning" >}}:
+        the project continues under someone else's leadership (Jun)
+    -   {{<g deliberate-closure "Deliberate closure" >}}:
+        the project does not continue, but you have time to plan (Vaida)
+    -   {{<g disaster-recovery "Disaster recovery" >}}:
+        the project experiences an abrupt interruption but recovers (Chetan)
+    -   {{<g abrupt-closure "Abrupt closure" >}}:
+        the project shuts down on short notice (Liam)
+-   Before discussing these,
+    we look at foundations that all scenarios rely on
+-   Finish with a section on looking after your people,
+    which also cuts across all scenarios
+
+:::: {.callout-note}
+
+An {{<g abstinence-solution "abstinence solution" >}} is one that requires people
+to do things we know they actually won't
+(see also "{{<g bullshit "bullshit" >}}" [@Frankfurt2005]).
+"Document everything" is an example:
+people will always short-change writing descriptions of work in favor of actually doing work,
+and fail to write down the parts of their work that they think are obvious.
+This isn't laziness:
+most of what we can write today doesn't actually address tomorrow's actual needs.
+
+::::
+
+## Threat Models
+
+-   What situation you are in usually depends on external factors
+    -   Use {{<g threat-modeling "threat modeling" >}} to think about them [@Smalls2021]
+-   {{<g individual-threat "Individual threats" >}} affect one or a few members of your team
+    -   Can come from mundane career or life changes (illness, new job opportunity)
+    -   Or external factors (international students' visas revoked with little warning)
+-   {{<g leadership-threat "Leadership threats" >}} are specifically aimed the project's leader
+    (e.g., being targeted in the media for politically unpopular research findings)
+-   {{<g community-threat "Community threats" >}} affect large groups
+    -   E.g., department being shut down
+    -   Affect so many people at the same time that the community cannot buffer the shock
+    -   And might not survive it
+    -   [Climategate][climategate] affected dozens of people directly
+        and damaged the entire climate research community
+-   {{<g global-threat "Global threats" >}} affect everyone at the same time
+    -   Which means other groups cannot help
+    -   And there may not be anywhere to run to
+    -   E.g., current attacks on science in the United States
+
+:::: {.callout-note}
+
+Governments make emergency plans to deal with community threats
+(if they are responsible enough to admit those threats exist).
+When governments themselves are in upheaval,
+people turn to {{<g civil-society "civil society" >}} for help [@Solnit2010].
+
+::::
+
+## Not Covered
+
+-   Community building
+    -   Lots of good guides [@Alinsky1989; @Brown2007; @Lakey2018]
+    -   We assume you have to use the community you already have
+        (i.e., don't have time to build one to deal with this situation)
+-   Communication skills
+    -   We'll focus on what to say rather than how to say it
+-   For-profit businesses
+    -   We assume your project isn't supposed to turn a profit
+    -   And that growth for its own sake hasn't been your goal [@Burlingham2016]
+
+## Exercises
+
+### Quick Check
+
+1.  Which quadrant are you in?
+    -   Does the project continue after the event, or not?
+    -   And is the event gradual or abrupt?
+1.  Do you have days or months to prepare?
+    -   The former is usually involuntary
+    -   The latter allows for (some) structural changes before and during the event
+    -   And more importantly, for course correction if your first guess is wrong
+1.  Can you act unilaterally or do other people have a veto?
+    -   Not "have a stake in the outcome", but rather can disagree with you and make it stick
+    -   Are those "other people" your peers or your superiors (e.g., your employer)?
+1.  Can you talk to someone who has been through this before?
