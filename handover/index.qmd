@@ -9,7 +9,7 @@ subtitle: "the best-case scenario"
 
 ## How Leaders Leave
 
--   [%b Sonnenfeld1988 %] studied what happens when leaders leave the organisations they built
+-   [@Sonnenfeld1988] studied what happens when leaders leave the organisations they built
     and identified four departure archetypes
     -   Which one applies to you is shaped by how central the project is to your identity
     -   Recognizing the pattern in advance shapes the handover conversations
