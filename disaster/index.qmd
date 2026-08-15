@@ -5,7 +5,7 @@
 -   A {{<g disaster "disaster" >}} is not the end of the project:
     it is an unplanned disruption that the team works through and survives
 -   In 2025, the US government launched an unprecedented series of attacks on its
-    own scientific research groups, and soon after [GitHub][github] briefly dropped
+    own scientific research groups, and soon after [GitHub](@github) briefly dropped
     below 90% availability for the first time
 -   These events reminded us how fragile research computing systems can be
 

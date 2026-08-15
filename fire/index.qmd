@@ -90,7 +90,7 @@
 
 -   I hope you're never fired,
     -   Or if you are,
-        that the company handles it more professionally than [DataCamp][buzzfeed-datacamp] did
+        that the company handles it more professionally than [DataCamp](@buzzfeed-datacamp) did
 
 ### Keep Public Statements Brief
 

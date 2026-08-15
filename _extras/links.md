@@ -40,10 +40,12 @@
 [pep-541]: https://peps.python.org/pep-0541/
 [pypi]: https://pypi.org/
 [rds]: https://aws.amazon.com/rds/
+[repo]: https://github.com/gvwilson/closure
 [repository-resilience]: https://www.esipfed.org/repository-resilience/
 [shiny]: https://shiny.posit.co/
 [signal]: https://signal.org/
 [slack]: https://slack.com/
 [streamlit]: https://streamlit.io/
 [uptime]: https://uptimerobot.com/
+[wilson-greg]: https://third-bit.com/
 [zenodo]: https://zenodo.org/

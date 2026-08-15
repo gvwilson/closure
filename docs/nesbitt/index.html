@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Learner Personas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Closing Time</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -261,14 +261,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>This post originally appeared on [Andrew Nesbitt’s blog][nesbitt-dumb] and is reproduced with the author’s permission.</em></p>
-<p>[Weekend at Bernie’s][nesbitt-bernies] showed that a good chunk of the most-depended-on open source packages are dead, and there are a lot of different ways for a project to end up that way.</p>
+<p><em>This post originally appeared on <a href="https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html">Andrew Nesbitt’s blog</a> and is reproduced with the author’s permission.</em></p>
+<p><a href="https://nesbitt.io/2026/05/08/weekend-at-bernies.html">Weekend at Bernie’s</a> showed that a good chunk of the most-depended-on open source packages are dead, and there are a lot of different ways for a project to end up that way.</p>
 <section id="the-maintainer-left" class="level2" data-number="G.1">
 <h2 data-number="G.1" class="anchored" data-anchor-id="the-maintainer-left"><span class="header-section-number">G.1</span> The maintainer left</h2>
 <dl>
 <dt>Ghost maintainer</dt>
 <dd>
-The simplest and most common case: last human commit some years back, issues accumulating unanswered, the repo not archived so it doesn’t show up in any filter that would flag it. Usually the maintainer just moved on to other things and the project wasn’t important enough to them to formally hand over or shut down, though the same silence covers everything up to and including the maintainer having died, which neither the registry nor the repo has any way to represent. From outside it’s indistinguishable from a long holiday until enough unanswered issues have piled up to make the silence unambiguous, and the npm utilities at the top of the [Bernie’s dead list][nesbitt-bernies] are mostly this.
+The simplest and most common case: last human commit some years back, issues accumulating unanswered, the repo not archived so it doesn’t show up in any filter that would flag it. Usually the maintainer just moved on to other things and the project wasn’t important enough to them to formally hand over or shut down, though the same silence covers everything up to and including the maintainer having died, which neither the registry nor the repo has any way to represent. From outside it’s indistinguishable from a long holiday until enough unanswered issues have piled up to make the silence unambiguous, and the npm utilities at the top of the <a href="https://nesbitt.io/2026/05/08/weekend-at-bernies.html">Bernie’s dead list</a> are mostly this.
 </dd>
 <dt>Corporate orphan</dt>
 <dd>
@@ -288,7 +288,7 @@ The maintainer was hired by a company and either the employment contract or just
 </dd>
 <dt>Succession deadlock</dt>
 <dd>
-The original maintainer is unreachable and there are people willing to take over, but the publish rights on the registry are tied to an account nobody else can access and the GitHub repo has no other admins, while the registry’s abandoned-package process needs either the original maintainer’s consent or a months-long dispute that nobody has obvious standing to start. The [PEP 541][pep-541] process and npm’s dispute policy both exist for exactly this case and both routinely take longer than forking and renaming would.
+The original maintainer is unreachable and there are people willing to take over, but the publish rights on the registry are tied to an account nobody else can access and the GitHub repo has no other admins, while the registry’s abandoned-package process needs either the original maintainer’s consent or a months-long dispute that nobody has obvious standing to start. The <a href="https://peps.python.org/pep-0541/">PEP 541</a> process and npm’s dispute policy both exist for exactly this case and both routinely take longer than forking and renaming would.
 </dd>
 </dl>
 </section>
@@ -301,7 +301,7 @@ Still active by any metric you’d run. Typo fixes and dependency bumps get merg
 </dd>
 <dt>Benevolent zombie</dt>
 <dd>
-The contribution graph is solid green and every commit is a bot. Dependabot bumps, an auto-merge rule, possibly automated releases triggered by the bumps, and now scheduled coding agents that can keep the lights on indefinitely without a human reading anything. Every recency-based health score rates this as fine, which is more or less the [whole problem][nesbitt-mismeasure] with recency-based health scores.
+The contribution graph is solid green and every commit is a bot. Dependabot bumps, an auto-merge rule, possibly automated releases triggered by the bumps, and now scheduled coding agents that can keep the lights on indefinitely without a human reading anything. Every recency-based health score rates this as fine, which is more or less the <a href="https://nesbitt.io/2026/05/09/the-mismeasure-of-open-source.html">whole problem</a> with recency-based health scores.
 </dd>
 <dt>Custody battle</dt>
 <dd>
@@ -355,7 +355,7 @@ The project is on v4 and actively maintained, but most of the ecosystem is still
 </dd>
 <dt>Registry orphan</dt>
 <dd>
-The package resolves from the registry and the source repo URL in its metadata 404s: deleted, made private, moved without updating the registry, or the hosting service it was on shut down. There’s nowhere to file an issue or fork from, and no way to verify the tarball matches anything that was ever in source control. About 1.7% of npm and 4% of Packagist [point at a repo that isn’t there][nesbitt-proxy], and a fair number of those are still being installed.
+The package resolves from the registry and the source repo URL in its metadata 404s: deleted, made private, moved without updating the registry, or the hosting service it was on shut down. There’s nowhere to file an issue or fork from, and no way to verify the tarball matches anything that was ever in source control. About 1.7% of npm and 4% of Packagist <a href="https://nesbitt.io/2026/05/11/proxy.html">point at a repo that isn’t there</a>, and a fair number of those are still being installed.
 </dd>
 </dl>
 </section>
@@ -419,7 +419,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The [Melbourne Metro safety campaign][melbourne-die] this post is named after closes with “be safe around trains,” which is more actionable than anything I’ve got. Whichever of the above applies, the package resolves the same, and your lockfile will keep wheeling it round the party with the sunglasses on for as long as nobody checks too closely.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Dumb_Ways_to_Die">Melbourne Metro safety campaign</a> this post is named after closes with “be safe around trains,” which is more actionable than anything I’ve got. Whichever of the above applies, the package resolves the same, and your lockfile will keep wheeling it round the party with the sunglasses on for as long as nobody checks too closely.</p>
 </div>
 </div>
 

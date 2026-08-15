@@ -14,10 +14,10 @@ subtitle: "foundations for every ending"
 
 -   Every team needs explicit decision-making rules
     -   Benevolent dictator for life (also known as {{<g bdfl "BDFL" >}} or "principal investigator")
-    -   {{<g martha-rules "Martha's Rules" >}}
+    -   Or {{<g martha-rules "Martha's Rules" >}}
 -   Rules must include {{<g suffrage "suffrage" >}}: who can veto, not just who is consulted
 -   Few projects have a `GOVERNANCE.md` file, and fewer still include shutdown criteria
--   The [Apache Software Foundation][asf]'s [attic process][asf-attic] is a documented model:
+-   The [Apache Software Foundation](@asf)'s [attic process](@asf-attic) is a documented model:
     -   At least three active respondents required for a viable project
     -   If they can't get a release out, shutdown process begins
 
@@ -159,7 +159,7 @@ because of the protocol's resilience.
     -   Check, don't assume
 -   Institutions, journals, and funders have policies for licensing and sharing [@Katz2018]
     -   If you don't know if there is a policy or not, *ask someone*
-    -   Look for an [Open Source Program Office][ospo] (OSPO) or intellectual property (IP) office
+    -   Look for an [Open Source Program Office](@ospo) (OSPO) or intellectual property (IP) office
 -   Open source licenses are irrevocable,
     but closing repositories is still a meaningful decision for your community
 -   Confidential and personally identifiable data has specific legal obligations

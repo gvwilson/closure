@@ -16,6 +16,25 @@ subtitle: "setting the scene"
     -   E.g., business owners who were satisfied with their exits had started planning years in advance
         [@Burlingham2014]
 
+## Learner Personas
+
+-   Jun, 38, is a data scientist who released an open source project
+    as part of her work at a tech company.
+    After a reorg moved her to a different division,
+    she wants to hand the project over to a junior team member.
+-   Vaida, 33, works as a data analyst for the Ministry of the Environment.
+    She co-founded a volunteer group that teaches environmental science to high school students.
+    She is relocating for a new job and wants to wind things down properly.
+    She has two or three hours a week for the next couple of months.
+-   Chetan, 27 has maintained an online hummingbird tracking site for several years as a hobby.
+    The project has never had a budget beyond occasional small grants.
+    Their hosting service was hacked,
+    and they want to resurrect it before the fall migration starts in a few days.
+-   Liam, 29, is a software developer for the Ministry of the Environment.
+    After a recent election,
+    management has decided to halt work on the open source tool he has built.
+    He has been given until the end of the week to wind things down.
+
 ## The Grid
 
 -   Organize our thoughts on a 2x2 grid
@@ -61,7 +80,7 @@ most of what we can write today doesn't actually address tomorrow's actual needs
     -   E.g., department being shut down
     -   Affect so many people at the same time that the community cannot buffer the shock
     -   And might not survive it
-    -   [Climategate][climategate] affected dozens of people directly
+    -   [Climategate](@climategate) affected dozens of people directly
         and damaged the entire climate research community
 -   {{<g global-threat "Global threats" >}} affect everyone at the same time
     -   Which means other groups cannot help

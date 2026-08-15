@@ -44,8 +44,8 @@ subtitle: "looking back and next steps"
 ## Further Reading
 
 -   [@Foster2026] is one of the few end-to-end guides out there
--   [Repository Resilience][repository-resilience]
--   [Beyond the Bus Factor][beyond-bus-factor]
+-   [Repository Resilience](@repository-resilience)
+-   [Beyond the Bus Factor](@beyond-bus-factor)
 
 ## Exercises
 

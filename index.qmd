@@ -1,40 +1,13 @@
-This workshop is a short introduction to ending projects organized around a 2x2 grid:
-a project either continues after the event or does not,
-and the event is either gradual or abrupt.
-It assumes that participants have some experience managing small projects
-but little or no formal training in how to end them.
+---
+title: "Closing Time"
+---
+This workshop is a short introduction to succession planning, disaster management, and ending projects.
+It assumes that participants have some experience being part of small software or research projects
 All of the material is available under an open license,
-and contributions through our [repository][repo] are welcome.
+and contributions through our [repository](@repo) are welcome.
 All participants are required to respect our Code of Conduct.
 
-## Learner Personas
-
-There are important differences between shutting a project down
-of your own accord and on your own timeline,
-and shutting it down on short notice under difficult circumstances.
-This workshop therefore caters to four different learners:
-
--   Jun, 38, is a data scientist who released an open source project
-    as part of her work at a tech company.
-    After a reorg moved her to a different division,
-    she wants to hand the project over to a junior team member.
-
--   Vaida, 33, works as a data analyst for the Ministry of the Environment.
-    She co-founded a volunteer group that teaches environmental science to high school students.
-    She is relocating for a new job and wants to wind things down properly.
-    She has two or three hours a week for the next couple of months.
-
--   Chetan, 27 has maintained an online hummingbird tracking site for several years as a hobby.
-    The project has never had a budget beyond occasional small grants.
-    Their hosting service was hacked,
-    and they want to resurrect it before the fall migration starts in a few days.
-
--   Liam, 29, is a software developer for the Ministry of the Environment.
-    After a recent election,
-    management has decided to halt work on the open source tool he has built.
-    He has been given until the end of the week to wind things down.
-
-[*Greg Wilson*][wilson-greg] is a programmer, author, and educator based in Toronto.
+[*Greg Wilson*](@wilson-greg) is a programmer, author, and educator based in Toronto.
 He was the co-founder and first Executive Director of Software Carpentry
 and received ACM SIGSOFT's Influential Educator Award in 2020.
 
@@ -47,6 +20,3 @@ and received ACM SIGSOFT's Influential Educator Award in 2020.
     help who you can
   </em>
 </p>
-
-[repo]: https://github.com/gvwilson/closure
-[wilson-greg]: https://third-bit.com/
