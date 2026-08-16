@@ -6,55 +6,56 @@
 :   A shutdown in which the project does not continue and the event is abrupt:
     short notice, usually someone else's decision, with only one chance to get it right.
 
-<span id="abstinence-solution">abstinence solution</a>
+<span id="abstinence-solution">abstinence solution</span>
 :   A proposed solution that requires people to behave in ways they actually won't.
     Its real purpose is to allow its proponents to pretend they have solved the problem.
 
-<span id="advance-directive">advance directive</a>
+<span id="advance-directive">advance directive</span>
 :   A document written while a project is still healthy that specifies conditions for shutdown,
     who has authority to decide,
     what assets must be preserved,
     and what obligations must be honored.
 
-<span id="anticipatory-mourning">anticipatory mourning</a>
+<span id="anticipatory-mourning">anticipatory mourning</span>
 :   Grief that begins before an expected loss rather than after it,
     involving simultaneous processing of past, present, and future losses.
 
-<span id="asset-transfer">asset transfer</a>
+<span id="asset-transfer">asset transfer</span>
 :   The transfer of selected assets and obligations from one party to another
     while leaving the original legal entity intact.
 
-<span id="attention-narrowing">attention narrowing</a>
+<span id="attention-narrowing">attention narrowing</span>
 :   A cognitive effect of acute stress
     in which focus narrows to the most visible problem while other concerns become invisible.
 
 ## B
 
-<span id="bdfl">Benevolent Dictator for Life (BDFL)</a>
+<span id="bdfl">Benevolent Dictator for Life (BDFL)</span>
 :   A governance model in which one person holds final decision-making authority over a project
     for as long as they choose to lead it.
 
-<span id="bullshit">bullshit</a>
+<span id="bullshit">bullshit</span>
 :   Communication that disregards truth in favor of achieving an effect,
     in which the speaker is indifferent to whether their statements are true or false.
 
+<span id="bus-factor">bus factor</span>
+:   The minimum number of team members who have to be hit by a bus
+    in order for the project to come to a halt.
+    Also known as {{<g lottery-factor "lottery factor">}}.
+
 ## C
 
-<span id="civil-society">civil society</a>
+<span id="civil-society">civil society</span>
 :   Organizations, networks, and communities that operate outside government and the commercial sector.
 
-<span id="community-threat">community threat</a>
+<span id="community-threat">community threat</span>
 :   A threat that affects a large group of people simultaneously,
     overwhelming the community's capacity to absorb the shock.
 
-<span id="continuing-bonds">continuing bonds</a>
+<span id="continuing-bonds">continuing bonds</span>
 :   A theory of bereavement that states that
     healthy mourning does not require severing the relationship with what was lost
     but can instead involve ongoing connections.
-
-<span id="cosmology-episode">cosmology episode</a>
-:   A moment during a crisis when the world stops making sense and people freeze
-    because the structures that normally coordinate action have disappeared.
 
 ## D
 
@@ -62,11 +63,11 @@
 :   A shutdown in which the project does not continue and the event is gradual:
     decided by project leaders with enough notice to plan and correct course.
 
-<span id="doi">digital object identifier (DOI)</a>
+<span id="doi">digital object identifier (DOI)</span>
 :   A persistent unique identifier assigned to a digital object such as a dataset or software release
     so that it can be reliably cited and located.
 
-<span id="dignity-therapy">dignity therapy</a>
+<span id="dignity-therapy">dignity therapy</span>
 :   A brief structured intervention involving a guided life-review interview
     in which a person reflects on what has mattered most,
     producing a legacy document intended to extend their influence.
@@ -80,26 +81,26 @@
 
 ## E
 
-<span id="emotion-focused-coping">emotion-focused coping</a>
+<span id="emotion-focused-coping">emotion-focused coping</span>
 :   A response to stress that addresses a person's internal emotional state
     rather than the external situation causing the stress.
 
-<span id="entity-transfer">entity transfer</a>
+<span id="entity-transfer">entity transfer</span>
 :   The transfer of an entire project or other legal entity, including
     unknown obligations.
 
 ## F
 
-<span id="fair-principles">FAIR principles</a>
+<span id="fair-principles">FAIR principles</span>
 :   A set of guidelines requiring that research data be Findable, Accessible, Interoperable, and Reusable.
 
-<span id="fantasy-document">fantasy document</a>
+<span id="fantasy-document">fantasy document</span>
 :   A plan that gives the appearance of preparedness
     but bears no relationship to what would actually happen if the plan were needed.
 
 ## G
 
-<span id="global-threat">global threat</a>
+<span id="global-threat">global threat</span>
 :   A threat that affects an entire community or society,
     leaving no external community available to provide support.
 
@@ -107,7 +108,7 @@
 
 ## I
 
-<span id="individual-threat">individual threat</a>
+<span id="individual-threat">individual threat</span>
 :   A threat affecting one or a few members of a team,
     arising from career changes, life events, or external pressures targeting specific people.
 
@@ -117,13 +118,18 @@
 
 ## L
 
-<span id="leadership-threat">leadership threat</a>
+<span id="leadership-threat">leadership threat</span>
 :   A threat aimed specifically at a project's leader,
     such as a reputational attack based on the leader's research or public positions.
 
+<span id="lottery-factor">lottery factor</span>
+:   The minimum number of team members who have to win the lottery and retire
+    in order for the project to come to a halt.
+    Also known as {{<g bus-factor "bus factor">}}.
+
 ## M
 
-<span id="martha-rules">Martha's Rules</a>
+<span id="martha-rules">Martha's Rules</span>
 :   A consensus procedure in which a proposal passes unless enough participants formally object,
     balancing efficiency with broad participation.
 
@@ -133,7 +139,7 @@
 
 ## N
 
-<span id="normalization-of-deviance">normalization of deviance</a>
+<span id="normalization-of-deviance">normalization of deviance</span>
 :   The process by which repeated small deviations from safe practice come to be accepted as normal,
     increasing the risk of eventual catastrophic failure.
 
@@ -141,15 +147,15 @@
 
 ## P
 
-<span id="password-manager">password manager</a>
+<span id="password-manager">password manager</span>
 :   Software that stores and manages login credentials securely,
     enabling strong unique passwords for each service.
 
-<span id="problem-focused-coping">problem-focused coping</a>
+<span id="problem-focused-coping">problem-focused coping</span>
 :   A response to stress that addresses the external situation causing the stress
     rather than the person's emotional reaction to it.
 
-<span id="psychological-first-aid">psychological first aid</a>
+<span id="psychological-first-aid">psychological first aid</span>
 :   A framework for supporting people in the early stages of a crisis
     by promoting safety, calm, self-efficacy, connectedness, and hope.
 
@@ -157,7 +163,7 @@
 
 ## R
 
-<span id="recognition-primed-decision-making">recognition-primed decision making</a>
+<span id="recognition-primed-decision-making">recognition-primed decision making</span>
 :   A form of decision-making in which
     an expert recognizes a situation as an instance of a familiar type
     and acts on the first workable response
@@ -165,11 +171,11 @@
 
 ## S
 
-<span id="street-level-bureaucracy">street-level bureaucracy</a>
+<span id="street-level-bureaucracy">street-level bureaucracy</span>
 :   The practice by which frontline workers use their own judgment to depart from institutional rules
     when applying those rules would produce worse outcomes.
 
-<span id="succession-plan">succession plan</a>
+<span id="succession-plan">succession plan</span>
 :   A document specifying what a departing leader is handing over,
     when each element will transfer,
     and what the successor will be responsible for.
@@ -178,31 +184,31 @@
 :   The process of preparing for a project to continue under new leadership
     on a gradual timeline.
 
-<span id="suffrage">suffrage</a>
+<span id="suffrage">suffrage</span>
 :   The right to participate in a binding governance decision,
     as distinct from the right merely to be consulted.
 
-<span id="sunk-cost-fallacy">sunk cost fallacy</a>
+<span id="sunk-cost-fallacy">sunk cost fallacy</span>
 :   The tendency to continue investing in something because of past investment
     rather than expected future value.
 
-<span id="supply-chain-attack">supply chain attack</a>
+<span id="supply-chain-attack">supply chain attack</span>
 :   An attack in which a malicious actor compromises a project
     by gaining acceptance as a contributor.
 
-<span id="survival-arc">survival arc</a>
+<span id="survival-arc">survival arc</span>
 :   A three-stage pattern of response to disaster consisting of denial, deliberation, and decision.
 
 ## T
 
-<span id="threat-modeling">threat modeling</a>
+<span id="threat-modeling">threat modeling</span>
 :   A structured technique for identifying and categorizing risks to a system or organization.
 
-<span id="tight-coupling">tight coupling</a>
+<span id="tight-coupling">tight coupling</span>
 :   A design property of systems in which components are so interdependent that
     a failure in one triggers failures in others.
 
-<span id="total-pain">total pain</a>
+<span id="total-pain">total pain</span>
 :   The concept that suffering is never purely physical but has 
     psychological and social dimensions that amplify each other.
 

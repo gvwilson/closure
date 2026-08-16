@@ -5,7 +5,7 @@ subtitle: "the best-case scenario"
 
 -   You are leaving a project that you currently lead
 -   It will carry on after your departure
--   You have time to make a [%g succession-plan "succession plans" %]
+-   You have time to make a {{<g succession-plan "succession plans">}}
 
 ## How Leaders Leave
 
