@@ -38,11 +38,6 @@
 :   Communication that disregards truth in favor of achieving an effect,
     in which the speaker is indifferent to whether their statements are true or false.
 
-<span id="bus-factor">bus factor</span>
-:   The minimum number of team members who have to be hit by a bus
-    in order for the project to come to a halt.
-    Also known as {{<g lottery-factor "lottery factor">}}.
-
 ## C
 
 <span id="civil-society">civil society</span>
@@ -125,7 +120,7 @@
 <span id="lottery-factor">lottery factor</span>
 :   The minimum number of team members who have to win the lottery and retire
     in order for the project to come to a halt.
-    Also known as {{<g bus-factor "bus factor">}}.
+    Also known as "bus factor".
 
 ## M
 
