@@ -3,7 +3,7 @@
 -- heading from the included file (so the including chapter supplies its own
 -- title). The included file is otherwise standalone Markdown; the only extra
 -- rewrite needed is the internal book link @/slug/ -> ../slug/index.qmd.
--- Include paths are resolved relative to the project root (like _bin/links.lua)
+-- Include paths are resolved relative to the project root (like mccole/links.lua)
 -- because quarto.doc.input_file does not point at the chapter during book PDF
 -- renders, which merge all chapters into a single document.
 

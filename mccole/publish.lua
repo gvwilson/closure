@@ -4,7 +4,7 @@
 -- '../quarto/' directory one level above the book, so this script rewrites
 -- every reference to those directories accordingly.
 --
--- Usage: pandoc lua _bin/publish.lua SOURCE DESTINATION [SNIPPET]
+-- Usage: pandoc lua mccole/publish.lua SOURCE DESTINATION [SNIPPET]
 --   SOURCE      directory of rendered HTML (e.g. 'docs')
 --   DESTINATION directory to write into (e.g. '~/third/docs/change')
 --   SNIPPET     optional path to an HTML fragment inserted as the last
