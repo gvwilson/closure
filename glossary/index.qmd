@@ -74,6 +74,10 @@
 :   The process of restoring a project to working order after an abrupt event
     while the project continues.
 
+<span id="downsizing">downsizing</span>
+:   A significant reduction in a project's money, people, or both
+    such that continuing as before is no longer possible.
+
 ## E
 
 <span id="emotion-focused-coping">emotion-focused coping</span>
@@ -127,6 +131,10 @@
 <span id="martha-rules">Martha's Rules</span>
 :   A consensus procedure in which a proposal passes unless enough participants formally object,
     balancing efficiency with broad participation.
+
+<span id="minimum-viable-project">minimum viable project</span>
+:   The smallest version of a project still worth keeping alive,
+    re-derived from first principles after a significant cut.
 
 <span id="moscow-method">MoSCoW method</span>
 :   A prioritization technique that sorts tasks into four categories:
@@ -193,6 +201,10 @@
 
 <span id="survival-arc">survival arc</span>
 :   A three-stage pattern of response to disaster consisting of denial, deliberation, and decision.
+
+<span id="survivor-guilt">survivor guilt</span>
+:   Guilt felt by people who remain after others have left or been let go,
+    often compounded by a heavier individual workload.
 
 ## T
 

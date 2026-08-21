@@ -3,43 +3,53 @@ subtitle: "when the project survives but shrinks"
 ---
 # Downsizing
 
--   The grid in the [introduction](../intro/index.qmd) assumes a project either carries on or comes to an end
+-   The introduction assumes a project either carries on or comes to an end
 -   {{<g downsizing "Downsizing" >}} is a third case:
     the project continues, but with significantly less money, fewer people, or both
 -   A 50% cut is not fatal by itself, but enough that "business as usual" is no longer an option
--   The cut is usually someone else's decision made on someone else's timetable
+-   The cut is usually someone else's decision made on someone else's timetable [@Ho2009]
 -   The goal is not to close the project or hand it over,
     but to shrink it without breaking it
 
 ## Accept the New Reality
 
--   The most common response to a cut is denial dressed up as commitment
-    -   Keep the old roadmap, stretch everyone, and hope the money comes back
--   [@Weitzel1989] calls this the "faulty action" stage of decline:
-    the wrong remedy (working harder) applied to the wrong diagnosis (the project has shrunk)
--   The first step downsizing is to re-plan around the resources you actually have,
+-   Re-plan around the resources you actually have,
     not the ones you used to have
 -   Answer two questions:
     -   What must this project still do to be worth continuing?
     -   What can it afford to stop doing?
 -   Don't wait for certainty: "we'll get through this somehow" is not a plan
     -   Plan for the cut being permanent, and treat restoration as a bonus
+-   The stages of decline that lead here are covered [earlier](../deliberate/index.qmd)
 
 ## Re-decide What the Project Is For
 
 -   A significant cut invalidates the mission statement,
     which was written for a project you no longer have
 -   Re-derive a {{<g minimum-viable-project "minimum viable project" >}} from first principles
+-   Large projects accumulate work that does not serve the mission
+    because someone is paid to do it rather than because it is needed [@Graeber2018]
 -   Everything outside that core is now:
     -   Deferred: shelved with a note explaining what it was and why it was cut
     -   Delegated: handed to community members who can carry it independently
     -   Dropped: acknowledged as no longer part of the project
 -   A 50% cut is "do half the things properly, or do everything half as well"
     -   Choosing the former deliberately greatly improves chances of survival
+-   Write the minimum viable project down on one page:
+    -   Keep: capabilities that must survive,
+        each with a target service level
+        ("monthly release" versus "occasional fixes only")
+    -   Stop: what is explicitly dropped now
+    -   Owner: who is accountable for each kept item after the cut
+    -   Re-expand trigger: the concrete condition that would bring a cut item back
+    -   Close trigger: the concrete condition under which we stop shrinking and close instead
 
 ## Sequence the Cuts
 
--   Cut in an order that protects the project's ability to recover
+-   Cut in an order that protects the project's ability to recover:
+    scope, then process, then people, then future resources
+    -   In other words, cut in the order things are easiest to reverse,
+        and never cut your ability to recover before you must
 -   First, reduce scope:
     it is reversible, and it costs no people
 -   Then, simplify process and tooling
@@ -49,6 +59,9 @@ subtitle: "when the project survives but shrinks"
 -   Last, cut the things that generate future resources
     -   Final reports, funder relationships, and reputation
     -   Losing eligibility for the next grant accelerates decline [@Wruck1990]
+-   Every cut must carry a one-line reversal condition
+    ("re-hire the docs contractor if we land the second grant")
+-   When two cuts are equally reversible, cut the one touching fewer people
 -   Write down each cut and the reason for it so it can be reversed if resources return
     -   This is the opposite of [abrupt closure](../abrupt/index.qmd),
         where restoration is usually off the table
@@ -57,71 +70,65 @@ subtitle: "when the project survives but shrinks"
 
 -   A funding cut is not a quiet instruction to deliver the same results for less
 -   Renegotiate deliverables and deadlines with sponsors and users
-    -   Silence and minimization do more harm than honest news [@Coombs2019]
--   The project's [advance directive](../gas/index.qmd) should include
-    "what happens if we lose half our funding"
-    -   If it does not, writing that answer down is the first concrete step
+    -   Talked [earlier](../abrupt/index.qmd) about
+        how to communicate bad news without making it worse
+-   Answer four questions for each stakeholder
+    (funder, sponsor, users, downstream projects):
+    1.  What we still deliver, and at what level
+    2.  What we no longer deliver, and by when
+    3.  What we ask from them
+    4.  The fallback if we cannot agree
 
 ## Who Stays and Who Goes
 
--   Deciding who stays is the hardest part of leading through a cut
-    -   [Firing and Being Fired](../fire/index.qmd) covers the mechanics
-    -   This section is about choosing
--   Make the criteria explicit and apply them consistently
-    -   Perceived favoritism does lasting damage to the people who remain
--   Decide by the project's future needs,
-    not by seniority or by loyalty to the past
-    -   The skills that built the project are not necessarily the ones it needs now
--   Involve others in the decision where you can
+-   Score each person on three axes:
+    -   Future-need fit
+    -   Skill
+    -   Redundancy
+-   Have a second reviewer check every score
     -   You are not objective, and you may be the last to see your own blind spots
--   Do not make departure contingent on training a replacement
+-   [Firing and Being Fired](../fire/index.qmd) covers the mechanics of letting people go
 
 ## Survivors
 
--   The people who remain are not necessarily the lucky ones
-    -   They keep the project but inherit more work per person
+-   The people who remain are not necessarily the lucky ones:
+    they keep the project but inherit more work per person
 -   {{<g survivor-guilt "Survivor guilt" >}} is real and common:
-    -   Name this explicitly and make space for it
--   If the people who left were not treated decently,
-    the people who stayed will assume they are next and will start looking elsewhere
+    name it explicitly and make space for it
 -   Don't "reward" survivors with impossible expectations
     -   "Thank you for staying, now do two jobs" turns a cut into a slow-motion shutdown
+    -   Restructuring corrodes exactly the trust and loyalty that keep a project alive [@Sennett1998]
 
 ## Watch for the Death Spiral
 
--   A cut rarely lands all at once
-    -   It triggers indirect losses that can be larger than the cut itself
--   The most capable people often leave voluntarily once the future is uncertain
--   Cascading failure:
-    collaborators and funders scale back their involvement,
-    which justifies further cuts
--   Sometimes the honest conclusion is that a 50% cut is really the first step to closure
-    -   In that case, treat it as [deliberate closure](../deliberate/index.qmd)
-        rather than letting the project bleed out slowly
+-   The warning signs usually appear before the next cut, not after it
+-   Review these leading indicators on a fixed cadence
+    (monthly, or whenever another cut is announced):
+    -   Most-capable departures
+    -   Collaborator and funder pullback
+    -   Backlog growth
+    -   Lottery/bus factor falling toward one
+    -   Rising per-person load
+-   Declare in advance two or three conditions under which downsizing has failed
+    and the plan switches to [deliberate closure](../deliberate/index.qmd):
+    -   "We fall below N active maintainers"
+    -   "Funding halves again"
+-   These conditions are the downsize analogue of the advance directive's
+    shutdown conditions described in [governance](../gas/index.qmd)
 
 ## Exercises
 
 ### The Minimum Viable Project
 
-1.  Write a one-paragraph description of the smallest version of your project
-    that would still be worth keeping alive.
-1.  List three things that you would defer, delegate, or drop
+1.  Fill in the one-page minimum viable project template for your project:
+    Keep, Stop, Owner, trigger to revive, trigger to close.
+1.  List three things you would defer, delegate, or drop
     if your funding and/or team was cut in half.
 
 ### Renegotiate
 
 Your project's funding is being cut by half in three months.
 
-1.  Draft the message you send to your funder explaining what you will still deliver
-    and what you will no longer be able to.
-1.  Draft the one-sentence message you send to your users.
-    How does it differ from the funder's message?
-
-### Who Stays
-
-Your project is losing half its people.
-
-1.  What criteria would you use to decide who stays?
-1.  What criteria are you most tempted to use,
-    and how do they differ from the ones you just wrote down?
-1.  Who else should be in the room when the decision is made?
+1.  Answer the four questions listed earlier for your funder.
+1.  Answer them for your users.
+1.  Compare the answers: where do they differ most?

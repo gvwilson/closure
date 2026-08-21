@@ -84,6 +84,7 @@ subtitle: "the most important part"
     to their dependence on the project
 -   Help community members find each other independently of your infrastructure:
     a mailing list or forum they control survives your shutdown
+    -   Mutual aid of this kind builds capacity rather than dependence [@Spade2020]
 -   Teams that maintained social contact after shutdown were more likely to reform and continue work;
     those that dispersed without ties were not
 -   Engineers assigned to maintain a cancelled project suffer serious morale damage

@@ -36,7 +36,7 @@ subtitle: ending on your own terms
 
 :::: {.callout-note}
 
-One special case is patterns in the dynamics of corporate scandals [@Palazzo2025].
+One special case is patterns in the dynamics of corporate scandals [@Palazzo2025; @Jackall1988].
 Recognizing them early can give people warning that projects are going to fail.
 
 <div class="center">
