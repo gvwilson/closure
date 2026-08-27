@@ -9,6 +9,7 @@
 *.toc
 *.txt
 *~
+.codewhale
 .DS_Store
 .\#*
 /.quarto/

@@ -5,24 +5,25 @@
 \vspace*{0.2in}
 
 \begin{flushleft}
-{\Large
-\textbf\newline{Twelve Quick Tips for Managing IT Disasters in Small Research Software Teams}
-}
-\newline
-\\
-{Greg Wilson}\textsuperscript{1*}
-\\
-\bigskip
-\textbf{1} Third Bit, Toronto, Ontario, Canada\\
-* Corresponding author, gvwilson@third-bit.com.
+  {\Large
+    \textbf\newline{Twelve Quick Tips for Managing IT Disasters in Small Research Software Teams}
+  }
+  \newline
+  \\
+  {Greg Wilson}\textsuperscript{1*}
+  \\
+  \bigskip
+  \textbf{1} Third Bit, Toronto, Ontario, Canada\\
+  * Corresponding author, gvwilson@third-bit.com.
 \end{flushleft}
 
 In 2025, the US government launched an unprecedented series of attacks on its
 own scientific research groups.  A year later \withurl{GitHub}{https://github.com/}
-briefly dropped below 90\% availability for the first time, while wildfires in
-Canada, France, Spain, and elsewhere have forced researchers from the homes and
-labs. These events and others have reminded us just how fragile research
-computing systems can be.
+dropped below 90\% availability for the first time, while wildfires in Canada,
+France, Spain, and elsewhere forced researchers from the homes and labs.  These
+events and others have reminded us just how fragile research computing systems
+can be, and that planning for disasters is one of the most effective ways to
+prevent them.
 
 This paper is a short guide to disaster planning and recovery for a small
 research software team.  The tips assume you are doing everything yourself on
@@ -38,7 +39,7 @@ provide it.
 We assume that your team fits one or more of these profiles:
 
 \begin{description}
-
+  
 \item[Providing a simple online service]
   Your research group runs a \withurl{Shiny}{https://shiny.posit.co/} app
   or a \withurl{Streamlit}{https://streamlit.io/} dashboard so that collaborators can query data.
@@ -48,8 +49,8 @@ We assume that your team fits one or more of these profiles:
   \item The graduate student who deployed the service leaves and no one else has credentials.
   \item Your service depends on a database that another group maintains,
     and that group shuts down on short notice.
-\end{itemize}
-
+  \end{itemize}
+  
 \item[Publishing a software package]
   Your group releases software to public registries like \withurl{PyPI}{https://pypi.org/} or
   \withurl{CRAN}{https://cran.r-project.org/}. Scenarios include:
@@ -58,7 +59,7 @@ We assume that your team fits one or more of these profiles:
   \item GitHub suspends your account.
   \item Your institutional web hosting is turned off.
   \end{itemize}
-
+  
 \item[Managing data]
   Your group produces datasets in the lab or in the field that are shared with
   collaborators and deposited in repositories.  Scenarios include:
@@ -67,7 +68,7 @@ We assume that your team fits one or more of these profiles:
   \item A field laptop is stolen and the data on it has not been backed up.
   \item Your data repository announces it is shutting down.
   \end{itemize}
-
+  
 \end{description}
 
 These categories overlap: for example, an ecology lab may publish an R package,
@@ -85,20 +86,29 @@ Shiny dashboard is hosted, where the ten-year field dataset lives, and the
 laptops the team works on. For each item, answer two questions:
 
 \begin{enumerate}
-
+  
 \item
   How long can you be without it before work stops dead? This is your
   \emph{Recovery Time Objective} (RTO).
-
+  
 \item
   How much data can you afford to lose: the last hour's work, the last
   day's, a week's? This is your \emph{Recovery Point Objective} (RPO).
-
+  
 \end{enumerate}
 
 Next, identify the single points of failure within your control, such as the
 person who knows the deployment process or the credit card that pays for cloud
 services. For each, ask what happens if it disappears.
+
+\begin{notebox}[Questions for Support]
+  If you have access to research support teams of the kind described in the introduction,
+  you may want to ask them these questions.
+  \begin{itemize}
+  \item Can you help us estimate realistic recovery time and recovery point targets?
+  \item Who else shares the systems we depend on, and how would their failure cascade to us?
+  \end{itemize}
+\end{notebox}
 
 \section*{Tip 2: Make a plan.}
 
@@ -125,14 +135,20 @@ numbered series of specific actions. For example, for an online service outage:
 \end{enumerate}
 
 \begin{notebox}
+  If a step requires knowledge or access that only one person has, you have a
+  \emph{lottery-factor} problem (also called a ``bus factor'' problem). Ask
+  yourself, ``If Alice wins the lottery and moves to Bali tomorrow, can the rest
+  of the team keep things running?''  This is the hardest part of planning: Alice
+  probably doesn't recognize all the things only she knows how to do, and no one
+  else does either because she has always taken care of it.
+\end{notebox}
 
-If a step requires knowledge or access that only one person has, you have a
-\emph{lottery-factor} problem (also called a ``bus factor'' problem). Ask
-yourself, ``If Alice wins the lottery and moves to Bali tomorrow, can the rest
-of the team keep things running?''  This is the hardest part of planning: Alice
-probably doesn't recognize all the things only she knows how to do, and no one
-else does either because she has always taken care of it.
-
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item Will you review our plan and checklists and flag any steps that are wrong or missing?
+  \item Where should we keep a copy so your staff can also find it during an incident?
+  \item Who is our first point of contact on your team when we declare a disaster?
+  \end{itemize}
 \end{notebox}
 
 \section*{Tip 3: Back up everything.}
@@ -181,11 +197,17 @@ i.e., that you can run it and then run it again.  A recovery that corrupts data
 the second time is as bad as no recovery at all.
 
 \begin{notebox}
+  If you can store backups on a separate cloud account with credentials that are
+  not stored on any production server, do so. If an attacker compromises your main
+  account, they should not get your backups as well.
+\end{notebox}
 
-If you can store backups on a separate cloud account with credentials that are
-not stored on any production server, do so. If an attacker compromises your main
-account, they should not get your backups as well.
-
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item What backup and off-site repository services do you provide?
+  \item Can you test our restore process?
+  \item Who manages our off-site deposits, and how do we reach them when we need a restore?
+  \end{itemize}
 \end{notebox}
 
 \section*{Tip 4: Communicate clearly.}
@@ -226,6 +248,14 @@ be calm and reliable. Silence erodes trust faster than bad news, so update
 stakeholders at regular intervals (for example, every 60 minutes or at 10:00 am
 and 3:00 pm) even if the update is ``still working on it''.
 
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item How can we reach your team during an outage?
+  \item Is there an institutional status page or mailing list our updates should be mirrored to?
+  \item Who on your team needs to receive our incident messages?
+  \end{itemize}
+\end{notebox}
+
 \section*{Tip 5: Test the plan.}
 
 The most revealing test for a small team is to hand the recovery checklist to
@@ -242,6 +272,13 @@ and there.
 Keep track of how long these tests take and compare against your RTO. If
 restoring the database takes four hours but your RTO is two hours, you must
 either fix the former or adjust the latter.
+
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item Can your staff join our next drill so we can find gaps together?
+  \item Can you provide a sandbox where we can practice for disasters without affecting production?
+  \end{itemize}
+\end{notebox}
 
 \section*{Tip 6: Watch for trouble.}
 
@@ -260,6 +297,14 @@ generate a catastrophic bill even for a small team. Set budget alerts in your
 cloud provider's console at 50\% and 90\% of your normal monthly spend, sent to
 at least two people. Most cloud providers offer free-tier budget alerting
 adequate for a small team.
+
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item What monitoring and alerts do you already run, and can we subscribe to them?
+  \item Can you help us set up alerts and uptime checks for our accounts?
+  \item Which early-warning metrics would tell us something is about to fail?
+  \end{itemize}
+\end{notebox}
 
 \section*{Tip 7: Lock down your accounts.}
 
@@ -292,6 +337,14 @@ Finally, maintain an offboarding checklist. When someone leaves, revoke their
 digital access and collect their physical keys as soon as you can. A disgruntled
 former team member with lingering access is trouble you don't need.
 
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item Can you help us set up multi-factor authentication?
+  \item Which of your team should have access to administrative credentials?
+  \item How quickly does your offboarding process revoke access when someone leaves?
+  \end{itemize}
+\end{notebox}
+
 \section*{Tip 8: Protect your assets.}
 
 Make a simple, explicit policy about where things live, such as, ``patient data
@@ -300,12 +353,10 @@ rest''.  If your policy will not fit comfortably on a single page in an 11-point
 font, rewrite it until it does.
 
 \begin{notebox}
-
-You may have obligations you are not aware of under HIPAA, GDPR, or your
-funder's data-management plan.  If you are handling sensitive data, you should
-therefore check whether your institution has an ethics board or data-protection
-office that offers free consultation.
-
+  You may have obligations you are not aware of under HIPAA, GDPR, or your
+  funder's data-management plan.  If you are handling sensitive data, you should
+  therefore check whether your institution has an ethics board or data-protection
+  office that offers free consultation.
 \end{notebox}
 
 Keep laptops and servers patched: enable automatic updates for operating
@@ -322,6 +373,14 @@ someone on the team is contacted by villains, their first action should be to
 physically disconnect the affected machine from the network and then call the
 designated incident lead. Do not try to negotiate or pay without consulting
 legal counsel: most jurisdictions have regulations about ransomware payments.
+
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item Who should we talk to about data protection?
+  \item Can you confirm our laptops and servers have automatic patching enabled?
+  \item If we face ransomware, who is our incident lead and which legal counsel do we call?
+  \end{itemize}
+\end{notebox}
 
 \section*{Tip 9: Stabilize, then investigate.}
 
@@ -353,6 +412,14 @@ mistake. Write down one concrete action item and assign it to one person with a
 deadline. If you cannot find an outside moderator for the review, have the team
 member \emph{least} involved in the incident lead it.
 
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item How do we escalate a ticket with our cloud provider(s)?
+  \item Who on your team should join our incident response?
+  \item Can you act as moderator for our post-incident review?
+  \end{itemize}
+\end{notebox}
+
 \section*{Tip 10: Count the cost.}
 
 You probably don't have a budget line item titled ``disasters'', but you still
@@ -368,6 +435,13 @@ experiment time, missed paper deadlines, or collaborators who stop trusting
 you. That number tells you whether it is worth spending \$50/month on a managed
 database or \$200/year on a backup service.
 
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item Can you tell us what backup storage, a managed database, and monitoring ought to cost?
+  \item Which of those can the institution cover, and which do we have to fund ourselves?
+  \end{itemize}
+\end{notebox}
+
 \section*{Tip 11: Support your team during the crisis.}
 
 The disasters discussed in the opening are not just logistics problems: each is
@@ -380,30 +454,30 @@ During the acute phase of a disaster, apply the same five principles that the
 World Health Organization recommends for crisis responders \cite{who2026}:
 
 \begin{description}
-
+  
 \item[Promote safety.]
-Before asking for status updates, confirm that everyone is not in immediate
-personal danger.  Someone whose laptop was stolen may not be thinking clearly
-about data loss because they are still shaken from the theft itself.
-
+  Before asking for status updates, confirm that everyone is not in immediate
+  personal danger.  Someone whose laptop was stolen may not be thinking clearly
+  about data loss because they are still shaken from the theft itself.
+  
 \item[Calm the environment.]
-Do not add to the panic.  Use a steady voice in your out-of-band chat.  Remind
-the team that the plan exists and that they have rehearsed for this.  Panic is
-contagious, but so is calm.
-
+  Do not add to the panic.  Use a steady voice in your out-of-band chat.  Remind
+  the team that the plan exists and that they have rehearsed for this.  Panic is
+  contagious, but so is calm.
+  
 \item[Build self-efficacy.]
-Remind people that they have handled difficult things before.  Give each person
-one concrete task from the checklist so that everyone feels useful rather than
-helpless.
-
+  Remind people that they have handled difficult things before.  Give each person
+  one concrete task from the checklist so that everyone feels useful rather than
+  helpless.
+  
 \item[Foster connectedness.]
-Use your fallback communication channel to keep the team together.  Isolation
-amplifies distress, so do not let anyone absorb the news alone.
-
+  Use your fallback communication channel to keep the team together.  Isolation
+  amplifies distress, so do not let anyone absorb the news alone.
+  
 \item[Maintain hope.]
-In particular, do not speculate about worst cases before you have confirmed
-them.
-
+  In particular, do not speculate about worst cases before you have confirmed
+  them.
+  
 \end{description}
 
 Protect the person who may have caused the problem.  A team member who
@@ -418,6 +492,14 @@ person working eight hours straight, so rotate people out of the incident
 response when the acute phase is over, even if they insist they are fine.  In
 particular, the person who pulled the all-nighter to restore the database should
 not also be the person writing the post-mortem the next morning.
+
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item What wellbeing or crisis support do you offer, and how do we access it?
+  \item Are there any provisions for post-incident leave?
+  \item How should crisis preparation and response be factored into annual performance reviews?
+  \end{itemize}
+\end{notebox}
 
 \section*{Tip 12: Help your team recover after the disaster.}
 
@@ -446,6 +528,14 @@ sharing backup space or simply bringing them coffee.
 Finally, celebrate the recovery, not just the disaster. A short thank-you
 message that says ``we handled this'' costs nothing and pays dividends the next
 time something goes wrong.
+
+\begin{notebox}[Questions for Support]
+  \begin{itemize}
+  \item What longer-term counselling or support can you offer staff in the weeks after the incident?
+  \item Who else in the institution should we inform so they can support our recovery?
+  \item Can you help us capture lessons learned so other teams benefit from what happened?
+  \end{itemize}
+\end{notebox}
 
 \nocite{*}
 \bibliography{disaster-tips}
