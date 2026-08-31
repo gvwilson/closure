@@ -76,14 +76,12 @@ run a Shiny dashboard for collaborators, and curate a ten-year field dataset.
 
 \section*{Tip 1: Know your risks.}
 
-Start by making a point-form list of every service and physical asset your team
-depends on.  For a small team, this will take about an hour the first time
-through, and 15-30 minutes per quarter for review.  A Markdown file in a Git
-repository or a Google Doc is the right tool for this.
-
-For our ecology lab, this includes where the R package is published, where the
-Shiny dashboard is hosted, where the ten-year field dataset lives, and the
-laptops the team works on. For each item, answer two questions:
+Start by making a point-form list of the services, data sets, and physical
+assets your team depends on.  For a small team, this will take about an hour the
+first time through, and 15-30 minutes per quarter for review.  For our ecology
+lab, this includes where the R package is published, where the Shiny dashboard
+is hosted, where the ten-year field dataset lives, and the laptops the team
+works on. For each item, answer two questions:
 
 \begin{enumerate}
   
@@ -97,7 +95,10 @@ laptops the team works on. For each item, answer two questions:
   
 \end{enumerate}
 
-Next, identify the single points of failure within your control, such as the
+A Google Doc or a text file in a shared drive or Git repository is the right
+tool for creating this, but as discussed below, make sure you keep a copy
+somewhere you can access when online services are down.  Once you have this
+list, identify the single points of failure within your control, such as the
 person who knows the deployment process or the credit card that pays for cloud
 services. For each, ask what happens if it disappears.
 
@@ -210,7 +211,7 @@ the second time is as bad as no recovery at all.
   \end{itemize}
 \end{notebox}
 
-\section*{Tip 4: Communicate clearly.}
+\section*{Tip 4: Decide how to stay in touch.}
 
 Choose a single communication channel that does not depend on your normal
 infrastructure. For example, if you use \withurl{Slack}{https://slack.com/},
@@ -306,19 +307,19 @@ adequate for a small team.
   \end{itemize}
 \end{notebox}
 
-\section*{Tip 7: Lock down your accounts.}
+\section*{Tip 7: Secure your accounts.}
 
-Enable multi-factor authentication (MFA) on every digital account: this is the
+Enabling multi-factor authentication (MFA) on every account is the
 highest-impact security measure you can take \cite{smalls2021}. An authenticator
 app or passkey is better than SMS-based MFA, though SMS is better than no MFA at
 all.
 
 Use a password manager like \withurl{1Password}{https://1password.com/} or
-\withurl{Bitwarden}{https://bitwarden.com/} for the whole team.  Bitwarden's
-free tier is often enough for a 3-5 person team. Every shared credential goes in
-the password manager: never send credentials over chat or email. Print the
-password manager's recovery code and store it somewhere physically safe, because
-if you lose access to the password manager you lose access to everything.
+\withurl{Bitwarden}{https://bitwarden.com/} for the whole team so that you can
+share credentials securely.  Every shared credential goes in the password
+manager: never send credentials over chat or email. Print the password manager's
+recovery code and store several copies somewhere physically safe: if you lose
+access to the password manager, you lose access to everything.
 
 If you have a custom domain, know who manages it: institutional IT, a commercial
 registrar, or someone on the team. Make sure that person's contact information
