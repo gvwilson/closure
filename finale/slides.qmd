@@ -1,0 +1,40 @@
+---
+title: "Conclusion"
+format: revealjs
+---
+
+## Share What You Learned
+
+-   This guide was created because nothing like it existed
+    -   It is incomplete, and your help is welcome
+-   Share what you have learned
+    -   Give talks
+    -   Post on social media, preferably Mastodon
+    -   The big platforms are single points of institutional failure
+-   Share what has not worked as well
+    -   So others do not find those landmines the hard way
+-   Sharing during difficult times protects your mental health
+-   Take time to grieve
+    -   The end of years of work hurts, even when voluntary
+    -   Colleagues may be suffering too
+    -   Others may have survivors' guilt
+-   Remember that people become altruistic and brave after disaster
+
+## Organize
+
+-   The best preventive action is to join professional associations
+    -   Push them to take meaningful action
+    -   Software has few meaningful associations to join
+-   This makes many people uncomfortable
+    -   Membership in voluntary organizations has declined
+    -   We are out of practice
+-   The bad guys are not
+    -   An anti-vax conspiracy theorist is more likely to run for school board than an epidemiologist
+-   Right now the focus is preserving what we have
+    -   But playing defense is just a way to lose more slowly
+
+## Further Reading
+
+-   Foster's guide is one of the few end-to-end guides
+-   Repository Resilience
+-   Beyond the Bus Factor

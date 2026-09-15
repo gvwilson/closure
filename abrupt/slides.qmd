@@ -1,0 +1,99 @@
+---
+title: "Abrupt Closure"
+format: revealjs
+---
+
+## The Scenario
+
+-   Worst case
+    -   The project does not continue
+    -   You get one shot to close it down
+
+## What People Actually Do
+
+-   Under pressure, experts do not compare options
+    -   They recognize a familiar situation and act on the first workable course
+    -   Recognition-primed decision making
+-   Experience from other domains can be misleading
+    -   But also more useful than people realize
+    -   Ask "has anyone seen something like this before?"
+-   Attention narrows under acute stress
+    -   Harder to hold multiple competing priorities in mind
+    -   Teams focus on the most visible problem and forget whole categories
+    -   A predictable feature of how the brain responds to pressure
+
+## Convergence as a Resource
+
+-   Four types of groups form in emergencies
+    -   Established organizations that stick to their routines
+    -   Organizations that extend their routines to the new situation
+    -   Ad hoc groups modeled on established organizations
+    -   Emergent groups with no prior or subsequent existence
+-   People converge on a crisis without being told
+    -   They step forward because the project mattered
+    -   They help if given minimum viable information
+    -   In software, this means unofficial mirrors and community threads
+-   Support this if you can without endangering yourself
+
+## A Loose Interpretation of the Rules
+
+-   Frontline workers routinely depart from formal rules
+    -   When applying them mechanically would produce worse outcomes
+    -   Street-level bureaucracy: real policy is made in the moment
+-   Waiting for approval that cannot be obtained is itself a decision
+    -   Usually a worse one
+-   When procedures do not apply, the people present should act within their discretion
+    -   Copying data, setting up a forwarding address, sending a brief notice
+-   Members of marginalized groups often have more practice with hostile bureaucracies
+    -   Their tactics can be instructive
+
+## Pause First
+
+-   Surgical failures were usually failures to perform known steps, not failures of skill
+    -   A checklist, not more training, was the fix
+    -   The same principle applies to abrupt closure
+-   First, establish how much time you have and what constraints are non-negotiable
+    -   Keeping shutdown secret backfires
+    -   Rumors and information vacuums are more destructive than bad news
+-   Second, write down every category of thing to address before resolving any
+    -   Access, backups, notifications, communication, legal obligations
+    -   The list does not need to be complete or ordered
+    -   It just needs to exist to prevent tunnel vision
+-   Third, triage ruthlessly with MoSCoW
+    -   Must do: obligations with legal or financial risk
+    -   Should do: the minimum viable record of the work
+    -   Could do: a way for the community to find each other
+    -   Won't do: everything else, including "do it properly"
+
+## Then Speak
+
+-   Three communication errors increase reputational damage
+    -   Silence: stakeholders fill the vacuum with rumor
+    -   Denial: asserting the crisis is not serious
+    -   Diminishment: acknowledging it but minimizing severity
+-   Rapid, honest, minimal communication is best
+    -   Even when you do not yet know what you will do
+    -   One paragraph: what we know, what we do not know, when we expect more
+    -   Not a plan, but it prevents the harms of silence
+
+## Then Act
+
+-   You probably cannot clean up code, data, or publications
+    -   A README and a runnable script are a viable minimum
+-   Notify funders and stakeholders with binding claims before going dark
+-   Provide a forwarding address
+    -   A working email beats silence
+-   Do not promise maintenance you cannot deliver
+-   The first conversations are not about logistics
+    -   The next section covers the human side
+
+## When You Are the One Being Hit
+
+-   Most participants are not the ones making the decision
+-   If your own work is about to disappear, do the minimum viable handover
+    -   Push a copy somewhere public
+    -   Export issues and notes
+    -   Hand credentials to a trusted person if it is safe
+-   Pause before speaking or posting publicly
+    -   Have someone you trust review it first
+-   Broader advice lives in an appendix

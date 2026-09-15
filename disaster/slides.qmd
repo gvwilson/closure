@@ -1,0 +1,92 @@
+---
+title: "Disaster Recovery"
+format: revealjs
+---
+
+## What a Disaster Is
+
+-   A disaster is not the end of the project
+    -   An unplanned disruption the team works through and survives
+-   In 2025, the US government attacked its own scientific research groups
+    -   GitHub briefly dropped below 90% availability
+-   These events reminded us how fragile research computing can be
+
+## The Survival Arc
+
+-   Three stages in how people behave when disaster strikes
+    -   Denial: refusing to believe the situation is serious
+    -   Deliberation: paralyzed uncertainty about what to do
+    -   Decision: action, which may or may not be correct
+-   Denial usually consumes far more time than expected
+    -   Thinking through the scenario before it happens shortens it
+-   The gap between a credible sign and the first action will be long
+    -   Rehearsal converts a novel emergency into a recognized pattern
+    -   The most common mistake is skipping early stages as premature
+
+## Know Your Risks
+
+-   Make a point-form list of every service and asset the team depends on
+-   For each item, answer two questions
+    -   How long can you be without it? (recovery time objective, RTO)
+    -   How much data can you afford to lose? (recovery point objective, RPO)
+-   Identify single points of failure within your control
+    -   The credit card that pays for cloud services
+    -   The person with the only key to the freezer
+
+## Make and Test a Plan
+
+-   Write one shared document everyone can find in thirty seconds
+    -   Store it in at least two places that cannot fail at once
+-   State disaster declaration criteria in plain language
+    -   "The dashboard has been offline for more than a day"
+-   Include a short numbered checklist for each scenario
+-   Test the plan by handing it to the newest member
+    -   Ask them to execute it without help
+    -   Every stuck point is a documentation or automation gap
+-   This is the antidote to the fantasy document
+
+## Back Up and Protect
+
+-   Follow the 3-2-1 rule
+    -   Three copies of every critical asset
+    -   On two different types of media
+    -   With one copy off-site
+-   Back up source code to two different forges with automatic mirroring
+-   Back up configuration too
+    -   DNS records, environment variables, pipeline definitions
+-   Test a full restore at least once a year
+    -   About a third of backups fail to restore completely
+-   Backups are not preservation
+    -   Backups protect a continuing project from operational loss
+    -   Preservation leaves a closing project usable by strangers
+
+## Communicate
+
+-   Choose one channel that does not depend on normal infrastructure
+    -   Agree on a fallback and write it in the plan
+-   Pre-write messages and store them with the plan
+    -   One for the team, users, collaborators, and afterward
+-   Designate one person as the communicator
+    -   Everyone else focuses on fixing the problem
+    -   Silence erodes trust faster than bad news
+    -   Update stakeholders at regular intervals, even with "still working on it"
+
+## Stabilize, Then Investigate
+
+-   First goal is to contain damage, not find root cause
+    -   Contain the leak before mopping up
+-   Assign clear roles for the incident
+    -   One person leads the technical response
+    -   One handles communication
+    -   Everyone else does what the leads say
+-   Keep an incident log with timestamps
+    -   14:32 freezer alarm triggered
+    -   14:35 temperature rising
+    -   14:40 began sample transfer
+-   Escalate early
+    -   Open a support ticket as soon as you suspect it is someone else's side
+-   Review within 48 hours
+    -   Ask what in the system allowed the incident, not who made a mistake
+-   Count the cost
+    -   A day of downtime has a concrete price
+    -   That number tells you whether managed services are worth it

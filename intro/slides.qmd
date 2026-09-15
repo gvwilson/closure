@@ -1,0 +1,80 @@
+---
+title: "Introduction"
+format: revealjs
+---
+
+## Endings Are Real
+
+-   For every beginning there must be an ending
+-   But we do not like to talk about endings
+    -   Thousands of books on starting a business
+    -   Only a handful on passing one on or winding one down
+    -   Many of those are really about selling out at the right time
+    -   Because mortality scares us
+-   Preparing for endings can make them less painful
+    -   And less likely
+    -   Thinking about how things might end can prevent some endings
+-   It also makes what happens before more enjoyable
+    -   Satisfied business owners started planning years in advance
+
+## Learner Personas
+
+-   Jun, 38, a data scientist who released an open source project
+    -   A reorg moved her to another division
+    -   She wants to hand the project to a junior team member
+-   Vaida, 33, a data analyst and co-founder of a volunteer teaching group
+    -   Relocating for a new job
+    -   Wants to wind things down properly
+-   Chetan, 27, maintains an online hummingbird tracking site
+    -   The hosting service was hacked
+    -   Wants to resurrect it before fall migration
+-   Liam, 29, a software developer whose tool is being halted
+    -   Has until the end of the week to wind things down
+
+## The Grid
+
+-   Organize thoughts on a 2x2 grid
+-   One axis is continuity
+    -   Does the project continue after the event?
+-   The other axis is pace
+    -   Is the event gradual or abrupt?
+-   Four quadrants, each matched to a persona
+    -   Succession planning: continues under new leadership (Jun)
+    -   Deliberate closure: does not continue but there is time (Vaida)
+    -   Disaster recovery: abrupt interruption but recovers (Chetan)
+    -   Abrupt closure: shuts down on short notice (Liam)
+-   First, foundations that all scenarios rely on
+-   Finally, a section on looking after your people
+
+## A Word on Advice
+
+-   An abstinence solution requires people to do things they actually will not do
+-   "Document everything" is an example
+    -   People short-change writing in favor of doing
+    -   Most of what we can write today does not address tomorrow's needs
+
+## Threat Models
+
+-   Your situation usually depends on external factors
+    -   Use threat modeling to think about them
+-   Individual threats affect one or a few team members
+    -   Career or life changes
+    -   External factors such as visas revoked with little warning
+-   Leadership threats target the project leader
+    -   Example: media targeting for unpopular research
+-   Community threats affect large groups
+    -   Example: a department being shut down
+    -   Too many people are hit to buffer the shock
+    -   Climategate damaged the whole climate research community
+-   Global threats affect everyone at the same time
+    -   Other groups cannot help
+    -   There may be nowhere to run
+
+## Not Covered
+
+-   Community building
+    -   Assumes you must use the community you already have
+-   Communication skills
+    -   Focus on what to say rather than how to say it
+-   For-profit businesses
+    -   Assumes the project is not meant to turn a profit

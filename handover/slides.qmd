@@ -1,0 +1,68 @@
+---
+title: "Succession Planning"
+format: revealjs
+---
+
+## The Scenario
+
+-   You are leaving a project that you currently lead
+-   It will carry on after your departure
+-   You have time to make a succession plan
+
+## How Leaders Leave
+
+-   Four departure archetypes
+-   Which one applies is shaped by how central the project is to your identity
+-   Recognizing the pattern shapes the handover conversations
+-   Monarchs refuse to leave until forced out and undermine successors
+-   Generals depart reluctantly and often attempt to return
+-   Ambassadors leave willingly and remain available
+    -   The most satisfied after leaving
+-   Governors leave cleanly for new pursuits and disengage entirely
+
+## Before You Go
+
+-   Be sure you mean it
+    -   Letting go will be hard on you
+    -   Not letting go will be harder on your successors
+-   Do it when others think it is time
+    -   You are often the last to realize you should move on
+    -   Ask people and pay attention
+    -   Know people who will tell you the truth
+-   Explain what, when, and why
+    -   Tell people as soon as you are sure
+    -   Prevents rumors and speculation
+-   Do not pick a successor by yourself
+    -   You are not objective
+    -   The project's needs have probably changed
+    -   Involving others builds community
+
+## During the Handover
+
+-   Write a succession plan
+    -   Final state: what is your successor responsible for?
+    -   Transition: what are you handing over, and when?
+    -   First draft alone, final draft with your successor
+-   Hand over gradually if you can
+    -   Share tasks before you leave
+    -   Go on holiday for a week and leave them in charge
+-   Hand over permissions step by step
+    -   Transfer access a step ahead of the responsibilities
+    -   Keep at least two people with each critical credential
+-   Have some fun before you go
+    -   People remember beginnings and endings
+    -   Do one final small project
+
+## After You Leave
+
+-   When you leave, leave
+    -   A continued role confuses people who look to you for answers
+-   Leave for something
+    -   Have your next project lined up, even if small
+-   Reflect on what you learned
+    -   Helps you move on
+    -   Helps with the next thing
+    -   Helps your successor and others
+-   Celebrate the good things
+    -   Write down what you accomplished
+    -   As important as the could-have-beens

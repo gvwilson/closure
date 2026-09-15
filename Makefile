@@ -20,7 +20,8 @@ SLIDES_FLAGS=\
   --citeproc \
   --bibliography=${BIB} \
   --csl=mccole/slides.csl \
-  --css=mccole/slides.css
+  --css=mccole/slides.css \
+  --lua-filter=mccole/inc-pandoc.lua
 
 ## commands: show available commands (*)
 commands:
@@ -31,6 +32,8 @@ commands:
 ## site: render HTML with Quarto
 site:
 	${QUARTO} render --to html
+	@mkdir -p ${DOCS}/mccole
+	@cp mccole/book.css ${DOCS}/mccole
 	touch ${DOCS}/.nojekyll
 
 ## pdf: render PDF with Quarto
@@ -50,29 +53,31 @@ publish:
 slides: ${SLIDES_DST}
 
 ${DOCS}/%.html: %.qmd
-	mkdir -p $(@D)
+	@mkdir -p $(@D)
 	pandoc $< ${SLIDES_FLAGS} -o $@
-	cp mccole/slides.css ${DOCS}/mccole/slides.css
-	sed -i '' '/simple\.css/d' $@
+	@mkdir -p ${DOCS}/mccole
+	@cp mccole/slides.css ${DOCS}/mccole/slides.css
+	@sed -i '' '/simple\.css/d' $@
+	@sed -i '' 's:mccole/slides.css:../mccole/slides.css:g' $@
 
 ## check: check structure, spelling, etc.
 check: check-bib check-links check-glossary check-typos
 
 ## check-bib: check bibliography
 check-bib:
-	${LUA} ${BIN}/check-bib.lua ${BIB} ${MD_SRC}
+	@${LUA} ${BIN}/check-bib.lua ${BIB} ${MD_SRC}
 
 ## check-links: check Markdown links
 check-links:
-	${LUA} ${BIN}/check-links.lua ${LINKS} ${MD_SRC}
+	@${LUA} ${BIN}/check-links.lua ${LINKS} ${MD_SRC}
 
 ## check-glossary: check glossary references
 check-glossary:
-	${LUA} ${BIN}/check-glossary.lua ${GLOSSARY} ${MD_SRC}
+	@${LUA} ${BIN}/check-glossary.lua ${GLOSSARY} ${MD_SRC}
 
 ## check-typos: check spelling
 check-typos:
-	typos -c mccole/typos.toml ${MD_SRC}
+	@typos -c mccole/typos.toml ${MD_SRC} ${SLIDES_SRC}
 
 ## clean: remove generated and cache files
 clean:

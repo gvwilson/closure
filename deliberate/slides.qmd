@@ -1,0 +1,79 @@
+---
+title: "Deliberate Closure"
+format: revealjs
+---
+
+## The Scenario
+
+-   The project is not continuing and you have time to plan
+-   Sometimes called "succession to zero"
+-   Work is less about triage and more about communication and care
+
+## When to Close
+
+-   A five-stage model of organizational decline
+    -   Blindness: warning signs go unrecognized
+    -   Inaction: signs are seen but nothing changes
+    -   Faulty action: the wrong remedies are tried
+    -   Crisis: resources are depleted and options close
+    -   Dissolution
+-   The sunk cost fallacy keeps projects alive past their useful life
+-   Shutdown becomes undeniable long after it became inevitable
+    -   Warning signs were there earlier
+    -   The stage determines which interventions are still available
+-   Clinicians fail patients by focusing on what medicine can do, not what the patient wants
+    -   Closure conversations often fail the same way
+-   Shutdown conditions should already be in the advance directive
+    -   If not, first write down who decides and under what conditions
+    -   Distinguish who is consulted from who has a veto
+-   Discussions should establish shared understanding and explicit priorities
+    -   Negotiate a plan that meets those goals
+    -   Focus on the least bad outcome for each stakeholder
+
+## Honest Enough
+
+-   Framing matters
+    -   "Hibernation" provokes less hostility than "termination"
+    -   Only if it is true and credible
+-   "Tell people what you know, as soon as you know it" is hard
+    -   Information gaps cause more anxiety than difficult truths
+    -   Conflicting instructions cause lasting harm
+    -   But you often do not know what is happening
+    -   Constantly-changing announcements raise the temperature too
+-   This project is probably not your only relationship with others
+    -   Indirect costs of distress are larger than direct costs
+    -   Lost contributors, cancelled collaborations, distraction
+    -   An information vacuum does more damage than an honest announcement
+
+## Beginning the Closure
+
+-   Do not start by announcing shutdown
+    -   Announce that you are stopping work
+    -   Invite known successors to take over
+    -   Do not accept successors you do not already know
+-   Give users real deadlines and enough time
+    -   Two to six months between announcement and shutdown
+-   Use all announcement channels, not just the repository
+    -   The home page reaches core members, not the wider circle
+-   Tell people reasons, timelines, and what happens to assets
+
+## The Middle
+
+-   Update the project home page to list
+    -   Key achievements
+    -   Current state: working, broken, or incomplete
+    -   Where code, data, and results are archived
+    -   Next steps or alternatives for users
+-   Do not bother with
+    -   User-facing tutorials
+    -   Exhaustive dependency documentation
+    -   Extra tests as if for a new release
+    -   Bug triage
+
+## The End
+
+-   Have someone outside the project run structured exit interviews
+    -   Find out what should survive, not only what went wrong
+-   Hold a wake for the project
+    -   A group retrospective and memorial
+    -   What went well, what did not, and what stories people remember

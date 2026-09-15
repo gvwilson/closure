@@ -1,0 +1,139 @@
+---
+title: "Governance, Assets, and State"
+format: revealjs
+---
+
+## Foundations
+
+-   Every scenario relies on the same foundations
+    -   Clear decision-making rules
+    -   An accurate inventory of assets
+-   Put these in place while the project is healthy
+    -   Decisions under stress are harder and more error-prone
+-   Examples use software-intensive projects
+    -   Additions for other kinds of projects are welcome
+
+## Governance
+
+-   Every team needs explicit decision-making rules
+    -   A benevolent dictator for life (BDFL or principal investigator)
+    -   Or Martha's Rules
+-   Rules must include suffrage
+    -   Who can veto, not just who is consulted
+-   Few projects have a GOVERNANCE.md file
+    -   Fewer still include shutdown criteria
+-   The Apache Software Foundation attic process is a documented model
+    -   At least three active respondents for a viable project
+    -   If they cannot release, shutdown begins
+
+## Advance Directives
+
+-   In medicine, an advance directive specifies wanted care if a patient cannot speak
+-   Write one for the project while it is healthy
+    -   Conditions for shutdown
+    -   Who has authority to make the call
+    -   What assets must be preserved
+    -   What obligations must be honored
+-   A plan that has never been tested is a fantasy document
+    -   Plans often reassure regulators but bear no relation to reality
+    -   Ideally, walk through the plan periodically
+    -   Check that each step is executable with the people available
+
+## Coupling and Cascading Failure
+
+-   Organizations often blame individuals to deflect systemic accountability
+    -   "The driver was not paying attention" instead of "the dashboard was too complicated"
+-   Project infrastructure is often tightly coupled
+    -   Only visible during shutdown
+    -   Failures are predictable outcomes of the design
+-   One account that pays for ten services is a risk
+    -   A single personal login controlling a domain can cascade into total loss of access
+-   Treat any single point of control that cannot survive 48 hours as a bug
+
+## Assets
+
+-   Knowing what you have is the first step to preserving it
+    -   Code, data, discussion archives, credentials, domain, metadata, dependencies
+-   Preservation means making work usable by someone who did not create it
+-   Capture the why, not just the what
+    -   A README on the problem solved outlasts API docs
+-   For each asset type, ask two questions
+    -   How would someone find and use this if we disappeared?
+    -   Under time pressure, what do we do first?
+-   Treat every handover as an asset transfer, not an entity transfer
+    -   An asset transfer moves selected assets and obligations
+    -   An entity transfer moves the whole legal entity including unknown liabilities
+    -   Being explicit protects both sides
+
+## Specifics
+
+-   Code
+    -   Archive to a persistent location such as Zenodo or Software Heritage
+    -   Assign a DOI to the final release
+    -   Under pressure, prioritize data over code
+-   Data
+    -   Record provenance, format, units, and known limitations
+    -   Follow FAIR principles where possible
+    -   Under pressure, copy the data out first
+-   Discussion archives
+    -   Often more valuable than formal documentation
+    -   Export before paid services lapse
+    -   One public copy beats zero private ones
+-   Credentials and access
+    -   Hand to a trusted person outside the project before access is cut
+    -   Do this first in an emergency
+-   Domain and web presence
+    -   Domains lapse and get squatted
+    -   Migrate content before letting the domain go
+-   Metadata and identifiers
+    -   Mark deprecated versions in package registries
+    -   Point to alternatives with a migration guide
+    -   Write a short finder's note at the root of the archive
+-   Dependencies
+    -   Record exact versions
+    -   Provide a container image if possible
+
+## Permissions
+
+-   The lottery factor (also called the bus factor)
+    -   What stops if someone wins the lottery and leaves with zero notice?
+-   Use dedicated organizational accounts, not personal ones
+    -   Keep a personal account as a backup
+-   Keep a findable list of privileged actions and the accounts that can perform them
+-   Use a password manager for organizational credentials
+-   Disaster recovery covers the operational side
+    -   The point here is to build the habit before you need it
+
+## Legal and Administrative
+
+-   The most commonly skipped and the most likely to cause problems
+-   Keep a record of decisions made during shutdown
+    -   What was transferred, to whom, and when
+    -   Use email rather than chat for a record
+-   Determine who legally owns the outputs
+    -   IP policies differ between institutions
+    -   Check, do not assume
+-   Institutions, journals, and funders have licensing policies
+    -   Ask someone if you do not know
+    -   Look for an Open Source Program Office or IP office
+-   Open source licenses are irrevocable
+    -   Closing repositories still matters to the community
+-   Confidential data has legal obligations for retention and deletion
+-   Trademarks, domains, and social media handles have legal owners
+    -   Transfer or release them explicitly
+-   Financial accounts require formal closure
+    -   Residual funds may need to be donated or returned
+-   Grant reporting obligations survive shutdown
+-   Build exit clauses into contracts from the start
+
+## Normalized Deviations
+
+-   The Challenger disaster came from a long sequence of small decisions
+    -   Warning signals were noticed and filed away
+    -   Deviation became the norm
+-   Teams approaching closure carry the same backlog
+-   Deliberate closure should audit normalized deviations
+    -   Things the team accepted because fixing them felt too costly
+-   A shutdown retrospective is most valuable when it names what the team learned to live with
+-   Document these to record the actual state
+    -   Avoid passing silent assumptions to successors

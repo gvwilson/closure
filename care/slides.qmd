@@ -1,0 +1,84 @@
+---
+title: "Caring For Your People"
+format: revealjs
+---
+
+## Why Care Matters
+
+-   Projects end, but relationships between people do not have to
+-   People who depended on you are hit by multiple shocks at once
+    -   Just like you
+-   Acknowledge that shutdown is a loss, even when voluntary
+    -   People who spent years on a project deserve recognition
+
+## Total Pain
+
+-   Total pain describes how a dying patient's suffering is never purely physical
+    -   Physical, psychological, social, and spiritual dimensions
+    -   They interact and amplify one another
+-   Project closure is more than logistics
+    -   Identity loss, grief over unfinished work, anxiety, guilt or anger
+    -   These can fracture long-standing relationships
+-   Treating closure as purely administrative leaves people worse off
+
+## Psychological First Aid
+
+-   Five principles guide early crisis response
+    -   Promote a sense of safety
+    -   Calm the emotional environment
+    -   Build self-efficacy and collective efficacy
+    -   Foster connectedness
+    -   Maintain hope
+-   First conversations after a closure should not be about logistics
+    -   Confirm people are not in immediate danger
+    -   Acknowledge what happened rather than minimizing it
+    -   Remind people they have handled difficult things before
+    -   Connect people with one another
+    -   Identify what is uncertain versus decided
+-   Sometimes you have to be honest enough
+
+## Two Kinds of Coping
+
+-   Problem-focused coping addresses the situation itself
+    -   Used when the stressor feels controllable
+-   Emotion-focused coping addresses the internal response
+    -   Used when it feels uncontrollable
+-   Abrupt closure combines both
+    -   Team members respond differently depending on their sense of agency
+-   The person triaging data is not more competent than the one absorbing the news
+    -   They are applying different coping modes
+-   Managing closure well means making space for both
+
+## Grief and Its Timing
+
+-   Anticipatory mourning is grief that begins before an expected loss
+    -   Processing past, present, and future losses at once
+    -   More demanding than grief after the fact
+    -   People must keep functioning while losing the thing they are losing
+-   Planned shutdown triggers this in teams
+    -   Naming the dynamic helps people manage it
+-   Grief after a failed venture scales with personal identification
+    -   And interferes with learning from the experience
+-   Grief recovery is not linear
+    -   Do not force lessons-learned too early
+    -   A retrospective a month later captures more than one the week it closes
+
+## Practical Care
+
+-   Give downstream users notice proportional to their dependence
+-   Help the community find each other outside your infrastructure
+    -   A mailing list or forum they control survives your shutdown
+    -   Mutual aid builds capacity rather than dependence
+-   Teams that kept social contact were more likely to reform
+    -   Those that dispersed without ties were not
+-   Do not trap engineers maintaining a cancelled project
+-   People may feel liberated rather than bereft
+    -   Give permission to experience this without guilt
+-   Writing about difficult experiences helps
+-   Small acts of recognition matter disproportionately
+    -   Naming achievements, thanking contributors publicly
+-   A goodbye ceremony, however small, marks the ending
+    -   Closing a project is not erasing it
+-   Continuing bonds are a normal, healthy form of grief
+    -   Framing closure around what continues reduces distress
+    -   Archiving and attribution become preservation, not compliance
