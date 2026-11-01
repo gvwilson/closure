@@ -76,9 +76,7 @@ advance</li>
 </tbody>
 </table>
 <ul>
-<li>Which quadrant are you in?</li>
-<li>Do you have days or months?</li>
-<li>Can you act unilaterally?</li>
+<li>Disaster recovery is out of scope for this talk</li>
 </ul>
 <aside class="notes">
 <p>Set the stage.</p>
@@ -393,226 +391,6 @@ themselves. The learned-to-live-with line is the normalized-deviations
 point in one sentence.</p>
 </aside>
 </section>
-<section id="disaster-recovery" class="slide level2">
-<h2>Disaster Recovery</h2>
-<div class="center">
-<p>An abrupt interruption that the team survives</p>
-</div>
-<aside class="notes">
-<p>Context: in 2025 the US government attacked its own research groups,
-and a year later GitHub dropped below 90% availability for the first
-time. Planning is one of the most effective ways to prevent disasters.
-This is the quadrant where cheap, concrete fixes actually exist.</p>
-</aside>
-</section>
-<section id="scenarios" class="slide level2">
-<h2>Scenarios</h2>
-<ul>
-<li>Data: a server drive fails, a laptop is stolen before being backed
-up, the repository announces it is closing</li>
-<li>Package: a token expires and its owner leaves, GitHub suspends the
-account</li>
-<li>Service: the cloud account is suspended, the student who deployed it
-leaves with the credentials</li>
-</ul>
-<aside class="notes">
-<p>Have the room self-identify by profile; it sets up every slide that
-follows. The failure modes are mundane, which is the point: none of
-these is a meteor strike.</p>
-</aside>
-</section>
-<section id="know-your-risks" class="slide level2">
-<h2>Know Your Risks</h2>
-<ul>
-<li>One hour, once: list the services, datasets, and physical assets you
-depend on
-<ul>
-<li>Fifteen to thirty minutes a quarter to review</li>
-<li><em>Keep a copy you can read offline</em></li>
-</ul></li>
-<li>For each point:
-<ul>
-<li><strong>Recovery Time Objective</strong>: How long without it before
-work stops dead?</li>
-<li><strong>Recovery Point Objective</strong>: How much data can you
-afford to lose?</li>
-</ul></li>
-<li>Then find single points of failure you control</li>
-<li>The hardest part: Alice cannot list what only Alice knows, and
-neither can anyone else</li>
-</ul>
-<aside class="notes">
-<p>People want to answer “as soon as possible” for everything: force a
-number.</p>
-</aside>
-</section>
-<section id="write-it-then-test-it" class="slide level2">
-<h2>Write It, Then Test It</h2>
-<ul>
-<li>One shared document, findable in thirty seconds, in two places that
-cannot fail together</li>
-<li>Declaration criteria in plain language
-<ul>
-<li>E.g., “The dashboard has been offline for more than a day”</li>
-</ul></li>
-<li>A numbered checklist per scenario — steps, not principles
-<ol type="1">
-<li>Message the Signal group.</li>
-<li>Restore from snapshot.</li>
-<li>Check the dashboard.</li>
-</ol></li>
-<li>Test it on the newest team member
-<ul>
-<li>Every place they get stuck is a documentation or automation gap</li>
-</ul></li>
-<li>Compare the drill’s duration with your RTO</li>
-</ul>
-<aside class="notes">
-<p>No recent hires? Gather everyone for an hour and walk the checklist:
-“It’s Tuesday morning and all of Monday’s data has disappeared.” Fix
-what is missing, wrong, or stale on the spot.</p>
-</aside>
-</section>
-<section id="back-up-everything" class="slide level2">
-<h2>Back Up Everything</h2>
-<ul>
-<li>3-2-1: three copies, two kinds of media, one off-site</li>
-<li>Code and data to two forges or repositories <em>with automatic
-mirroring</em></li>
-<li>Test a full restore once a year: many backups fail to restore
-completely</li>
-<li>Make the restore <strong>idempotent</strong>
-<ul>
-<li>A recovery that corrupts data the second time is (almost) as bad as
-no recovery</li>
-</ul></li>
-<li>Backups live on a separate account whose credentials sit on no
-production server</li>
-</ul>
-<aside class="notes">
-<p>Sources disagree on the failure rate, ranging from “about 20%” to
-“about a third”. The idempotence point and the separate-account point
-are the two people never think of.</p>
-</aside>
-</section>
-<section id="watch-for-trouble" class="slide level2">
-<h2>Watch for Trouble</h2>
-<ul>
-<li>Monitor things that would get you out of bed at 3 a.m.
-<ul>
-<li>Uptime Robot and Healthchecks.io have free tiers</li>
-</ul></li>
-<li>E.g., check that your DOI still resolves, your package still
-installs, and the downloads badge has not dropped to zero
-<ul>
-<li>A sudden zero is often the first sign your registry listing is
-broken</li>
-</ul></li>
-<li>Check the cloud bill every month
-<ul>
-<li>One misconfigured resource can be catastrophic for a small team</li>
-</ul></li>
-</ul>
-<aside class="notes">
-<p>Surprising SaaS bills are becoming more common as people rely more on
-AI.</p>
-</aside>
-</section>
-<section id="lock-the-accounts" class="slide level2">
-<h2>Lock the Accounts</h2>
-<ul>
-<li><strong>Multi-factor authentication</strong> everywhere
-<ul>
-<li>An authenticator app or passkey beats SMS, and SMS beats
-nothing</li>
-</ul></li>
-<li>One team password manager
-<ul>
-<li>Shared credentials in it, <em>never</em> in chat or email</li>
-<li>Print the recovery code several times and store the copies somewhere
-safe</li>
-</ul></li>
-<li>Two people hold each critical credential
-<ul>
-<li>None tied to one phone or email</li>
-</ul></li>
-<li>Keep an offboarding checklist
-<ul>
-<li>The day someone leaves, revoke access</li>
-</ul></li>
-<li>For a lab: who has keys, who knows the alarm code, who may move
-hardware</li>
-</ul>
-<aside class="notes">
-<p>The single highest-impact security measure in the whole talk is MFA.
-The disgruntled ex-member with lingering access is the classic
-small-team incident.</p>
-</aside>
-</section>
-<section id="communicate" class="slide level2">
-<h2>Communicate</h2>
-<ul>
-<li>Pick a channel that does not depend on your normal infrastructure
-<ul>
-<li>E.g., if you use Slack, set up a Signal group</li>
-</ul></li>
-<li>A printed contact tree: at 2 a.m., who calls whom?
-<ul>
-<li>On the lab fridge, and photographed onto every phone</li>
-</ul></li>
-<li>Four messages, pre-written, stored with the plan and in the password
-manager
-<ul>
-<li>Team: “Declared incident: meet in the Signal group”</li>
-<li>Users: “We are investigating, will update within 60 minutes”</li>
-<li>Collaborators: “Data is safe so far, expect a delay of two
-days”</li>
-<li>Afterward: “We’re back: here’s what happened and what changes”</li>
-</ul></li>
-<li>One communicator, chosen for calm rather than technical skill
-<ul>
-<li>Update every 60 minutes even if the update is “still working on
-it”</li>
-</ul></li>
-</ul>
-<aside class="notes">
-<p>Pre-written messages are the difference between a 20-minute and a
-two-hour first hour. Silence erodes trust faster than bad news.</p>
-</aside>
-</section>
-<section id="stabilize-then-investigate" class="slide level2">
-<h2>Stabilize, Then Investigate</h2>
-<ul>
-<li>Stabilize first: contain the leak, then find the cause</li>
-<li>Roles for the duration:
-<ul>
-<li>One technical lead</li>
-<li>One communicator</li>
-<li>Everyone else takes instructions</li>
-</ul></li>
-<li>A timestamped log as you go
-<ul>
-<li>E.g., “14:32 alarm; 14:35 all requests 404; 14:40 failover”</li>
-</ul></li>
-<li>Escalate to service providers early
-<ul>
-<li>You can cancel a ticket, but you can’t get back two hours</li>
-</ul></li>
-<li>Review within 48 hours
-<ul>
-<li>“What in the system allowed this?” not “Who made the mistake?”</li>
-</ul></li>
-<li>Estimate the cost
-<ul>
-<li>This tells you how much it’s worth spending on countermeasures</li>
-</ul></li>
-</ul>
-<aside class="notes">
-<p>Emphasize the need to focus on faults in the system rather than
-personal mistakes: the latter can’t have an effect without the
-former.</p>
-</aside>
-</section>
 <section id="abrupt-closure" class="slide level2">
 <h2>Abrupt Closure</h2>
 <div class="center">
@@ -842,20 +620,46 @@ disaster</li>
 next time something goes wrong.</p>
 </aside>
 </section>
-<section id="key-points" class="slide level2">
-<h2>Key Points</h2>
-<ol type="1">
-<li>Write the decisions down while nothing is wrong</li>
-<li>Two people hold every critical credential, and MFA on all of
-them</li>
-<li>Test the plan and the restore</li>
-<li>In an emergency: categories first, then MoSCoW</li>
-<li>Look after the people, and talk about how they are doing a week and
-a month later</li>
-</ol>
+<section id="conclusion" class="slide level2">
+<h2>Conclusion</h2>
+<ul>
+<li>We created this guide because nothing like it existed</li>
+<li>It is incomplete, and we’d like your help
+<ul>
+<li>Share what you’ve learned</li>
+<li>Share what <em>hasn’t</em> worked as well</li>
+</ul></li>
+<li>Take time to grieve
+<ul>
+<li>The end of years of work will hurt, even if it is voluntary</li>
+<li>Your colleagues may be suffering as well</li>
+<li>And those who haven’t been hit (yet) may have survivors’ guilt</li>
+</ul></li>
+</ul>
 <aside class="notes">
 <p>Leave this slide up during questions.</p>
 </aside>
+</section>
+<section id="thank-you" class="slide level2">
+<h2>Thank You</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><img src="../mccole/gvwilson-gage-2019.png" width="80%"></p>
+</div><div class="column" style="width:66%;">
+<p>
+<a href="http://third-bit.com">Greg Wilson</a>
+</p>
+<p>
+<a href="mailto:gvwilson@third-bit.com">gvwilson@third-bit.com</a>
+</p>
+<p>
+<a href="http://third-bit.com/closure/">http://third-bit.com/closure/</a>
+</p>
+</div>
+</div>
+<p>
+<em>start where you are · use what you have · help who you can</em>
+</p>
 </section>
     </div>
   </div>

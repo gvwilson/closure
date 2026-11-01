@@ -16,9 +16,8 @@ format: revealjs
 | Project continues  | Succession         | Disaster recovery  |
 | Project stops      | Deliberate closure | Abrupt closure     |
 
--   Which quadrant are you in?
--   Do you have days or months?
--   Can you act unilaterally?
+
+-   Disaster recovery is out of scope for this talk
 
 ::: {.notes}
 Set the stage.
@@ -246,164 +245,6 @@ The "do not bother" list gives people permission to be gentle on themselves. The
 learned-to-live-with line is the normalized-deviations point in one sentence.
 :::
 
-## Disaster Recovery
-
-::: {.center}
-An abrupt interruption that the team survives
-:::
-
-::: {.notes}
-Context: in 2025 the US government attacked its own research groups, and a year
-later GitHub dropped below 90% availability for the first time. Planning is one
-of the most effective ways to prevent disasters.
-This is the quadrant where cheap, concrete fixes actually exist.
-:::
-
-## Scenarios
-
--   Data:
-    a server drive fails,
-	a laptop is stolen before being backed up,
-	the repository announces it is closing
--   Package:
-    a token expires and its owner leaves,
-	GitHub suspends the account
--   Service:
-    the cloud account is suspended,
-	the student who deployed it leaves with the credentials
-
-::: {.notes}
-Have the room self-identify by profile; it sets up every slide that follows. The
-failure modes are mundane, which is the point: none of these is a meteor strike.
-:::
-
-## Know Your Risks
-
--   One hour, once: list the services, datasets, and physical assets you depend on
-    -   Fifteen to thirty minutes a quarter to review
-    -   *Keep a copy you can read offline*
--   For each point:
-    -   **Recovery Time Objective**: How long without it before work stops dead?
-    -   **Recovery Point Objective**: How much data can you afford to lose?
--   Then find single points of failure you control
--   The hardest part:
-    Alice cannot list what only Alice knows,
-	and neither can anyone else
-
-::: {.notes}
-People want to answer "as soon as possible" for everything: force a number.
-:::
-
-## Write It, Then Test It
-
--   One shared document,
-    findable in thirty seconds,
-	in two places that cannot fail together
--   Declaration criteria in plain language
-    -   E.g., "The dashboard has been offline for more than a day"
--   A numbered checklist per scenario — steps, not principles
-    1.  Message the Signal group.
-	2.  Restore from snapshot.
-	3.  Check the dashboard.
--   Test it on the newest team member
-    -   Every place they get stuck is a documentation or automation gap
--   Compare the drill's duration with your RTO
-
-::: {.notes}
-No recent hires? Gather everyone for an hour and walk the checklist: "It's
-Tuesday morning and all of Monday's data has disappeared." Fix what is missing,
-wrong, or stale on the spot.
-:::
-
-## Back Up Everything
-
--   3-2-1: three copies, two kinds of media, one off-site
--   Code and data to two forges or repositories *with automatic mirroring*
--   Test a full restore once a year: many backups fail to restore completely
--   Make the restore **idempotent**
-    -   A recovery that corrupts data the second time is (almost) as bad as no recovery
--   Backups live on a separate account whose credentials sit on no production server
-
-::: {.notes}
-Sources disagree on the failure rate, ranging from "about 20%" to "about a
-third".  The idempotence point and the separate-account point are the two people
-never think of.
-:::
-
-## Watch for Trouble
-
--   Monitor things that would get you out of bed at 3 a.m.
-    -   Uptime Robot and Healthchecks.io have free tiers
--   E.g.,
-    check that your DOI still resolves,
-    your package still installs,
-	and the downloads badge has not dropped to zero
-    -   A sudden zero is often the first sign your registry listing is broken
--   Check the cloud bill every month
-    -   One misconfigured resource can be catastrophic for a small team
-
-::: {.notes}
-Surprising SaaS bills are becoming more common as people rely more on AI.
-:::
-
-## Lock the Accounts
-
--   **Multi-factor authentication** everywhere
-    -   An authenticator app or passkey beats SMS, and SMS beats nothing
--   One team password manager
-    -   Shared credentials in it, *never* in chat or email
-    -   Print the recovery code several times and store the copies somewhere safe
--   Two people hold each critical credential
-    -   None tied to one phone or email
--   Keep an offboarding checklist
-    -   The day someone leaves, revoke access
--   For a lab: who has keys, who knows the alarm code, who may move hardware
-
-::: {.notes}
-The single highest-impact security measure in the whole talk is MFA. The
-disgruntled ex-member with lingering access is the classic small-team incident.
-:::
-
-## Communicate
-
--   Pick a channel that does not depend on your normal infrastructure
-    -   E.g., if you use Slack, set up a Signal group
--   A printed contact tree: at 2 a.m., who calls whom?
-    -   On the lab fridge, and photographed onto every phone
--   Four messages, pre-written, stored with the plan and in the password manager
-    -   Team: "Declared incident: meet in the Signal group"
-    -   Users: "We are investigating, will update within 60 minutes"
-    -   Collaborators: "Data is safe so far, expect a delay of two days"
-    -   Afterward: "We're back: here's what happened and what changes"
--   One communicator, chosen for calm rather than technical skill
-    -   Update every 60 minutes even if the update is "still working on it"
-
-::: {.notes}
-Pre-written messages are the difference between a 20-minute and a two-hour first
-hour. Silence erodes trust faster than bad news.
-:::
-
-## Stabilize, Then Investigate
-
--   Stabilize first: contain the leak, then find the cause
--   Roles for the duration:
-    -   One technical lead
-    -   One communicator
-    -   Everyone else takes instructions
--   A timestamped log as you go
-    -   E.g., "14:32 alarm; 14:35 all requests 404; 14:40 failover"
--   Escalate to service providers early
-    -   You can cancel a ticket, but you can't get back two hours
--   Review within 48 hours
-    -   "What in the system allowed this?" not "Who made the mistake?"
--   Estimate the cost
-    -   This tells you how much it's worth spending on countermeasures
-
-::: {.notes}
-Emphasize the need to focus on faults in the system rather than personal
-mistakes: the latter can't have an effect without the former.
-:::
-
 ## Abrupt Closure
 
 ::: {.center}
@@ -566,14 +407,35 @@ The thank-you message after a recovery costs nothing and pays off the next time
 something goes wrong.
 :::
 
-## Key Points
+## Conclusion
 
-1.  Write the decisions down while nothing is wrong
-2.  Two people hold every critical credential, and MFA on all of them
-3.  Test the plan and the restore
-4.  In an emergency: categories first, then MoSCoW
-5.  Look after the people, and talk about how they are doing a week and a month later
+-   We created this guide because nothing like it existed
+-   It is incomplete, and we'd like your help
+    -   Share what you've learned
+    -   Share what *hasn't* worked as well
+-   Take time to grieve
+    -   The end of years of work will hurt, even if it is voluntary
+    -   Your colleagues may be suffering as well
+    -   And those who haven't been hit (yet) may have survivors' guilt
 
 ::: {.notes}
 Leave this slide up during questions.
 :::
+
+## Thank You
+
+::: {.columns}
+
+::: {.column width="33%"}
+<img src="../mccole/gvwilson-gage-2019.png" width="80%">
+:::
+
+::: {.column width="66%"}
+<p><a href="http://third-bit.com">Greg Wilson</a></p>
+<p><a href="mailto:gvwilson@third-bit.com">gvwilson@third-bit.com</a></p>
+<p><a href="http://third-bit.com/closure/">http://third-bit.com/closure/</a></p>
+:::
+
+:::
+
+<p><em>start where you are &middot; use what you have &middot; help who you can</em></p>
