@@ -269,7 +269,7 @@ This is the least pleasant option, and the one they have least practice at.
 -   So the first move is not action: it's a list
 
 ::: {.notes}
-Write categories in paralle with teammates, then compare.  Most lists miss
+Write categories in parallel with teammates, then compare.  Most lists miss
 things like credentials and legal obligations.
 :::
 

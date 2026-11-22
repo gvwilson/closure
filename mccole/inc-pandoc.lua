@@ -35,8 +35,7 @@ local function resolve_path(filename)
     return filename
   end
 
-  local dir = pandoc.path.directory(input[1])
-  return pandoc.path.join({dir, filename})
+  return pandoc.path.join({pandoc.path.directory(input[1]), filename})
 end
 
 function CodeBlock(el)
