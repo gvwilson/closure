@@ -39,6 +39,7 @@ site:
 	${QUARTO} render --to html
 	@mkdir -p ${DOCS}/mccole
 	@cp mccole/mccole-slides.css ${DOCS}/mccole/mccole-slides.css
+	@[ -d images ] && cp -r images ${DOCS}/images
 	touch ${DOCS}/.nojekyll
 
 ## pdf: render PDF with Quarto
