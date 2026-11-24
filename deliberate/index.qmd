@@ -34,7 +34,7 @@ subtitle: ending on your own terms
     -   The least bad outcome for each stakeholder
     -   What trade-offs they are willing to make
 
-:::: {.callout-note}
+::: {.note}
 
 One special case is patterns in the dynamics of corporate scandals [@Palazzo2025; @Jackall1988].
 Recognizing them early can give people warning that projects are going to fail.
@@ -67,7 +67,7 @@ Recognizing them early can give people warning that projects are going to fail.
 </table>
 </div>
 
-::::
+:::
 
 ## Honest Enough
 
@@ -120,7 +120,7 @@ Recognizing them early can give people warning that projects are going to fail.
 -   Hold a wake for the project (i.e., a combination group retrospective and memorial)
     -   What went well, what didn't, and what stories people will remember
 
-:::: {.callout-note}
+::: {.note}
 
 [@Chochinov2005;@Chochinov2012] advocates {{<g dignity-therapy "dignity therapy" >}}
 as a brief, structured intervention for people near the end of life.
@@ -133,7 +133,7 @@ is more than a conventional "lessons learned" report
 because it is personal, narrative, and explicitly oriented toward what should survive
 rather than what went wrong.
 
-::::
+:::
 
 ## Exercises
 

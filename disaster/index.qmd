@@ -1,6 +1,7 @@
+---
+subtitle: when the project survives the storm
+---
 # Disaster Recovery
-
-<p class="subtitle">when the project survives the storm</p>
 
 -   A {{<g disaster "disaster" >}} is not the end of the project:
     it is an unplanned disruption that the team works through and survives

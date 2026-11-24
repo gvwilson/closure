@@ -21,10 +21,7 @@ subtitle: "foundations for every ending"
     -   At least three active respondents required for a viable project
     -   If they can't get a release out, shutdown process begins
 
-<figure>
-  <img src="apache-attic.svg" alt="Eight-step Apache Attic Process taken from https://attic.apache.org/process-howto.html">
-  <figcaption>Apache Attic Process</figcaption>
-</figure>
+![Eight-step Apache Attic Process taken from https://attic.apache.org/process-howto.html](apache-attic.svg)
 
 -   In medicine, an {{<g advance-directive "advance directive" >}} specifies
     what care a patient wants if they become unable to speak for themselves
@@ -117,7 +114,7 @@ Dependencies
 :   Dependencies rot, so record exact versions and, if possible,
     a container image that reproduces the computational environment
 
-:::: {.callout-note}
+::: {.note}
 
 Fifteen years ago,
 a file-sharing system for scientific data based on the BitTorrent protocol
@@ -129,7 +126,7 @@ many individuals and groups are turning back to BitTorrent
 to share datasets that are at risk of disappearing
 because of the protocol's resilience.
 
-::::
+:::
 
 ## Permissions
 
@@ -174,7 +171,7 @@ because of the protocol's resilience.
     -   Check whether a final report is due
 -   Build exit clauses into contracts and development agreements from the start, not when you need them
 
-:::: {.callout-note}
+::: {.note}
 
 There is often a difference in large bureaucratic organization
 between the rules as written and the rules as enforced [@OSS1944].
@@ -186,7 +183,7 @@ than members of privileged groups [@Scott1987];
 if you belong to the latter,
 a conversation or two with selected colleagues may help you see your priorities more clearly.
 
-::::
+:::
 
 ## Normalized Deviations
 

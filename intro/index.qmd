@@ -54,7 +54,7 @@ subtitle: "setting the scene"
 -   Finish with a section on looking after your people,
     which also cuts across all scenarios
 
-:::: {.callout-note}
+::: {.note}
 
 An {{<g abstinence-solution "abstinence solution" >}} is one that requires people
 to do things we know they actually won't
@@ -65,7 +65,7 @@ and fail to write down the parts of their work that they think are obvious.
 This isn't laziness:
 most of what we can write today doesn't actually address tomorrow's actual needs.
 
-::::
+:::
 
 ## Threat Models
 
@@ -87,14 +87,14 @@ most of what we can write today doesn't actually address tomorrow's actual needs
     -   And there may not be anywhere to run to
     -   E.g., current attacks on science in the United States
 
-:::: {.callout-note}
+::: {.note}
 
 Governments make emergency plans to deal with community threats
 (if they are responsible enough to admit those threats exist).
 When governments themselves are in upheaval,
 people turn to {{<g civil-society "civil society" >}} for help [@Solnit2010].
 
-::::
+:::
 
 ## Not Covered
 
