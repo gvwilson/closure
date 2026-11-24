@@ -1,3 +1,5 @@
+# {.unnumbered}
+
 This workshop is a short introduction to succession planning, disaster management, and ending projects.
 It assumes that participants have some experience being part of small software or research projects. 
 All of the material is available under an [open license](license/index.qmd),
