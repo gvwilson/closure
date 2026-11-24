@@ -32,9 +32,9 @@ subtitle: when the project survives the storm
 -   Make a point-form list of every service and physical asset your team depends on
 -   For each item, answer two questions:
     -   How long can you be without it before work stops dead?
-        This is the <<{g rto "recovery time objective" >>} (RTO).
+        This is the {{<g rto "recovery time objective" >}} (RTO).
     -   How much data can you afford to lose: the last hour, the last day, a week?
-        This is the <<{g rpo "recovery point objective" >>} (RPO).
+        This is the {{<g rpo "recovery point objective" >}} (RPO).
 -   Identify the single points of failure within your control,
     e.g., the credit card that pays for cloud services,
     or the person with the only key to the freezer
