@@ -23,9 +23,9 @@ subtitle: ending on your own terms
     medicine *can* do rather than asking what the patient actually *wants*
     [@Gawande2014]
     -   Project closure conversations often fail in the same way
--   The conditions for shutdown should already be written down in the project's advance directive
--   If they are not, the first step is to write down who decides and under what conditions
-    -   Distinguish between who must be consulted and who has a veto
+-   The shutdown conditions should already be in the project's
+    {{<g advance-directive "advance directive" >}}
+    (see [Governance, Assets, and State](../gas/index.qmd))
 -   Discussions with team members, funders, institutional sponsors, and users should:
     -   Establish a shared understanding of the situation
     -   Make each party's values and priorities explicit
@@ -76,18 +76,15 @@ Recognizing them early can give people warning that projects are going to fail.
         and keeps the door open for revival
     -   *If* it is the truth and credible
     -   It's possible to be one without the other
--   "Tell people what you know, as soon as you know it" is easy to say but hard to do
-    -   Information gaps cause more anxiety than difficult truths
-    -   Conflicting verbal and written instructions cause lasting harm
-    -   On the other hand, you often *don't* know what's happening
-    -   And constantly-changing pronouncements raise the temperature as well
+-   How to announce bad news — telling people what you know as soon as you know it,
+    and avoiding silence, denial, and diminishment — is covered in
+    [Abrupt Closure](../abrupt/index.qmd)
 -   Remember that this project is probably not the sole relationship you have with others
     -   [@Wruck1990] found that indirect costs of financial distress
         (lost contributors, cancelled collaborations, management distraction)
         are substantially larger than direct costs such as legal fees or asset sales
     -   Indirect costs arise because distress signals inability to fulfil commitments,
         triggering defensive behaviour that accelerates decline
-    -   An information vacuum does more damage than an honest announcement would have
 
 ## Beginning
 
@@ -106,6 +103,7 @@ Recognizing them early can give people warning that projects are going to fail.
     -   Key achievements
     -   Current state (working, broken, incomplete)
     -   Where code, data, and results are (going to be) archived
+        (per-asset list: [Governance, Assets, and State](../gas/index.qmd))
     -   Next steps or alternatives for users
 -   Don't bother with:
     -   User-facing tutorials

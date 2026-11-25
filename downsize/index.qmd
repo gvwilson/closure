@@ -69,8 +69,8 @@ subtitle: "when the project survives but shrinks"
 
 -   A funding cut is not a quiet instruction to deliver the same results for less
 -   Renegotiate deliverables and deadlines with sponsors and users
-    -   Talked [earlier](../abrupt/index.qmd) about
-        how to communicate bad news without making it worse
+    -   [Abrupt Closure](../abrupt/index.qmd) covers how to communicate bad news
+        without making it worse
 -   Answer four questions for each stakeholder
     (funder, sponsor, users, downstream projects):
     1.  What we still deliver, and at what level

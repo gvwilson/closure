@@ -94,7 +94,8 @@ subtitle: "when the future arrives too soon and in the wrong order"
 
 ## …then Act
 
--   You probably don't have time to clean up code, data, or publications
+-   You probably don't have time to preserve every asset listed in
+    [Governance, Assets, and State](../gas/index.qmd)
     -   A README and a runnable script are a viable minimum handover for research software
 -   Notify funders and stakeholders with binding claims before the project goes dark
 -   Provide a forwarding address:
