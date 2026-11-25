@@ -4,15 +4,14 @@ metadata-files:
 book:
   title: "Closing Time"
   repo-url: "https://github.com/gvwilson/closure"
-  repo-actions: [edit, source, issue]
   chapters:
     - index.qmd
     - intro/index.qmd
     - gas/index.qmd
+    - disaster/index.qmd
+    - downsize/index.qmd
     - handover/index.qmd
     - deliberate/index.qmd
-    - downsize/index.qmd
-    - disaster/index.qmd
     - abrupt/index.qmd
     - care/index.qmd
     - finale/index.qmd
