@@ -11,6 +11,7 @@ book:
     - gas/index.qmd
     - handover/index.qmd
     - deliberate/index.qmd
+    - downsize/index.qmd
     - disaster/index.qmd
     - abrupt/index.qmd
     - care/index.qmd
@@ -21,6 +22,5 @@ book:
     - contributing/index.qmd
     - bibliography/index.qmd
     - glossary/index.qmd
-    - downsize/index.qmd
     - fire/index.qmd
     - nesbitt/index.qmd

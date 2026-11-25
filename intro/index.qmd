@@ -49,6 +49,10 @@ subtitle: "setting the scene"
         the project experiences an abrupt interruption but recovers (Chetan)
     -   {{<g abrupt-closure "Abrupt closure" >}}:
         the project shuts down on short notice (Liam)
+-   {{<g downsizing "Downsizing" >}} is a fifth scenario beyond the four quadrants:
+    the project continues, but with significantly less money, fewer people, or both
+    -   We cover it in its own chapter,
+        after deliberate closure and before disaster recovery
 -   Before discussing these,
     we look at foundations that all scenarios rely on
 -   Finish with a section on looking after your people,
