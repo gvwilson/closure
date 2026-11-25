@@ -23,8 +23,7 @@ subtitle: ending on your own terms
     medicine *can* do rather than asking what the patient actually *wants*
     [@Gawande2014]
     -   Project closure conversations often fail in the same way
--   The shutdown conditions should already be in the project's
-    {{<g advance-directive "advance directive" >}}
+-   The shutdown conditions should already be in the project's advance directive
     (see [Governance, Assets, and State](../gas/index.qmd))
 -   Discussions with team members, funders, institutional sponsors, and users should:
     -   Establish a shared understanding of the situation

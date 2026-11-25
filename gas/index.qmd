@@ -21,7 +21,7 @@ subtitle: "foundations for every ending"
     -   At least three active respondents required for a viable project
     -   If they can't get a release out, shutdown process begins
 
-![Eight-step Apache Attic Process taken from https://attic.apache.org/process-howto.html](apache-attic.svg)
+![Eight-step Apache Attic Process](apache-attic.svg){fig-alt="Apache attic process taken from https://attic.apache.org/process-howto.html"}
 
 -   In medicine, an {{<g advance-directive "advance directive" >}} specifies
     what care a patient wants if they become unable to speak for themselves

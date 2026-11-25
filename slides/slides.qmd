@@ -427,7 +427,7 @@ Leave this slide up during questions.
 ::: {.columns}
 
 ::: {.column width="33%"}
-<img src="../images/gvwilson-gage-2019.png" width="80%">
+<img src="../images/gvwilson-gage-2019.png" width="80%" alt="photograph of Greg Wilson">
 :::
 
 ::: {.column width="66%"}
