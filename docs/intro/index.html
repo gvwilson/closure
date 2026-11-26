@@ -186,6 +186,14 @@ Solnit, Rebecca. 2010. <em>A Paradise Built in Hell: The Extraordinary Communiti
     <a class="pager-link next" href="../gas/index.html">Governance, Assets, and State →</a>
   </nav>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a');
+  document.querySelectorAll('details.topnav-dropdown[open]').forEach(function (d) {
+    if (!d.contains(e.target) || (link && d.contains(link))) d.removeAttribute('open');
+  });
+});
+</script>
 
 
 </body></html>

@@ -215,6 +215,14 @@ Starcke, Katja, and Matthias Brand. 2012. <span>“Decision Making Under Stress:
     <a class="pager-link next" href="../care/index.html">Caring For Your People →</a>
   </nav>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a');
+  document.querySelectorAll('details.topnav-dropdown[open]').forEach(function (d) {
+    if (!d.contains(e.target) || (link && d.contains(link))) d.removeAttribute('open');
+  });
+});
+</script>
 
 
 </body></html>
